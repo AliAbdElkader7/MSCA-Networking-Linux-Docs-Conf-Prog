@@ -1,0 +1,44 @@
+### Create a local admin:
+R1(config)#username admin privilege 15 secret 123
+
+### Enable the AAA method:
+R1(config)#aaa new-model 
+
+### Define the TACACS+ Server:
+R1(config)#tacacs-server timeout 1
+R1(config)#tacacs server ISE1
+R1(config-server-tacacs)#address ipv4 192.168.113.200
+R1(config-server-tacacs)#key 1234
+R1(config-server-tacacs)#exit
+
+### Define the TACACS+ Server group:
+R1(config)#aaa group server tacacs+ ISE_TACACS
+R1(config-sg-tacacs+)#server name ISE1
+R1(config-sg-tacacs+)#exit
+
+### Define the authentication method:
+R1(config)#aaa authentication login TELNET group ISE_TACACS local
+R1(config)#aaa authentication enable default group ISE_TACACS enable 
+
+### Define the authorization method:
+R1(config)#aaa authorization config-commands 
+R1(config)#aaa authorization exec TELNET group ISE_TACACS local 
+R1(config)#aaa authorization commands 0 TELNET group ISE_TACACS local if-authenticated 
+R1(config)#aaa authorization commands 1 TELNET group ISE_TACACS local if-authenticated 
+R1(config)#aaa authorization commands 7 TELNET group ISE_TACACS local if-authenticated 
+R1(config)#aaa authorization commands 15 TELNET group ISE_TACACS local if-authenticated 
+
+### Define the accounting method:
+R1(config)#aaa accounting exec default start-stop group ISE_TACACS
+R1(config)#aaa accounting commands 0 default start-stop group ISE_TACACS
+R1(config)#aaa accounting commands 1 default start-stop group ISE_TACACS
+R1(config)#aaa accounting commands 7 default start-stop group ISE_TACACS
+R1(config)#aaa accounting commands 15 default start-stop group ISE_TACACS
+
+### Apply the authentication and authorization methods to the console:
+R1(config)#line vty 0 4
+R1(config-line)#login authentication TELNET 
+R1(config-line)#authorization exec TELNET
+R1(config-line)#exit                
+
+

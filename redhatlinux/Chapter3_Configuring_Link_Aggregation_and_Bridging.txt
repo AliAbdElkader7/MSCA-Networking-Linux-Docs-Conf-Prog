@@ -1,0 +1,87 @@
+Network teaming and bonds:
+
+- Network teaming is method for linking NICs together logically to allow for failover or higher throughput. 
+- It offers an alternate implementation of bonds (RHEL7 supports channel bonding for backward compatability)
+- Teaming modes (called runners):
+1. round-robin (Transmits packets in a round-robin fashing from each of the ports) (The default runner)
+2. active/backup (Watches for link changes and selects an active port for data transfers)
+3. broadcast (Transmits each packet from all ports)
+4. load balancer (Monitors traffic and uses a hash function to try to reach a perfect balance when selecting ports for packet transmission)
+5- LACP (Implements the 802.3ad Link Aggregation Control Protocol)
+-----------------------------------------------------------------------
+1- Create a team interface:
+[root@server ~]# nmcli connection add type team con-name team0 ifname team0 config '{"runner":{"name":"loadbalance"}}'
+
+2- Determine the network configuration:
+[root@server ~]# nmcli connection modify team0 ip4 192.168.1.150/24
+[root@server ~]# nmcli connection modify team0 ipv4.method manual
+
+3- Assign port interfaces:
+[root@server ~]# nmcli connection add type team-slave ifname ens38 master team0 con-name team0-ens38
+[root@server ~]# nmcli connection add type team-slave ifname ens39 master team0 con-name team0-ens39
+
+4- Bring team and port interfaces up/down:
+[root@server ~]# nmcli con up team0
+
+To verify:
+[root@server ~]# teamdctl team0 state
+[root@server ~]# ping -I team0 192.168.1.1
+[root@server ~]# nmcli dev dis ens33
+- The ping continues to work because team0 switched over to the remaining port.
+Hints:
+• Starting the network team interface does not automatically start the port interfaces.
+• Starting a port interface always starts the teamed interface.
+• Stopping the teamed interface also stops the port interfaces.
+• A teamed interface without ports can start static IP connections.
+• A team without ports waits for ports when starting DHCP connections.
+-----------------------------------------------------------------------
+Network teaming configuration files:
+
+[root@server ~]# vim /etc/sysconfig/network-scripts/ifcfg-team0
+[root@server ~]# vim /etc/sysconfig/network-scripts/ifcfg-team0-ens33
+
+- Any changes made do not go into effect until the next time the team interface is brought up.
+-----------------------------------------------------------------------
+Troubleshooting network teams:
+
+[root@server ~]# teamnl team0 ports                        (Display the team ports of the team0 interface)
+[root@server ~]# teamnl team0 getoption activeport         (Display the currently active port of team0)
+[root@server ~]# teamnl team0 setoption activeport 3       (Set the option for the active port of team0)
+[root@server ~]# teamdctl team0 state                      (Display the current state of the team0 interface)
+[root@server ~]# teamdctl team0 config dump                (Display the current JSON configuration for team0)
+-----------------------------------------------------------------------
+Edit the Network Teaming mode:
+
+[root@server ~]# teamdctl team0 state
+  runner: activebackup
+
+[root@server ~]# nmcli dev dis team0
+[root@server ~]# vim /etc/sysconfig/network-scripts/ifcfg-team0
+TEAM_CONFIG="{\"runner\": {\"name\": \"activebackup\"}}"
+TEAM_CONFIG="{\"runner\": {\"name\": \"roundrobin\"}}"
+
+[root@server ~]# systemctl restart NetworkManager
+[root@server ~]# nmcli con up team0
+-----------------------------------------------------------------------
+Configuring Software Bridges:
+
+- Used in virtualization applications for sharing a hardware NIC among one or more virtual NICs.
+[root@server ~]# yum install -y bridge-utils
+[root@server ~]# nmcli device status
+[root@server ~]# nmcli connection add type bridge ifname br0 con-name br0 autoconnect yes    (Create the bridge profile)
+[root@server ~]# nmcli device disconnect ens38
+[root@server ~]# nmcli connection add type bridge-slave ifname ens38 con-name br0-bridge master br0
+[root@server ~]# nmcli connection up br0
+[root@server ~]# nmcli connection modify br0 ip4 192.168.1.105/24 gw4 192.168.1.1 method none
+[root@server ~]# nmcli connection up br0
+[root@server ~]# man nmcli-examples         (Example 8)
+To verify:
+[root@server ~]# nmcli con show
+[root@server ~]# brctl show
+[root@server ~]# vim /etc/sysconfig/network-scripts/ifcfg-br0
+[root@server ~]# vim /etc/sysconfig/network-scripts/ifcfg-br0-bridge
+[root@server ~]# virsh list --all
+
+
+Best wishes:
+Abeer :)

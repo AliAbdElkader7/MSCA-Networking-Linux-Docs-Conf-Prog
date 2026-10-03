@@ -1,0 +1,25 @@
+- The default service is VSFTPd.
+- The anonymous user can only access /var/ftp whic is the home directory for ftp user.
+- The authenticated user can access its own home directory.
+- SELinux doesn't block anonymous user.
+
+[root@server ~]# yum install -y vsftpd
+[root@server ~]# systemctl start vsftpd
+[root@server ~]# systemctl enable vsftpd
+[root@server ~]# rpm -qc vsftpd
+[root@server ~]# vim /etc/vsftpd/vsftpd.conf
+  anonymous_enable=YES           (
+  local_enable=YES
+  write_enable=YES
+  local_umask=022
+
+
+
+To verify:
+[root@server ~]# yum install -y lftp
+[root@server ~]# lftp localhost
+lftp localhost:/> cd pub/
+lftp localhost:/pub> ls
+lftp localhost:/pub> get file.txt
+lftp localhost:/pub> exit
+

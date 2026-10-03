@@ -1,0 +1,3 @@
+DN,ObjectClass,SamAccountName,UserPrincipalName,Description,UserAccountControl,DisplayName
+"cn=habiba,OU=SandA,OU=Netway,OU=MCSA_ABEER,DC=tshoot,DC=com",user,habiba,biba@tshoot.com,,514,abeer
+"cn=kareem,OU=SandA,OU=Netway,OU=MCSA_ABEER,DC=tshoot,DC=com",user,kareem,kareem@tshoot.com,,514,ahmed

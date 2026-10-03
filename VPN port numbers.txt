@@ -1,0 +1,17 @@
+PPTP: TCP 1723
+L2TP over IPsec: UDP 1701, UDP 500 and UDP 4500
+SSTP: TCP 443
+GRE: Protocol group 47
+
+------------------------------------
+RADIUS (Remote Authentication Dial-In User Service):
+UDP 1812 for authentication and authorization
+UDP 1813 for accounting
+
+Earlier:
+UDP 1645 for authentication and authorization
+UDP 1646 for accounting
+
+TACACS+ (Terminal Access Controller Access Control System Plus):
+TCP 49
+

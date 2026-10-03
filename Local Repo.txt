@@ -1,0 +1,181 @@
+Step 2: Mount RHEL 8 DVD ISO
+Once we are done downloading the ISO file, we have to create a mounting point for mounting the recently downloaded ISO file on our system. We will be creating a mounting point under the /mnt directory by using the given command:
+
+$ sudo mkdir -p /mnt/disc
+$ sudo mount -o loop rhel-8.6-x86_64-dvd.iso /mnt/disc
+Mount RHEL 8 DVD
+Mount RHEL 8 DVD
+Make sure you change the name of the ISO file before mounting or it will bring an error! You might be wondering about the warning it gave us while we mounted our ISO but don’t worry, we will change permissions in the latter part of this guide.
+
+But if you are willing to use DVD media for the further process? You just have to create a mounting point and mount your media by given commands:
+
+$ sudo mkdir -p /mnt/disc
+$ sudo mount /dev/sr0 /mnt/disc
+While mounting, make sure you change sr0 with your drive name.
+
+Step 3: Creating Local RHEL 8 Repository
+After mounting RHEL 8 ISO file at /mnt, we need to get a copy of the media.repo file and paste it to our system directory located at /etc/yum.repos.d/ with the name of rhel8.repo.
+
+$ sudo cp /mnt/disc/media.repo /etc/yum.repos.d/rhel8.repo
+As we mentioned earlier, our drive is write-protected. But for our purpose, we have to change permissions of rhel8.repo file to 0644 which will allow us to read and make changes accordingly.
+
+$ sudo chmod 644 /etc/yum.repos.d/rhel8.repo
+Once we are done with changing permissions, we have to make some changes to make our local repository work. First, let’s open rhel8.repo file by utilizing the given command:
+
+$ sudo nano /etc/yum.repos.d/rhel8.repo
+Or
+$ sudo vi /etc/yum.repos.d/rhel8.repo
+Clear the default configuration and paste new instructions in the config file as given below:
+
+[BaseOS]
+name=REHL 9 - BaseOS
+metadata_expire=-1
+gpgcheck=1
+enabled=1
+baseurl=file:///media/BaseOS/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[AppStream]
+name=RHEL 9 - AppStream
+metadata_expire=-1
+gpgcheck=1
+enabled=1
+baseurl=file:///media/AppStream/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+The final result config file will look like this:
+
+Create RHEL 8 Local Repository
+Create RHEL 8 Local Repository
+After configuring the file, we need to clear the YUM cache by using the given yum or dnf command:
+
+$ sudo yum clean all
+or
+$ sudo dnf clean all
+Now, let’s list the enabled repositories on our system by the given command:
+
+$ sudo yum repolist enabled
+or
+$ sudo dnf repolist enabled
+List RHEL 8 Local Repository
+List RHEL 8 Local Repository
+So if you went through the process as we mentioned, you will get the output listing two additional repositories named “dvd-AppStream” and “dvd-BaseOS” which means we have successfully converted our ISO into a local repository.
+
+Now, let’s update the repository index by using the given command:
+
+$ sudo yum update
+or
+$ sudo dnf update
+
+_________________________________________________
+CREATE SERVER REPO ON HTTP
+Step 1: Install Nginx Web Server
+1. First, install the Nginx HTTP server using the DNF package manager as follows.
+
+# dnf install nginx
+Install Nginx on RHEL 8
+Install Nginx on RHEL 8
+2. Once Nginx installed, you can start, enable the service to auto start at boot time and verify the status using the following commands.
+
+# systemctl start nginx
+# systemctl enable nginx
+# systemctl status nginx
+Verify Nginx on RHEL 8
+Verify Nginx on RHEL 8
+3. Next, you need to open Nginx ports 80 and 443 on your firewall.
+
+# firewall-cmd --zone=public --permanent --add-service=http
+# firewall-cmd --zone=public --permanent --add-service=https
+# firewall-cmd --reload
+Open Nginx Port on RHEL 8 Firewall
+Open Nginx Port on RHEL 8 Firewall
+4. Now you can verify that your Nginx server is up and running by going to the following URL on your web browser, a default Nginx web page will be displayed.
+
+http://SERVER_DOMAIN_NAME_OR_IP
+Verify Nginx Installation on RHEL 8
+Verify Nginx Installation on RHEL 8
+Step 2: Mounting RHEL 8 Installation DVD/ISO File
+5. Create a local repository mount point under Nginx document root directory /var/www/html/ and mount the downloaded RHEL 8 DVD ISO image under /mnt directory.
+
+# mkdir /var/www/html/local_repo
+# mount -o loop rhel-8.0-x86_64-dvd.iso /mnt  [Mount Download ISO File]
+# mount /dev/cdrom /mnt                       [Mount DVD ISO File from DVD ROM]
+6. Next, copy ISO files locally under /var/www/html/local_repo directory and verify the contents using ls command.
+
+# cd /mnt
+# tar cvf - . | (cd /var/www/html/local_repo/; tar xvf -)
+# ls -l /var/www/html/local_repo/
+Verify Contents of RHEL 8 ISO Files
+Verify Contents of RHEL 8 ISO Files
+Step 3: Configuring Local Repository
+7. Now it is time to configure the local repository. You need to create the local repository configuration file in the /etc/yum.repos.d/ directory and set the appropriate permissions on the file as shown.
+
+# touch /etc/yum.repos.d/local-rhel8.repo
+# chmod  u+rw,g+r,o+r  /etc/yum.repos.d/local-rhel8.
+8. Then open the file for editing using your favorite command line text editor.
+
+# vim /etc/yum.repos.d/local.repo
+9. Copy and paste the following content in the file.
+
+[LocalRepo_BaseOS]
+name=LocalRepo_BaseOS
+metadata_expire=-1
+enabled=1
+gpgcheck=1
+baseurl=file:///var/www/html/local_repo/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[LocalRepo_AppStream]
+name=LocalRepo_AppStream
+metadata_expire=-1
+enabled=1
+gpgcheck=1
+baseurl=file:///var/www/html/local_repo/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+Save the changes and exit the file.
+
+10. Now you need to install required packages for creating, configuring and managing your local repository by running the following command.
+
+# yum install createrepo  yum-utils
+# createrepo /var/www/html/local_repo/
+Step 4: Testing Local Repository
+11. In this step, you should run a cleanup of temporary files kept for repositories by using the following command.
+
+# yum clean all
+OR
+# dnf clean all
+12. Then verify that the created repositories appear in the list of enabled repositories.
+
+# dnf repolist
+OR
+# dnf repolist  -v  #shows more detailed information 
+Verify Local Repository in RHEL 8
+Verify Local Repository in RHEL 8
+13. Now try to install a package from the local repositories, for example install Git command line tool as follows:
+
+# dnf install git
+
+
+
+Step 5: Setup Local Yum Repository on Client Machines
+14. Now on your RHEL 8 client machines, add your local repos to the YUM configuration.
+
+# vi /etc/yum.repos.d/local-rhel8.repo 
+Copy and paste the configuration below in the file. Make sure to replace baseurl with your server IP address or domain.
+
+[LocalRepo_BaseOS]
+name=LocalRepo_BaseOS
+enabled=1
+gpgcheck=0
+baseurl=http://192.168.0.106
+
+[LocalRepo_AppStream]
+name=LocalRepo_AppStream
+enabled=1
+gpgcheck=0
+baseurl=http://192.168.0.106
+Save the file and start using your local YUM mirrors.
+
+15. Next, run the following command to see your local repos in the list of available YUM repos, on the client machines.
+
+# dnf repolist

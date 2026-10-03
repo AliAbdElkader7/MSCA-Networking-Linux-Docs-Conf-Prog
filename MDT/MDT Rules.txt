@@ -1,0 +1,43 @@
+[Default]
+UserID=Administrator
+UserDomin=tshoot.com
+UserPassword=asd@123
+
+SkipBDDWelcome=YES
+SkipDeploymentType=YES
+SkipDomainMembership=NO
+SkipApplications=NO
+SkipSummary=YES
+SkipUserData=YES
+SkipComputerName=NO
+SkipTaskSequence=NO
+SkipLocaleSelection=YES
+SkipTimeZone=NO
+SkipAppsOnUpgrade=YES
+SkipAdminPassword=YES
+SkipProductKey=YES
+SkipComputerBackup=YES
+SkipBitLocker=YES
+SkipCapture=YES
+SkipFinalSummary=YES
+
+SkipBuild=YES
+SkipDestinationDisk=YES
+SkipGroupSubFolders=YES
+SkipPackageDisplay=YES
+SkipWizard=YES
+FinishAction=SHUTDOWN
+DoCapture=YES
+------------------------------
+Bootstrap.ini file:
+
+UserID=Administrator
+UserDomain=tshoot.com
+UserPassword=asd@123
+KeyboardLocale=en-us
+SkipBDDWelcome=YES
+------------------------------
+
+
+WMIC ComputerSystem GET Manufacturer
+WMIC ComputerSystem GET Model

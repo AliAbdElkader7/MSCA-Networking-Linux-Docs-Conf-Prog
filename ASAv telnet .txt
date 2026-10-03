@@ -1,0 +1,4 @@
+to make asav open with telnet , in first time to connect (vnc):
+
+cd coredumpinfo
+copy coredump.cfg disk0:/use_ttyS0

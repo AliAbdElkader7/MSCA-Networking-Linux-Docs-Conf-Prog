@@ -1,0 +1,126 @@
+- The firewalld.service and iptables.service, ip6tables.service, and ebtables.service services conflict with each other.
+[root@server ~]# systemctl mask iptables.service
+[root@server ~]# systemctl status firewalld
+-----------------------------------------------------
+Working with zones:
+
+- A number of predefined zones are shipped with firewalld, each with their own intended usage (public, home, trusted, internal, work, external, DMZ, block and drop).
+
+[root@server ~]# firewall-cmd --get-zones
+[root@server ~]# firewall-cmd --get-default-zone                    (The default zone is the public zone)
+[root@server ~]# firewall-cmd --set-default-zone=public
+[root@server ~]# firewall-cmd --get-active-zones
+[root@server ~]# firewall-cmd --list-all
+[root@server ~]# firewall-cmd --zone=public --list-all              (List all configurations related to that zone)
+
+-----------------------------------------------------
+### To add or remove a service:
+firewalld can be managed in three ways:
+1. firewall-cmd.
+2. firewall-config.           (yum -y install firewall-config)
+3. Using the configuration files in /etc/firewalld/               (not recommended)
+
+[root@server ~]# firewall-cmd --get-services
+[root@server ~]# firewall-cmd --zone=public --add-service=dhcp
+[root@server ~]# firewall-cmd --zone=public --add-service=http
+[root@server ~]# firewall-cmd --zone=public --add-service=dhcp --permanent
+[root@server ~]# firewall-cmd --zone=public --add-service=http --permanent
+[root@server ~]# firewall-cmd --zone=public --remove-service=dhcp
+[root@server ~]# firewall-cmd --zone=public --remove-service=dhcp --permanent
+
+Note:
+- If --zone is omitted from those commands, the default zone is used.
+- When appling the changes to the --permanent configuration, we activate the changes with "firewall-cmd --reload" or using the command "systemctl reload firewalld".
+- While testing out new rules, an administrator can choose to work on the runtime configuration by omitting the --permanent option and choose to automatically remove a rule after a certain amount of time: -- timeout=<TIMEINSECONDS>. 
+
+[root@server ~]# firewall-cmd --zone=public --add-service=http --timeout=30
+  
+### To add or remove a port number:
+[root@server ~]# vim /etc/ssh/sshd_config
+Port 2220
+[root@server ~]# yum whatprovides semanage
+[root@server ~]# yum -y install policycoreutils-python
+[root@server ~]# semanage port -l | grep -i ssh
+[root@server ~]# semanage port -a -t ssh_port_t -p tcp 2220
+[root@server ~]# systemctl restart sshd
+[root@server ~]# firewall-cmd --zone=public --add-port=2220/tcp
+[root@client ~]# ssh root@192.168.1.100 -p 2220
+[root@server ~]# firewall-cmd --zone=public --remove-port=2220/tcp
+To verify:
+[root@server ~]# nmap localhost
+[root@server ~]# netstat -tulpen
+
+[root@server ~]# yum install -y httpd
+[root@server ~]# systemctl start httpd
+[root@server ~]# vim /var/www/html/index.html
+[root@server ~]# vim /etc/httpd/conf/httpd.conf
+Listen 8080
+[root@server ~]# systemctl restart httpd
+[root@server ~]# firewall-cmd --zone=public --add-port=8080/tcp
+--------------------------------------------------------------------
+Creating a Service file:
+
+- firewalld configuration files are stored in two places: /etc/firewalld and /usr/lib/firewalld. If a configuration file with the same name is stored in both locations, the version from /etc/firewalld/ will be used. 
+
+[root@server ~]# cp /usr/lib/firewalld/services/dhcp.xml /etc/firewalld/services/abeer.xml
+[root@server ~]# vim /etc/firewalld/services/abeer.xml
+<service>
+  <short>abeer</short>
+  <description>Abeer protocol</description>
+  <port protocol="tcp" port="8080"/>
+</service>
+[root@server ~]# firewall-cmd --reload
+[root@server ~]# firewall-cmd --get-services
+[root@server ~]# firewall-cmd --add-service=abeer --timeout=10
+--------------------------------------------------------------------
+Managing Rich Rules:
+- Rich roles uses expression language to create custom rules which is not allowed in using basic syntax.
+# HTTP
+[root@server ~]# firewall-cmd --zone=public --add-rich-rule='rule family=ipv4 source address=192.168.1.50/32 service name=http accept'
+# SSH 
+[root@server ~]# firewall-cmd --zone=public --add-rich-rule='rule family=ipv4 source address=192.168.1.50/32 service name=ssh accept'
+# FTP
+[root@server ~]# firewall-cmd --zone=public --add-rich-rule='rule family=ipv4 source address=192.168.1.50/32 port  port=21 protocol=tcp accept'
+
+[root@server ~]# firewall-cmd --permanent --zone=public --add-rich-rule='rule family=ipv4 source address=192.168.1.50/32 reject'
+
+# ping:
+[root@server ~]# firewall-cmd --get-icmptypes
+[root@server ~]# firewall-cmd --zone=public --query-icmp-block=echo-reply
+no
+[root@server ~]# firewall-cmd --zone=public --add-icmp-block=echo-reply
+
+Examles:
+[root@server ~]# firewall-cmd --permanent --zone=public --add-rich-rule='rule service name=http limit value=3/m accept'
+
+[root@server ~]# less /etc/protocols
+[root@server ~]# firewall-cmd --permanent --add-rich-rule='rule protocol value=cbt accept'
+
+To verify:
+[root@server ~]# firewall-cmd --zone=public --list-all 
+[root@server ~]# firewall-cmd --zone=public --list-rich-rules
+--------------------------------------------------------------------
+To enable port forwarding (port mapping):
+
+[root@server ~]# firewall-cmd --zone=public --add-forward-port=port=80:proto=tcp:toport=8080
+[root@server ~]# firewall-cmd --zone=public --list-all
+Now the client can access the web server using port 80 even though the server has a different port number which is 8080.
+--------------------------------------------------------------------
+Network Address Translation (NAT)
+
+- Firewalld supports two types of NAT: masquerading and port forwarding. 
+- Both can be configured on a basic level with regular firewall-cmd rules, and more advanced forwarding configurations can be accomplished with rich rules.
+
+[root@server ~]# yum install -y elinks        (To install a CLI web browser)
+or:
+[root@server ~]# curl http://192.168.1.100        (Using HTTP)
+[root@server ~]# curl -k https://192.168.1.100        (Using HTTPS)
+[root@server ~]# firewall-cmd --zone=public --add-forward-port=port=8080:proto=tcp:toport=80:toaddr=192.168.1.100
+[root@server ~]# firewall-cmd --zone=public --add-service=http
+[root@server ~]# firewall-cmd --zone=public --add-masquerade
+To verify:
+[root@server ~]# firewall-cmd --zone=public --list-all 
+--------------------------------------------------------------------
+
+Best wishes:
+Abeer :)

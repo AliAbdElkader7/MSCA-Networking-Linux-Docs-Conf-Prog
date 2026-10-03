@@ -1,0 +1,121 @@
+### Dot1x using authentication:
+
+Between the switch and the ISE server:
+
+- Enable AAA:
+IOU(config)# aaa new-model
+
+- Configure the AAA method:
+IOU(config)# aaa authentication dot1x default group ISE 
+IOU(config)# aaa authorization network default group ISE
+IOU(config)# aaa accounting dot1x default start-stop group ISE 
+
+- Define the RADIUS server:
+IOU(config)# radius server RADIUS1 
+IOU(config-radius-server)#address ipv4 192.168.1.200 auth-port 1812 acct-port 1813
+IOU(config-radius-server)#key TSHOOT
+
+- Configure the RADIUS server group:
+IOU(config)#aaa group server radius ISE 
+IOU(config-sg-radius)#server name RADIUS1
+
+- Configure the RADIUS CoA:
+IOU(config)#aaa server radius dynamic-author
+IOU(config-locsvr-da-radius)#client 192.168.1.200 server-key TSHOOT
+
+Between the switch and the host:
+
+- Enable 802.1x:
+IOU(config)#dot1x system-auth-control
+
+- Create an ACL to define permitted traffic before the port is authenticated:
+IOU(config)#ip access-list extended PRE_AUTH
+IOU(config-ext-nacl)#remark DHCP
+IOU(config-ext-nacl)#permit udp any eq bootpc any eq bootps
+IOU(config-ext-nacl)#remark DNS
+IOU(config-ext-nacl)#permit udp any any eq domain 
+IOU(config-ext-nacl)#remark PING
+IOU(config-ext-nacl)#permit icmp any any echo
+IOU(config-ext-nacl)#remark TFTP
+IOU(config-ext-nacl)#permit UDP any any eq tftp
+
+- Apply ACL to a specific interface:
+IOU(config-if)#switchport mode access
+IOU(config-if)#spanning-tree portfast
+IOU(config-if)#ip access-group PRE_AUTH in
+
+- Optional (allow hosts to access the network before the port is authorized):
+IOU(config-if)#authentication open
+
+- Enable dot1x to the interface:
+IOU(config-if)#authentication port-control auto 
+
+- Enable periodic reauthentication of the supplicant:
+IOU(config-if)#authentication periodic 
+
+- Allow the switch to be the initiator:
+IOU(config-if)#dot1x pae authenticator
+
+On the ISE Server:
+- Create a group and an identity.
+- Add the switch as a client to the ISE server.
+- Create a new authorization profile and change the DACL to "PERMIT_ALL_IPV4_TRAFFIC"
+   Policy tab > Policy Elements > Results.
+   Authorization > Authorization Profiles. 
+
+Link the new authorization policy to the default policy set.
+   Policy tab > Policy Sets > Edit the default policy.
+   Authorization policy >  edit the "Basic_Authentication_Access". 
+
+On the Client:
+- Enable the dot1x service.
+
+To verify:
+IOU# show authentication sessions
+IOU# show authentication sessions int e0/0 detail
+IOU# clear authentication sessions
+IOU# clear authentication sessions int e0/0 
+
+Hint: 
+- To change the default authentication protocol:
+Policy tab > Policy Elements > Results 
+Allowed Protocols > Default Network Access > Check "Allow weak ciphers for EAP".
+
+-----------------------------------------------------------
+### Dot1x using MAB:
+
+IOU(config-if)#switchport mode access
+IOU(config-if)#spanning-tree portfast
+IOU(config-if)#ip access-group PRE_AUTH in
+IOU(config-if)#authentication open
+IOU(config-if)#mab
+IOU(config-if)#authentication port-control auto 
+
+On the ISE Server:
+- Add the client MAC address as an end point.
+  Context Visibility tab >  End points
+  Add the MAC address of the end point.
+
+On the Client:
+- Re authenticate. 
+
+-----------------------------------------------------------
+
+### For interfaces connected to both a pc and an IP phone:
+
+IOU(config-if)#switchport mode access
+IOU(config-if)#switchport voice vlan 100
+IOU(config-if)#spanning-tree portfast
+IOU(config-if)#ip access-group PRE_AUTH in
+IOU(config-if)#authentication open
+IOU(config-if)#authentication host-mode multi-domain 
+IOU(config-if)#mab
+IOU(config-if)#authentication order dot1x mab
+IOU(config-if)#authentication priority dot1x mab
+IOU(config-if)#authentication event fail action next-method 
+
+
+
+
+Best wishes:
+Abeer :)

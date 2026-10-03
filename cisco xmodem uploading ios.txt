@@ -1,0 +1,13 @@
+how to upload a ios form xmodem (console):
+interreput boot from hold mode button for range 5s
+change speed to 115200 == set BAUD 115200
+*then change it in putty or tera term or whatever
+copy ios from shell software to flash :
+copy xmodem:.....bin flash:....bin
+then start send ios from teraterm edit:transfer
+after copy ; set boot to ios ==> set boot flash:...|.bin
+and ==> sw(config)#boot system switch <anynum> flash:....|.bin
+then restart switch or router == > reset (or boot from flash)
+return speed value to 9600:
+line con 0
+speed 9600

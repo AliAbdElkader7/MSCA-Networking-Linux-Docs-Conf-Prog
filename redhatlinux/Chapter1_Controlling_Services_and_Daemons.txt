@@ -1,0 +1,100 @@
+===================================================================
+             Controlling Services with systemctl
+===================================================================
+- System startup and server processes are managed by the systemd System and Service Manager both at boot time and on a running system.
+- Daemons are processes that wait or run in the background performing various tasks. To listen for connections, a daemon uses a socket.
+- For many years, process ID 1 of Linux and UNIX systems has been the init process. This process was responsible for activating other services on the system. Frequently used daemons were started on systems at boot time with System V and Linux Standard Base (LSB) init scripts. Less frequently used daemons were started on demand by another service, such as initd or xinetd. 
+- In RHEL 7, process ID 1 is systemd, the new init system. A few of the new features provided by systemd include:
+ • Parallelization capabilities, which increase the boot speed of a system.
+ • Automatic service dependency management prevents long timeouts, such as not starting a network service when the network is not available.
+- The systemctl command is used to manage different types of systemd objects, called units.
+- Some common unit types are listed as follows:
+ • Service unit is used to start frequently accessed daemons, such as a web server.
+ • Socket units are used to delay the start of a service at boot time and to start less frequently used services on demand. These are similar to services which use the xinetd to start.
+ • Path units are used to delay the activation of a service until a specific file system change occurs. This is commonly used for services which use spool directories, such as a printing system.
+
+[root@server ~]# systemctl status sshd.service
+[root@server ~]# systemctl status sshd.service -l
+[root@server ~]# systemctl
+[root@server ~]# systemctl --type=service               (Query the state of only the service units)
+OR)
+[root@server ~]# systemctl list-unit-files --type=service
+[root@server ~]# systemctl is-active sshd
+[root@server ~]# systemctl is-enabled sshd
+[root@server ~]# systemctl list-units --type=service               (List the active units)
+[root@server ~]# systemctl list-units --type=service --all         (List the active and inactive units)
+[root@server ~]# systemctl --failed --type=service             (List failed services)
+
+=============================================================
+Controlling System Services:
+[root@server ~]# systemctl status sshd
+[root@server ~]# systemctl restart sshd
+[root@server ~]# systemctl stop sshd
+[root@server ~]# systemctl start sshd
+[root@server ~]# systemctl reload sshd         (Re-read the configuration file)
+=============================================================
+Unit dependencies:
+[root@server ~]# systemctl stop cups
+Warning: Stopping cups.service, but it can still be activated by:
+  cups.socket
+  cups.path
+
+[root@server ~]# systemctl list-dependencies cups
+[root@server ~]# systemctl list-dependencies cups --reverse 
+=============================================================
+Masking services:
+A masked service can not be started manually or automatically
+network vs NetworkManager 
+iptables vs firewalld
+[root@server ~]# systemctl mask network
+[root@server ~]# systemctl unmask network
+=============================================================
+Enabling system daemons to start or stop at boot:
+[root@server ~]# systemctl enable sshd
+[root@server ~]# systemctl disable sshd
+===================================================================
+              Controlling the Boot Process
+===================================================================
+Selecting a Boot Target:
+1- shutdown.target 
+2- multi-user.target         (multiple users, text-based logins only)
+3- graphical.target          (multiple users, graphical and text-based logins)
+4- reboot.target
+5- rescue.target
+6- emergency.target          (the root file system mounted read-only)
+7- and more...
+
+[root@server ~]# systemctl list-units --type=target --all    (List all available targets)
+[root@server ~]# systemctl get-default 
+[root@server ~]# systemctl set-default graphical.target
+[root@server ~]# systemctl set-default multi-user.target 
+[root@server ~]# systemctl set-default rescue.target
+[root@server ~]# systemctl default
+=======================================================
+Selecting a different target at boot time:
+1. (Re)boot the system.
+2. Interrupt the boot loader menu countdown by pressing any key.
+3. Press e to edit the current entry.
+4. Move the cursor to the line that starts with linux16. 
+5. Append systemd.unit=desired.target.
+6. Press Ctrl+x to boot with these changes.
+=======================================================
+Password Recovery:
+1. Reboot the system.
+2. Interrupt the boot loader countdown by pressing any key.
+3. Press e to edit the selected entry.
+4. Move the cursor to the kernel command line (the line that starts with linux16).
+5. Append rd.break (this will break just before control is handed from the init ramfs to the actual system).
+6. Press Ctrl+x to boot with the changes.
+7. mount -o remount,rw /sysroot
+8. chroot /sysroot
+9. passwd root
+10. touch /.autorelabel
+11. Ctrl+D
+12. Ctrl+D
+
+=======================================================
+
+Best wishes:
+Abeer :)
+

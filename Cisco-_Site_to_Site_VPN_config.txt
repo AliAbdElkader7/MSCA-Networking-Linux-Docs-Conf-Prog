@@ -1,0 +1,59 @@
+step1: Setup the ISAKMP policy (for IKE phase1)
+
+R1(config)#crypto isakmp policy 2
+R1(config-isakmp)#authentication pre-share
+R1(config-isakmp)#encryption aes
+R1(config-isakmp)#group 2
+R1(config-isakmp)#hash sha
+To Verify: R1#show crypto isakmp policy
+           R1# debug crypto isakmp
+Configure pre-shared keys:
+R1(config)#crypto isakmp key CISCO address 20.0.0.2
+ 
+
+step2: Setup IPSEC transform-set (for IKE phase2 )
+
+R1(config)#crypto ipsec transform-set NAME esp-aes 256 ah-sha-hmac
+R1(config)#crypto ipsec security-association lifetime seconds 1800 (optional)
+To Verify: R1# show crypto ipsec transform-set
+           R1# show crypto ipsec sa
+           R1# debug crypto ipsec
+
+
+step3: Define interesting traffic (Must Mirror)
+
+
+R1(config)#ip access-list extended LIST
+R1(config-ext-nacl)#permit ip 1.0.0.0 0.0.0.255 2.0.0.0 0.0.0.255
+
+
+step4: Setup crypto map
+
+R1(config)#crypto map VPN_MAP 10 ipsec-isakmp
+R1(config-crypto-map)#match address LIST
+R1(config-crypto-map)#set peer 20.0.0.2
+
+where LIST is the name of the ACL
+
+R1(config-crypto-map)#set transform-set NAME
+R1(config-crypto-map)#set pfs <DH_GROUP>           (optional)
+R1(config-crypto-map)#set security-association lifetime seconds <VALUE>      (optional)   
+
+where NAME is the name of the IPSEC transform-set
+To Verify: R1# show crypto map
+
+setp5: Asign crypto map to interafce
+
+R1(config)#int s1/0
+R1(config-if)#crypto map VPN_MAP
+
+
+step6: Configure NAT
+R1(config)#access-list 100 deny ip host 1.1.1.1 host 2.2.2.2
+R1(config)#access-list 100 permit ip host 1.1.1.1 any
+R1(config)#int f0/0
+R1(config-if)#ip access-group 100 in
+
+Verify IPsec VPN Operation:
+R1# show crypto isakmp sa
+R1# show crypto ipsec sa

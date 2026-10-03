@@ -1,0 +1,3 @@
+DN,ObjectClass,SamAccountName,UserPrincipalName,Description,UserAccountControl,DisplayName
+"cn=abeer hosni,ou=sales,dc=tshoot,dc=com",user,abeer,abeer.hosni@tshoot.com,,514,abeer
+"cn=ahmed hosni,ou=sales,dc=tshoot,dc=com",user,ahmed,ahmed@tshoot.com,,514,ahmed

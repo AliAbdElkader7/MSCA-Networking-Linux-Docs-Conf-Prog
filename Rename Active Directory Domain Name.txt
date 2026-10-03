@@ -1,0 +1,31 @@
+- Create a primary DNS lookup zone called "new.local and _msdcs.new.local" 
+Hint: The DNS replication for the _msdcs.new.local should be to all the DNS servers in the forest.
+
+- rendom /list              (To generate an XML file)
+- Edit the domain name and the netbios name in the XML file to the new name.
+- rendom /showforest        (To show the content of the file)
+- rendom /upload
+- rendom /prepare
+- rendom /execute
+- The server will be restarted automatically.
+- Sign in with other user.
+- Change manually the computer name and the suffix to the new name.
+- Fix the group policy console using the command:
+gpfixup /olddns:tshoot.com /newdns:new.local
+gpfixup /oldnb:TSHOOT /newnb:NEW              (To change the netbios name)
+- rendom /clean                (To remove the old domain refrences)
+- rendom /end                  (To unfreeze the forest configuration)
+- Rejoin the client computers to the new domain.
+- Change the UPN suffix for all the user accounts either manually or using a power shell script.
+PS c:\> Get-ADUser -Filter * -SearchBase "OU=IT,dc=new,dc=local" | fl name,userprincipalname
+PS c:\> 
+Import-Module ActiveDirectory
+$oldSuffix = "tshoot.com"
+$newSuffix = "new.local"
+$ou = "DC=new,DC=local"
+$server = "DC"
+Get-ADUser -SearchBase $ou -filter * | ForEach-Object {
+$newUpn = $_.UserPrincipalName.Replace($oldSuffix,$newSuffix)
+$_ | Set-ADUser -server $server -UserPrincipalName $newUpn
+}
+

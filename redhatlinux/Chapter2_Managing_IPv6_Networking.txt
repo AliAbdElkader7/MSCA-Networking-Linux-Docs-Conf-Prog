@@ -1,0 +1,113 @@
+===================================================================
+             NetworkManager 
+===================================================================
+- A connection is a collection of settings that can be configured for a device.
+- Only one connection is active for one device at a time.
+- Each connection has a name or ID that identifies it.
+=============================================================
+Viewing networking information:
+
+[root@server ~]# nmcli dev status
+[root@server ~]# ip link
+[root@server ~]# nmcli con show       (shows all connections)
+[root@server ~]# nmcli con show --active     (shows only active connections)
+[root@server ~]# ip addr show
+[root@server ~]# ip addr show eth0
+[root@server ~]# ip -s link show ens33
+[root@server ~]# ip route
+[root@server ~]# traceroute 8.8.8.8             [root@server ~]# tracepath 8.8.8.8
+[root@server ~]# netstat -tulpen                [root@server ~]# ss -tulpen
+=============================================================
+Adding a network connection:
+
+[root@server ~]# nmcli con add con-name eno2 type ethernet ifname eno2       (will get IPv4 networking information using DHCP and will autoconnect on startup)
+[root@server ~]# nmcli con add con-name eno2 type ethernet ifname eno2 ip4 192.168.1.100/24 gw4 192.168.1.254
+=============================================================
+Controlling network connections:
+
+[root@server ~]# nmcli con up static-eth0    (the name of a connection, not the name of the network interface which is shown from the nmcli con show command)
+[root@server ~]# nmcli dev disconnect eth0    (disconnect the network interface device and bring it down)
+
+Note:
+- The command "nmcli con down name" is normally not the best way to deactivate a network interface. This command will bring down the connection. But by default, most wired system connections are configured with autoconnect enabled. This activates the connection as soon as its network interface is available. Since the connection's network interface is still available, nmcli con down name will bring the interface down, but then NetworkManager will immediately bring it up again unless the connection is entirely disconnected from the interface.
+=======================================================
+Modifying network connection settings:
+
+[root@server ~]# nmcli con mod static-eth0 ipv4.addresses "192.168.1.2/24 192.168.1.254"
+[root@server ~]# nmcli con mod static-eth0 +ipv4.dns 8.8.8.8       (Adds a DNS server to the list of nameservers)
+[root@server ~]# nmcli con reload            (The NetworkManager reads the configuration changes)
+[root@server ~]# cat /etc/resolv.conf
+
+Note:
+- If a connection that got its IPv4 information from a DHCPv4 server is being changed to get it from static configuration files only, the setting ipv4.method should also be changed from auto to manual. otherwise, the connection may hang or not complete successfully when it is activated, or it may get an IPv4 address from DHCP in addition to the static address.
+
+- To change settings in /etc/resolv.conf, it is better to set DNSn and DOMAIN directives in the relevant /etc/sysconfig/network-scripts/ifcfg-* files.
+=======================================================
+Deleting a network connection:
+
+[root@server ~]# nmcli con del eth0
+=======================================================
+Modifying the system host name:
+
+[root@server ~]# hostname
+[root@server ~]# cat /etc/hostname
+[root@server ~]# hostnamectl set-hostname server.tshoot.com
+[root@server ~]# hostnamectl
+[root@server ~]# hostnamectl status
+Note:
+- Previous versions of RHEL stored the hostname as a variable in the /etc/sysconfig/network file.
+=======================================================
+Static Routing:
+[root@server ~]# nmtui
+[root@server ~]# ip route show
+[root@server ~]# vim /etc/sysconfig/network-scripts/route-ens33
+=======================================================
+IPv6 Networking Concepts:
+
+- The best transition plan at present is to provide all hosts with both IPv4 and IPv6 addresses (dual-stack).
+- Always use lowercase letters for hexadecimal numbers a through f.
+- When including a TCP or UDP network port after an IPv6 address, always enclose the IPv6 address in square brackets
+[2001:db8:0:10::1]:80 
+- IPv6 address is 2001:db8:0:1::1/64
+  Allocation from provider is 2001:db8::/48
+[root@server ~]# ping6 fe80::211:22ff:feaa:bbcc%ens33     (Where %eth0 is the scope identifier)
+[root@server ~]# ping6 ff02::1%ens33                      (Pinging this address will send traffic to all nodes on the link)
+
+Note:
+- Link-scope multicast addresses (starting ff02::/8) need to be specified with a scope identifier, just like a link-local address.
+- In DHCPv6, a host sends a DHCPv6 request from its link-local address to port 547/UDP on ff02::1:2. The DHCPv6 server then usually
+sends a reply with appropriate information to port 546/UDP on the client's link-local address. 
+- The radvd package in RHEL7 allows a RHEL-based IPv6 router to provide SLAAC through router advertisements.
+=======================================================
+IPv6 Networking Configuration:
+
+[root@server ~]# nmcli con add con-name eno33 type ethernet ifname eno33         (gets IPv4 address using DHCPv4 and IPv6 address by listening for router advertisements on the local link)
+[root@server ~]# nmcli con add con-name eno33 type ethernet ifname eno33 ip6 2001:db8:0:1::c000:207/64 gw6 2001:db8:0:1::1 ip4 192.168.1.5/24 gw4 192.168.1. 1
+[root@server ~]# nmcli con show eno33 | grep ipv6
+[root@server ~]# nmcli con mod eno33 ipv6.address "2001:db8:0:1::a00:1/64 2001:db8:0:1::1"
+[root@server ~]# nmcli con mod ens33 +ipv6.dns 2001:4860:4860::8888     (To add another DNS server)
+[root@server ~]# nmtui
+[root@server ~]# man nmcli-examples
+
+Hint:
+- If a connection that got its IPv6 information by SLAAC or a DHCPv6 server is being changed to get it from static configuration files only, the setting ipv6.method should also be changed from auto or dhcp to manual. Otherwise, the connection may hang or not complete successfully when it is activated, or it may get an IPv6 address from SLAAC or DHCPv6 in addition to the static address.
+=======================================================
+Viewing IPv6 networking information:
+
+[root@server ~]# nmcli dev status
+[root@server ~]# nmcli con show 
+[root@server ~]# ip addr show ens33
+[root@server ~]# ip -6 route show           (displays the IPv6 routing table)
+=======================================================
+IPv6 troubleshooting tools:
+
+[root@server ~]# ping6 2aa1:dbs:a:1::1
+[root@server ~]# ping6 ff02::1%ens33
+[root@server ~]# ssh fe80::f482:dbff:fe25:6a9f%ens33 
+[root@server ~]# tracepath6 2001:dbS:0:2::451
+
+
+
+Best wishes:
+Abeer :)
+

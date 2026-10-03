@@ -1,0 +1,26 @@
+phase 1:
+	crypto ikev1 policy <num>
+		# authentication pre-share 
+		# encryption aes
+		# hash sha
+		# group 5
+		
+		
+	crypto ikev1 enable outside
+	
+	crypto isakmp identity address
+	tunnel-group <name> type ipsec-l2l 
+	tunnel-group <name> ipsec-attributes
+		ikev1 pre-share-key ...
+		
+		
+phase2 :
+
+	access-list <name> extended permit ip (src , mask , dst , mask)
+	crypto ipsec ikev1 transform-set <name> esp-aes esp-sha-hmac
+	
+	crypto map <name> <num> match address <aclname>
+	crypto map <name> <num> set ikev1 transform-set <name>
+	crypto map <name> <num> set peer <public ip of peer>
+	
+	crypto map <name> interface outside

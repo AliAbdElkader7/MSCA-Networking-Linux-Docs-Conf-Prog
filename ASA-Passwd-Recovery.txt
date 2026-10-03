@@ -1,0 +1,24 @@
+After startup, press the Escape key when you are prompted to enter ROMMON
+mode.
+update the configuration register value:
+
+rommon #1> confreg 0x41
+rommon #2> confreg
+
+Hit enter at each prompt to accept the default. When you get to “disable system configuration” hit y.
+
+Reboot the ASA
+rommon #2> boot
+
+At this point the ASA should reload and completely bypass the configuration.
+
+    When the firewall reboots it will not prompt a console user for a username and the enable password is blank. Go into enable mode.
+    enable
+
+    Restore the old config
+    copy startup-config running-config
+
+Enter config mode and reset the password
+
+Restore the config registry to where it was to begin with
+hostname(config)# no config-register 

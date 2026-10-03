@@ -1,0 +1,7 @@
+### How to roll back forest and domain functional level Windows server 2016 and 2012 R2
+
+(Get-ADForest).ForestMode
+
+Set-ADForestMode -Identity tshoot.com -ForestMode Windows2012R2Forest
+
+Set-ADDomainMode -Identity tshoot.com -DomainMode Windows2012R2Domain

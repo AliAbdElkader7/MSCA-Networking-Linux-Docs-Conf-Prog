@@ -1,0 +1,242 @@
+﻿
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+*       CHANGELOG
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - Wim Converter - v2.0.0.0 (11 November 2018)
+
+==> This version is based on changes provided in "WinReducer ES - Wim Converter - v1.9.9.1 [VIP Closed Build]" !
+
+- NEW : "Hungarian" Language to v3.49 by Batya (Forum User)
+- NEW : "Português do Brasil" Language to v3.57 by Hélio (Forum User)
+
+- UPDATE : "English" to v3.57 (Please read EX-100 changelog to get all changes)
+- UPDATE : "Dutch" Language to v3.47 by John K. (Forum User)
+- UPDATE : "French" Language to v3.57 by Jpm (Forum User)
+- UPDATE : "German" Language to v3.49 by KrX (Forum Moderator) and hauser.markus (Forum User)
+- UPDATE : "Polish" Language to v3.44 by WinClub.pl (WinReducer Partner)
+- UPDATE : "Romanian" Language to v3.57 by ruby2hora (Forum User)
+- UPDATE : "Russian" Language to v3.35 by Ducazen (Forum User)
+- UPDATE : "Spanish" Language to v3.52 by Fiama (Forum User)
+- UPDATE : "DISM v10.0.17763.1" (from Windows 10 v1809 RS5 build) : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only Dism on "ON", then check the "Force Download" option, then use "Download" button
+- UPDATE : "Brazilian" Language : Changed name to "Português do Brasil"
+
+- FIX : "WinReducer Update Notification" : Bug with WinReducer server connection error
+- FIX : "Updates Downloader" : Bug with WinReducer server connection error
+
+*** Changelog Diff. since v1.9.9.1 [VIP Closed Build] ***
+None
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - Wim Converter - v1.9.2.0 (16 May 2018)
+
+==> This version is based on changes provided in "WinReducer ES - Wim Converter - v1.9.1.1 [VIP Closed Build]" !
+
+- NEW : Detect third-party software download troubles, and select alternative download sources
+
+- UPDATE : "7zip - v18.05" : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only 7zip on "ON", then check the "Force Download" option, then use "Download" button
+- UPDATE : "DISM v10.0.17134.1" (from Windows 10 v1803 RS4 build) : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only Dism on "ON", then check the "Force Download" option, then use "Download" button
+- UPDATE : "LOG" file : Additional information with ISO name during ISO extraction
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - Wim Converter - v1.9.1.0 (11 April 2018)
+
+==> This version is based on changes provided in "WinReducer ES - Wim Converter - v1.9.0.1 [VIP Closed Build]" !
+
+- UPDATE : "English" Language to v3.44
+- UPDATE : "French" Language to v3.44.1 by Jpm (Forum User)
+- UPDATE : "Polish" Language to v3.44 by WinClub.pl (WinReducer Partner)
+- UPDATE : "Romanian" Language to v3.44 by ruby2hora (Forum User)
+- UPDATE : "Russian" Language to v3.35 by Ducazen (Forum User)
+- UPDATE : "Spanish" Language to v3.44 by Fiama (Forum User)
+- UPDATE : "7zip - v18.00" : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only 7zip on "ON", then check the "Force Download" option, then use "Download" button
+- UPDATE : "DISM v10.0.16299.15" (from Windows 10 v1709 RS3 build) : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only Dism on "ON", then check the "Force Download" option, then use "Download" button
+- UPDATE : "LOG" file : Additional information for ISO extraction or ISO Creation, and also for file conversion (esd, wim and swm)
+
+- FIX : "ESD Media Creation" : Solved Issue with missing editions using Windows 10 ESD file
+- FIX : "ESD Media Creation" : Solved issue with error message instead of successful message (without "ISO Creation" option selected)
+- FIX : "WIM to ESD" : Unresponsive computer with x64 version
+
+*** Changelog Diff. since v1.9.0.1 [VIP Closed Build] ***
+- NEW : Add version number in titlebar
+- FIX : "ISO Creation" : Error message under certain circumstances
+- FIX : "SWM Size" : Not initialized correctly after conversion
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - Wim Converter - v1.8.5.0 (18 May 2017)
+
+- NEW : "Spanish" Language to v3.33 by Fiama (Forum User)
+
+- UPDATE : "English" to v3.33 (Please read EX-100 changelog to get all changes)
+- UPDATE : "French" Language to v3.33 by Jpm (Forum User)
+- UPDATE : "German" Language to v3.33 by KrX (Forum Moderator) and hauser.markus (Forum User)
+- UPDATE : "Polish" Language to v3.33 by WinClub.pl (WinReducer Partner)
+- UPDATE : "Romanian" Language to v3.33 by ruby2hora (Forum User)
+- UPDATE : "Russian" Language to v3.33 by Ducazen (Forum User)
+- UPDATE : "7zip - v16.04" : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only 7zip on "ON", then check the "Force Download" option, then use "Download" button
+- UPDATE : "DISM v10.0.15063.0" (from Windows 10 RS2 build) : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only Dism on "ON", then check the "Force Download" option, then use "Download" button
+
+- FIX : "Options (ALL)" : Error with "Starter Edition" registered software
+- FIX : Software startup issue under certains rare circumstances
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - Wim Converter - v1.5.0.0 (02 August 2016)
+
+- NEW : "WinReducer ES - Wim Converter" is available in 2 versions : x86 and x64 builds (Unregistered and Registered users are able to use both builds)
+- NEW : "OPTIONS - Themes - Fade In" : GUI option available for "Starter" edition
+- NEW : "OPTIONS - Themes - Fade Out" : GUI option available for "Starter" edition
+- NEW : "OPTIONS - Themes - Icons Borders" : GUI option available for "Starter" edition
+- NEW : "OPTIONS - Themes - Icons Text" : GUI option available for "Starter" edition
+- NEW : "OPTIONS - Themes - Font" : GUI option available for "Starter" edition
+- NEW : Multi-Architecture ISO support (which embeds both x86 and x64 architecture in the same ISO)
+
+- UPDATE : "Dutch" Language to v3.12 by John K. (Forum User)
+- UPDATE : "LOG file" : Add WinReducer build version
+
+- FIX : "ESD Installation Media Creation" : ISO Creation bug
+- FIX : "OPTIONS - Themes - Fade In" : Didn't work properly with a registered Edtion
+- FIX : "OPTIONS - Themes - Fade Out" : Didn't work properly with a registered Edtion
+- FIX : "OPTIONS - Themes - Icons Borders" : Didn't work properly with a registered Edtion
+- FIX : "OPTIONS - Themes - Icons Text" : Didn't work properly with a registered Edtion
+- FIX : "OPTIONS - Themes - Fade Out" : Didn't work properly if disabled with a registered Edtion
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - Wim Converter - v1.4.1.0 (10 June 2016)
+
+- NEW : "Installation" window : "DISM and OSCDIMG" : WinReducer internal download support
+
+- UPDATE : "English" to v3.12 (Add lines : 70)
+- UPDATE : "French" Language to v3.12 by Jpm (Forum User)
+- UPDATE : "German" Language to v3.12 by KrX (Forum Moderator) and hauser.markus (Forum User) : Translation improvements ... thank you so much guys :)
+- UPDATE : "Polish" Language to v3.12 by WinClub.pl (WinReducer Partner)
+- UPDATE : "Romanian" Language to v3.12 by ruby2hora (Forum User)
+- UPDATE : "Russian" Language to v3.12 by Ducazen (Forum User)
+- UPDATE : "7zip - v16.02" : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only 7zip on "ON", then check the "Force Download" option, then use "Download" button
+- UPDATE : "Installation" window : Remove "getwaiktools" software support
+- UPDATE : "Installation" window : Replace Dism and oscdimg website links to microsoft waik resources
+- UPDATE : "ReadMe.pdf" to v2.01
+
+- FIX : "WinReducer Premium and higher editions" : Automatic update changelog file
+- FIX : "OPTIONS" : Missing translation text
+- FIX : High DPI GUI Cosmetics
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - WIM Converter - v1.4.0.0 (03 May 2016)
+
+- UPDATE : "English" to v3.11 (Add lines : 483, 493 and 664)
+- UPDATE : "French" Language to v3.11 by Jpm (Forum User)
+- UPDATE : "Romanian" Language to v3.11 by ruby2hora (Forum User)
+- UPDATE : "Russian" Language to v3.10 by Ducazen (Forum User)
+- UPDATE : Compatibility improvements for future WinReducer Software
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - WIM Converter - v1.3.2.0 (09 March 2016)
+
+- UPDATE : "French" Language to v3.08 by Jpm (Forum User)
+- UPDATE : "Polish" Language to v3.08 by WinClub.pl (WinReducer Partner)
+- UPDATE : "Romanian" Language to v3.08 by ruby2hora (Forum User)
+
+- FIX : Software exit troubles
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - WIM Converter - v1.3.1.0 (31 January 2016)
+
+- NEW : Third Party Software Version Detection : To ensure to get the best WinReducer Software Experience
+
+- UPDATE : "French" Language to v3.07 by Jpm (Forum User)
+- UPDATE : "German" Language to v3.07 by KrX (Forum Moderator) and hauser.markus (Forum User)
+- UPDATE : "Romanian" Language to v3.07 by ruby2hora (Forum User)
+- UPDATE : "Configuration - Software Installation - Forced download of all elements" : Check by default
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - WIM Converter - v1.3.0.0 (16 January 2016)
+
+- NEW : "French" Language to v3.05 by Jpm (Forum User)
+- NEW : "German" Language to v3.05 by KrX (Forum Moderator) and hauser.markus (Forum User) : Components translation improvements
+- NEW : "Polish" Language to v3.05 by WinClub.pl (WinReducer Partner)
+- NEW : "Romanian" Language to v3.06 by ruby2hora (Forum User)
+- NEW : "Use Better WIM Compression" : Activate a better compression for WIM files using the ESD Recovery Mode compression algrithm
+
+- UPDATE : "English" to v3.07 (line 140 : replace "WinReducer81.log" by "log" ; Add lines : 951 and 952)
+- UPDATE : "7zip - v15.14" : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only 7zip on "ON", then check the "Force Download" option, then use "Download" button
+- UPDATE : "DISM v10.0.10586.0" (from Windows 10 TH2 build) : To update it, just go to "Options - Configuration - Software Installation" : put all software on "OFF", keep only Dism on "ON", then check the "Force Download" option, then use "Download" button
+- UPDATE : Improve startup
+- UPDATE : "High DPI" Support
+- UPDATE : Copyright year to 2016
+- UPDATE : All website links to use https
+- UPDATE : GUI buttons improvements
+- UPDATE : Windows Editions detection speed optimizations
+- UPDATE : Change DISM priority during ESD conversion to avoid troubles during conversion
+
+- FIX : "CONFIGURATION - OPTIONS - Fade-In" : Launch error under certain circumstances
+- FIX : "CONFIGURATION - OPTIONS - Fade Out" : Close error under certain circumstances
+- FIX : "CONFIGURATION - OPTIONS - Updates" : Detection error under certain circumstances
+- FIX : "EXIT" : Activation window under certain circumstances
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - WIM Converter - v1.2.1.0 (10 August 2015)
+
+- NEW : "ESD" files conversion is available under Windows 7 and 8.0 running systems
+
+- UPDATE : GUI cosmetics Improvements
+
++ Changes from "v1.2.0.1 (VIP Closed Beta)"
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - WIM Converter - v1.2.0.1 (Closed Beta) (07 August 2015)
+
+- NEW : Support for x86 and x64 third party software (7zip, Dism, Oscdimg and SetACL) : Just redownload all files using the official procedure, as prompted at startup
+- NEW : ISO extraction support (available using the "OPEN" button)
+- NEW : "Installation" window : Indicates which third party software architecture is used
+
+- UPDATE : ImageX replaced by Windows 10 RTM Dism
+- UPDATE : Cleanup files improvements during exit
+- UPDATE : "ESD to WIM" : Conversion speed improvements
+- UPDATE : "ESD to SWM" : Conversion speed improvements
+- UPDATE : "ESD Media Creation" file to ISO : conversion speed improvements
+- UPDATE : GUI cosmetics Improvements
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - WIM Converter - v1.1.1.0 (14 July 2015)
+
+- UPDATE : Various minor improvements
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - WIM Converter - v1.1.0.0 (05 July 2015)
+
+- NEW : Support for "Brazilian" Language, translation made by "Paulo Neto" (WinReducer Forum Member) ==> Status : OK
+- NEW : Support for "Dutch" Language, translation made by "John K" (WinReducer User) ==> Status : OK
+- NEW : Support for "French" Language, translation made by "Jpm" (WinReducer Forum Member) ==> Status : OK
+- NEW : Support for "German" Language, translation made by "KrX" (WinReducer Forum Moderator) ==> Status : OK
+- NEW : Support for "Italian" Language, translation made by "Basex64" (WinReducer Forum Member) ==> Status : OK
+- NEW : Support for "Polish" Language, translation made by "WinClub.pl" (WinReducer Partner) ==> Status : OK
+- NEW : Support for "Romanian" Language, translation made by "ruby2hora" (WinReducer Forum Member) ==> Status : OK
+- NEW : Support for "Russian" Language, translation made by "walkman8196" (WinReducer Forum Member) ==> Status : Incomplete
+- NEW : Support for "Vietnamese" Language, translation made by "BangMaple" (WinReducer Forum Member) ==> Status : Incomplete
+
+- UPDATE : "ReadMe.pdf" to v2.00
+- UPDATE : "English" Language to v3.01
+- UPDATE : "OPTIONS - CONFIGURATION" : Change "Software Installation" button color : "Red" : configuration error detected --- "Green" : correct configuration
+- UPDATE : "VIP Activation" window : Hide "Username" text while entering your registration information to avoid possible troubles
+- UPDATE : "VIP Activation" window : Hide "Serial number" text while entering your registration information to avoid possible troubles
+- UPDATE : Integrated Default GUI Theme to v3.01
+
+
+*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+* WinReducer ES - WIM Converter - v1.0.0.0 (10 June 2015)
+
+- Public Build Release

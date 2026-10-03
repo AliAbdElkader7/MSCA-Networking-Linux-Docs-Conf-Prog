@@ -1,0 +1,1031 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Language File generated for WinReducer Software created by Winterstorm2050 from www.winreducer.net-->
+<Packages>
+  <Language>Italian</Language>
+  <Name>Basex64</Name>
+  <Version>v3.00</Version>
+  <Traduction>
+    <Tab>
+      <Exit Title="ESCI"/>
+      <Exit Text="Sei sicuro di voler uscire ?"/>
+      <Exit Yes="Si"/>
+      <Exit No="No"/>
+    </Tab>
+    <Tab>
+      <Launcher Title="Benvenuto in WinReducer"/>
+      <Launcher Home="START" Folder="Cartella" ISO="ISO" Tools="Strumenti"/>
+      <Launcher Options="OPZIONI" Update="Update" Folders="Config" Theme="Temi" Info="Info"/>
+      <Launcher Exit="ESCI" Ok="OK"/>
+      <Launcher Error01="Il Font del Tema non è installato correttamente" Error02="Copia il font all'interno di ''WinReducer - Home - Themes - Font'' nella cartella di ''Windows - Fonts'' ... Altrimenti WinReducer userà il  font predefinito del sistema !"/>
+    </Tab>
+    <Tab>
+      <OpenFolder Title="Apri una Cartella ..."/>
+      <HDDSize Title="L'HDD o SSD potrebbe non avere spazio libero : sono raccomandati 15 Gb !"/>
+      <OpenFolder Launch="APRI"/>
+      <OpenFolder Mount="Monta immagine"/>
+      <OpenISO Title="Estrai e Apri un file ISO ..."/>
+      <OpenISO Launch="Apri"/>
+      <OpenISO Mount="Monta immagine"/>
+      <OpenFolderISO Wait="Attendi... estrazione ISO in corso..."/>
+      <OpenFolderISO Error01="Questa cartella non è valida !" Error02="Questa cartella è di sola lettura !" Error03="Vuoi ripulire la cartella di estrazione ?" Error04="Edizione non supportata" Error05="Scegli una valida Edizione Windows  !" Error06="Il tuo file non è stato caricato correttamente... Premi OK per ripulire il tuo sistema"/>
+      <OpenFolderISO Error07="Stai provando ad usare un Windows Upgrade DVD non supportato !"/>
+	  <OpenFolderISO Error08="La cartella di estrazione predefinita è vuota : estrai una nuova ISO !"/>
+      <OpenFolderISO DVDError="Nessun DVD Windows trovato!"/>
+    </Tab>
+    <Tab>
+      <Options Title="OPZIONI"/>
+      <Error Text="OPS ... E' stato rilevato un errore ..."/>
+      <Folders Text="CONFIGURAZIONE"/>
+      <Folders Options="Opzioni"/>
+      <Folders Update="Notifica di aggiornamento"/>
+      <Folders Mode="Attiva Tema"/>
+      <Folders Folders="Folders"/>
+      <Folders Integrate="Integrate"/>
+      <Folders Software="Software"/>
+      <Folders Website="Sito web"/>
+      <Folders DownloadSoft="Scarica tutti i file"/>
+	  <Folders ForcedDownload="Scaricamento forzato di tutti gli elementi" ForcedDownloadTips="Usa questa opzione se vuoi scaricare ancora tutti gli elementi attivati, altrimenti scaricherà solo tutti gli elementi mancanti"/>
+      <Folders Processing="Elaborazione in corso"/>      
+      <Folders Wait="Attendi ..."/>
+      <Folders Error="Tutti i percorsi delle cartelle e del software devono essere ATTIVATI ... Controlla il file Log di Winreducer !"/>
+      <Infos Text="INFORMAZIONI"/>
+      <Infos Motherboard="Motherboard" Manufactured="Fabbricato da" Product="Nome Prodotto" Bios="Versione BIOS"/>
+      <Infos System="Sistema" Edition="Edizione Windows" Processor="Processore" Unused="" Type="Tipo di Sistema"/>
+      <Themes Text="TEMI"/>
+      <Themes Activate="Attiva Supporto"/>
+      <Themes Change="Cambia Tema"/>
+      <Themes Fonts="Available System Fonts" Tips="Manage your WinReducer GUI Theme Font"/>
+      <Themes FadeIn="Dissolvenza in apertura"/>
+      <Themes FadeOut="Dissolvenza in chiusura"/>
+      <Themes IconsBorders="Bordi della Icone"/>
+      <Themes LauncherText="Testo delle Icone"/>
+      <Themes Download="Scarica nuovi Temi"/>
+      <Themes Error="Il tuo Tema non è nella cartella corretta"/>
+      <Update Text="AGGIORNA"/>
+      <Update Download="Download"/>
+      <Update Search="Ricerca in corso ... Attendi ..."/>
+      <Update Available="E' disponibile un nuovo aggiornamento di WinReducer"/>
+      <Update Unavailable="Non è disponibile nessun aggiornamento !"/>
+      <Update Complete="Download completato !"/>
+      <Update CompleteError="E' stato rilevato un errore durante l'elaborazione della richiesta, mancano ancora alcuni file !" CompleteError1="Devi attivaretutti i programmi per convalidare la procedura d'installazione"/>
+      <Update Error="Impossibile connettersi al server, riprova più tardi ..."/>
+    </Tab>
+    <Tab>
+      <Remover Start="Start" Appearance="Aspetto" Features="Funzioni" Remover="Rimozione" Services="Servizi" System="Sistema" Unattended="Unattended" Presets="Presets" Finish="FINE"/>
+      <Remover Informations="Informazioni" Text="Seleziona il nome di una funzionalità di WinReducer  per vedere il relativo aiuto ..." Error="Nessun aiuto è disponibile per questa funzionalità"/>
+      <Remover Tips1="WinReducer Software creato da" Tips2="suggerimenti di aiuto creati da" Text="Black Viper, siti di Microsoft e Wikipedia "/>
+      <Remover Tips2="WinReducer GUI translated by"/>
+      <Remover Load="Carica" Title="Winreducer Configurazione personalizzata di Ripristino file " Help="Carica impostazioni precedenti da un file (*.wccf)" Success="Il tuo file è stato caricato con successo !" Error="E' stato individuato un errore durante il caricamento del tuo file !"/>
+      <Remover Loading1="Cancella Impostazioni" Loading2="Tutte le impostazioni in WinReducer saranno cancellate ! E' utile, se vuoi ricreare tutte le impostazioni manualmente. Viene anche avviato automaticamente se vuoi caricare un nuovo file preset .wccf" Loading3="Ciò cancellerà completamente le tue impostazioni precedenti !" Loading4="Sei sicuro di cancellare comletamente le tue impostazioni precedenti ?"/>
+	  <Remover Contribute1="Contributo al" Contribute2="Progetto Winreducer"/>
+	  <Remover Save="Salva" Title="Winreducer Configurazione personalizzata per il Ripristino file" Help="Salva le impostazioni attuali nel file (*.wccf)" Success="Il tuo file è stato salvato con successo !" Error="E' stato individuato un errore durante il salvataggio del tuo file !"/>
+      <Remover Exist="Esiste già un file con lo stesso nome  ..." File="Vuoi sostituirlo col nuovo file ?"/>
+      <Remover Apply="APPLICA" Title="Avvia Processo di WinReducer" Text="Sei sicuro di voler continuare ?" Help="Applica tutte le impostazioni per personalizzare o ridurre la tua Edizione Windows "/>
+      <Remover Congratulations="CONGRATULAZIONI !" Apply="Le tue modifiche sono state applicate con successo"/>
+      <Remover Cancel="Sei sicuro di voler uscire? Perderai tutte le tue modifiche"/>
+      <Remover CancelPending="You are not allowed to cancel the process at the moment, please wait until this component will be finished !"/>
+      <Remover Error="E' stato individuato un errore e WinReducer deve essere chiuso"/>
+      <Remover Error01="Stai tentando di usare lo stesso nome per il nome utente e per il nome del computer. Entrambi i nomi devono essere differenti altrimenti riceverai un errore durante l'installazione !"/>
+      <Remover Error02="Hai rimosso precedentemente alcuni Componenti Windows usati per questo preset protetto, il risultato non può essere garantito !" Error02a="Puoi seguire il link della banca dati delle Informazioni , in alto a destra di questa scheda, per avere più informazioni ..."/>
+      <Remover DataBaseInformations="Database delle Informazioni"/>
+      <Remover AutoRemove_ISO="Ottimizza Dimensioni ISO" Tips="Seleziona automaticamente alcune ottimizzazioni per ridurre le dimensioni del tuo file ISO personalizzato, si adatta meglio per i principianti"/>
+      <Remover AutoRemove_EXPERT="Usa Ottimizzazioni per ESPERTO" Tips="Ciò ridurrà notevolmente la tua ISO pulendo la cartella WinSxS ... NON usarlo se non sai cosa stai facendo perchè potrai riscontrare alcuni gravi bug critici, e rimuove automaticamente Funzionalità di Windows, Servizio di Windows Update, Servizio di Segnalazione Errori (sono inutili perchè danneggiati). Devi prendere in considerazione questa funzione a unico scopo di test, non usarla per un Sistema Operativo di uso quotidiano"/>
+      <Remover DesktopMenu1="Menu Contestuale Desktop"/>
+      <Remover ThemeSupport1="Supporto Tema" ThemeSupport2="Attiva Supporto Tema" ThemeSupport3="Pacchetto Temi di Winreducer" ThemeSupport4="Sfondi" ThemeSupport5="Cursori" ThemeSupport6="Sostituzione File" ThemeSupport7="Interfaccia Utente Moderna" ThemeSupport8="Tema Windows Predefinito"/>
+      <Remover Various1="Vari"/>
+      <Remover Integrate1="Integrazione" Integrate2="Cartelle Utente" Integrate3="Cartelle Sistema" Integrate4="WinReducer Post Installazione"/>
+      <Remover Integrate5="Integratore Registro di WinReducer"/>
+      <Remover ControlPanelView1="Categoria" ControlPanelView2="Icone grandi" ControlPanelView3="Icone piccole"/>
+      <Remover OpenFilesClick1="Doppio click per aprire l'oggetto" OpenFilesClick2="Un click per aprire l'oggetto (sottolinea titoli delle icone  secondo le impostazioni del browser)" OpenFilesClick="Un click per aprire l'oggetto to open an item (Sottolinea titoli delle icone solo se selezionati)"/>
+      <Remover TaskbarPosition1="In alto" TaskbarPosition2="A sinistra" TaskbarPosition3="A destra" TaskbarPosition4="In basso"/>
+      <Remover Enable="Attiva" Disable="Disattiva" Remove="Rimuovi"/>
+      <Remover ServiceChoices1="Predefinito (Tutti)" ServiceChoices2="Rimuovi (Tutti)" ServiceChoices3="Configurazione di Black Viper" ServiceChoices4="Riservato" ServiceChoices5="Riservato"/>
+      <Remover Service1="Automatico (avvio ritardato)" Service2="Automatico" Service3="Manuale" Service4="Disabilitato" Service5="Rimuovi"/>
+      <Remover UnsignedDrivers="Supporto Driver senza firma"/>
+      <Remover SP1IE11Detection="It has been detected as installed and should be updated with latest updates to get the best security" SP1IE11Detection1="It has been detected as an old version and must be updated to get the best security" SP1IE11Detection2="It has been detected as removed"/>
+      <Remover EncryptedHDD="Drive criptato (eHDD)"/>
+      <Remover Add="Aggiungi un File"/>
+      <Remover AddFolder="Aggiungi una cartella"/>
+      <Remover Registry1="Aggiungi un file del Registro" Registry2="Controlla compatibilità" Registry3="Salva in un file del Registro"/>
+      <Remover Registry4="Nessun errore è stato individuato, il tuo file è totalmente compatibile !" Registry5="Sono stati individuati alcuni errori, devi cancellare tutte le chiavi di registro in rosso (con tutti i valori dipendenti) per evitare problemi !"/>
+      <Remover OOBE1="Colore (Nero - Grigio)" OOBE2="Colore (Nero - Bianco)" OOBE3="Colore (Grigio - Nero)" OOBE4="Colore (Grigio - Bianco)" OOBE5="Colore (Bianco - Nero)" OOBE6="Colore (Bianco - Verde)" OOBE7="Separazione" OOBE8="Testo (Pausa)" OOBE9="Testo (Registro)" OOBE10="Testo (Programmi)" OOBE11="Database del Forum WinReducer per l'installazione silenziosa di programmi "/>
+      <Remover ContextMenu1="Copia" ContextMenu2="Taglia" ContextMenu3="Incolla"/>
+      <Remover UserGroup1="Amministratori" UserGroup2="Utenti"/>
+      <Remover NetLocation1="Domestica" NetLocation2="Aziendale" NetLocation3="Pubblica"/>
+      <Remover PowerScheme1="Bilanciato" PowerScheme2="Risparmio di energia" PowerScheme3="Prestazioni elevate"/>
+      <Remover ProtectPC1="Installa gli aggiornamenti importanti e raccomandati" ProtectPC2="Installa solo gli aggiornamenti importanti" ProtectPC3="Disabilita Windows Update"/>
+      <Remover Activate="Attiva Opzioni Unattend" Options="Ciò cancellerà il precedente file autounattended nella tua ISO !"/>
+      <Remover ProfileError="Il tuo file non è un profilo Wireless LAN valido !"/>
+      <Remover Optimization="Velocità di rimozione" Default="Predefinito" Fast="Alta" Extreme="Molto alta"/>
+	  <Remover DefaultTips="Velocità di rimozione predefinita, senza ottimizzazioni" OptimizedFor="Ottimizzato per" CPU="CPU" CPUCores="core" RAM="RAM" Gb="Gb"/>
+      <Remover OnTop="Mostra in primo piano"/>
+      <Remover FeaturesCleanup="Pulizia Funzioni"/>
+      <Remover Wait="Caricamento in corso ... Attendere prego ..." Finish="Completamento in corso ... Attendere prego ..."/>
+    </Tab>
+    <Tab>
+      <Tools Title="Strumenti"/>
+      <Updates Name="AGGIORNAMENTI"/>
+      <Updates Text="Scaricamento Aggiornamenti"/>
+      <Updates Folder="Cartella di archiviazione"/>
+      <Updates Catalog="Ricerca"/>
+      <Updates Available="Disponibile Catalogo Aggiornamenti" />
+      <Updates WU="Aggiornamenti Windows" Important="Importante" Optional="Opzionale" Rollup="Rollup" FlashPlayer="Adobe Flash Player" InternetExplorer="Internet Explorer 11" Frame35="Net Framework 3.5" Frame45="Net Framework 4.5" WUTools="Strumenti"/>
+      <Updates DriversSoftwareLinks="Link Driver e Software" Drivers="Driver" GraphicCard="Scheda Grafica" MotherboardChipset="Scheda madre (Chipset)" MotherboardStorage="Scheda madre (Memoria)" NetworkEthernet="Reti (Ethernet)" NetworkWireless="Reti (Wireless)" SoundCard="Sound Card" USB30="USB 3.0" Software="Software" Audio="Audio" FileArchiver="File Archiver" InternetBrowser="Internet Browser" TextEditor="Text Editor" Video="Video"/>
+      <Updates Report="Categoria" Name="Nome" Date="Data" Size="Dimensione" Links="Link"/>
+      <Updates Download="SCARICA"/>
+      <Updates Deprecated="Rimuovi gli aggiornamenti obsoleti e problematici"/>
+      <Updates Downloadable="Non hai selezionato nessun aggiornamento da scaricare !"/>
+      <Updates Finish="Tutti i file sono stati scaricati con successo !"/>
+      <Updates Error="Sono stati individuati degli errori durante lo scaricamento degli aggiornamenti ... Leggi il file ''WinReducer81.log'' e contattami per favore ... Grazie !"/>
+      <Updates Downloaded="Scaricato"/>
+      <Updates RemainTime="Tempo Rimanente"/>
+      <Updates DownSpeed="Velocità"/>
+      <ISO Name="ISO"/>
+      <ISO Text="Creazione File ISO"/>
+      <ISO Wim="Salva nel file WIM " Iso="Save nel file ISO"/>
+      <ISO Open="Scegliere una cartella di estrazione per creare una nuova ISO o per dividere il file WIM"/>
+      <ISO Folder="Salva ISO in" Name="Nome" Label="Etichetta" Split="Dividi in" SplitInfos="(in Mb ; Bianco = Disabilitato)" Open="Cartella"/>
+      <ISO Uefi="Compatibilità avvio UEFI"/>
+      <ISO UsbTransfert="Trasferisci cartella in USB " UsbTransfertPrevious="Sono stati individuati i file di installazione Windows, verranno sostituiti !" UsbTransfertTips="ATTENZIONE : verrà cancellato il contenuto del tuo dispositivo USB !" UsbTransfertSpeed="La velocità di trasferimento dipende dalle prestazioni del tuo dispositivo USB ..." UsbTransfertError="Non è stato individuato nessuna unità USB FAT32 o NTFS !"/>
+      <ISO Save="SALVA" Confirm="Sei sicuro di voler continuare ?"/>
+      <ISO Congratulations="CONGRATULAZIONI !" Wim="Le tue modifiche sono state salvate con successo" Iso="La tua ISO personalizzata è stata creata con successo !"/>
+      <ISO Congratulations_Error="E' stato individuato un errore durante la creazione del file ISO o wim, purtroppo il tuo file non è stato creato correttamente !"/>
+      <ISO Error01="Il campo cartella è vuoto !" Error02="E' presente un file iso con lo stesso nome ..." Error03="Vuoi sostituirlo con il tuo nuovo file iso ?"/>
+      <USB Name="USB"/>
+      <USB Text="Creazione dispositivo USB avviabile"/>
+      <USB Available="Disponibili dispositivi HDD and USB"/>
+      <USB Unavailable="NESSUN DISPOSITIVO USB TROVATO !"/>
+      <USB Number="Numero Disco" Name="Nome" FileSystem="File System"/>
+      <USB Create="CREA"/>
+      <USB Text01="Sei sicuro di voler continuare ?" Text02="RISERVATO SOLO AD UTENTI ESPERTI !" Text03="NON USARLO, se non sai esattamente cosa stai facendo ..." Text04="La tua unità verrà formattata interamente, c'è il rischio di formattare un'unità errata, infatti puoi perdere tutti i documenti contenuti ... quindi non lamentarti se succede qualcosa di sbagliato, perchè ti ho avvisato !" Text05="Se non sei sicuro completamente, è meglio scegliere ''No'' per interrompere il processo !"/>
+      <USB Finish="La tua unità USB è pronta !"/>
+      <USB Error="I campi del numero e (o) del nome  sono vuoti !"/>
+      <Editor Name="Preset Editor"/>
+      <Editor Text="Preset Editor"/>
+      <Editor Launch="AVVIA"/>
+      <Editor Message1="Hai scelto di usare il Preset Editor, quindi puoi caricare o salvare le tue impostazioni per l'uso in un secondo momento !" Message2="Non puoi applicare queste impostazini direttamente in Windows, Perciò devi montare una ISO Windows o una cartella !"/>
+    </Tab>
+    <Tab>
+      <WinReducerEdition Title="Attivare la Edition di WinReducer ?"/>
+      <WinReducerEdition Yes="SI" No="NO"/>
+	  <WinReducerEdition Username="Username"/>
+	  <WinReducerEdition SerialNumber="Serial Number"/>
+      <WinReducerEdition Activate="ATTIVA"/>
+      <WinReducerEdition Link="Visita il"/>
+      <WinReducerEdition Success="La tua Edition di WinReducer è stata attivata con successo !"/>
+      <WinReducerEdition Unsuccess="Si può ottenere un numero di serie valido utilizzando il negozio di WinReducer.net !" Unsuccess1="Numero Seriale nella lista nera" Unsuccess2="Numero Seriale Scaduto" Unsuccess3="Numero Seriale Invalido"/>
+      <WinReducerEdition Startup="Attivazione della Edition di WinReducer all'avvio"/>
+      <WinReducerEdition InstallPage=" Installazione Software" InstallPage1="Click here to launch the easy installation configuration page for :" InstallPage2="Programmi Esterni di Terze Parti" InstallPage3="Temi Winreducer" InstallPage4="Temi Windows"/>
+    </Tab>
+    <WR100>
+		  <Tips OfficialName="EdgeCP Model for Config" TranslatedName="EdgeCP Model for Config" Text="EdgeCP è correlato alla nuova sostituzione dei Charm, con l'interfaccia dello schermo/bordo  ... SERVE LA CONFERMA"/>
+		  <Tips OfficialName="Cloud Experience" TranslatedName="Cloud Experience" Text="Un'utilizzo semplificato del cloud"/>
+		  <Tips OfficialName="Cortana" TranslatedName="Cortana" Text="Cortana è un'assistente personale dotato di intelligenza artificiale"/>
+		  <Tips OfficialName="Feedback" TranslatedName="Feedback" Text="Invia i Technical Preview feedbacks alla Microsoft"/>
+		  <Tips OfficialName="Application Experience (Engine)" TranslatedName="Verifica compatibilità applicazioni (Motore)" Text="Controlla un database mantenuto di Microsoft per i problemi noti con programmi popolari e abilita automaticamente soluzioni alternative, o alla prima installazione (usando UAC) o all'avvio di un'applicazione. I vecchi programmi “Vista o Windows 7 non compatibili” potrebbero aver bisogno di questo servizio in esecuzione. Disattivando questa funzione può aumentare su tutta la risposta delle applicazioni in fase di avvio (dovuto dall'evitato controllo del database), tuttavia, non risolverà i problemi di installazione delle applicazioni"/>
+		  <Tips OfficialName="Net Framework 4.6 Network Advanced Services" TranslatedName="Net Framework 4.6 Network Advanced Services" Text=""/>
+		  <Tips OfficialName="Windows OneCore" TranslatedName="Windows OneCore" Text="Vuole porsi come marchio di portabilità delle funzionalità di Windows Phone, per l'uso in qualsiasi ambiente operativo di Windows tramite Windows OneCore"/>
+		  <Tips OfficialName="Various Keyboards" TranslatedName="Varie tastiere" Text="La lista è: Central Atlas Tamazight, Guarani, Central Kurdish, Tifinagh (Full), Myanmar, New Tai Lue, Tai Le, Ogham, Lisu (Basic), Lisu (Standard), N’Ko, Phags-pa, Buginese, Gothic, Ol Chiki, Osmanya, Old Italic, Sora, Javanese e Futhark"/>
+		  <Tips OfficialName="Mobile PC (Engine)" TranslatedName="Mobile PC (Motore)" Text="Vari strumenti per aiutarti a manage un   mobile PC come un laptop"/>
+    </WR100>
+	<WR81>
+	  <Tips OfficialName="Start" TranslatedName="Start" Text="Carica o salva un file per la configurazione personalizzata di windows (*.wccf)"/>
+      <Tips OfficialName="Appearance" TranslatedName="Aspetto" Text="Implementa l'aspetto di Windows (aggiunge temi, sfondi, cursori, ...)"/>
+		  <Tips OfficialName="Activate Desktop Context Menu" TranslatedName="Attiva Menu Contestuale Desktop" Text="Aggiunge qualche collagamento nel menu contestuale del desktop per spegnere, riavviare, ..."/>
+			  <Tips OfficialName="Safe mode" TranslatedName="Modalità Provvisoria" Text="Aggiunge al menu contestuale del desktop la possibilità di riavviare facilmente in modalità provvisoria"/>
+			  <Tips OfficialName="Hibernate" TranslatedName="Ibernazione" Text="Aggiunge al menu contestuale del desktop la possibilità di ibernare facilmente il computer"/>
+			  <Tips OfficialName="Logout" TranslatedName="Disconnetti" Text="Aggiunge al menu contestuale del desktop la possibilità di disconnettere facilmente il computer"/>
+			  <Tips OfficialName="Restart" TranslatedName="Riavvia il sistema" Text="Aggiunge al menu contestuale del desktop la possibilità di riavviare facilmente il computer"/>
+			  <Tips OfficialName="Shutdown" TranslatedName="Arresta il sistema" Text="Aggiunge al menu contestuale del desktop la possibilità di spegnere facilmente il computer"/>
+			  <Tips OfficialName="Shutdown (Hybrid)" TranslatedName="Arresta il sistema (Ibrido)" Text="Aggiunge al menu contestuale del desktop la possibilità di usare lo spegnimento ibrido del computer. Non disabilitare l'ottimizzazione dell'avvio ibrido per poter usare questa funzione"/>
+		  <Tips OfficialName="Activate Theme Support" TranslatedName="Attiva Supporto Tema" Text="Aiuta a cambiare l'aspetto di windows (sfondi, cursori, tema sostituisce i file di Windows...) utilizzando WinReducer Theme Pack o scegliendo singolarmente ciascun elemento"/>
+			  <Tips OfficialName="WinReducer Theme Pack" TranslatedName="WinReducer Theme Pack" Text="Carica un WinReducer Theme Pack per cambiare facilmente l'aspetto di Windows. I WinReducer Theme Pack sono disposibili nelsito web di WinReducer. Theme Packs create per le versioni precedenti di Winreducer sono compatibili con questa versione"/>
+			  <Tips OfficialName="Background - Setup Screen" TranslatedName="Sfondo - schermata setup" Text="Cambia l'immagine di sfondo del setup"/>
+			  <Tips OfficialName="Background - Setup Screen Window" TranslatedName="Sfondo - Finestra schermata setup" Text="Cambia la finestra del setup"/>
+			  <Tips OfficialName="Background - Lockscreen" TranslatedName="Sfondo - Blocca" Text="Cambia l'immagine di sfondo quando di clicca su blocca computer"/>
+			  <Tips OfficialName="Background - Logo (System CPL)" TranslatedName="Sfondo - Logo (CPL del sistema)" Text="Cambia il logo nella finestra delle proprietà del computer"/>
+			  <Tips OfficialName="Background - Picture Password" TranslatedName="Sfondo - Immagine Password" Text="Cambia l'immagine di Windows quando si mette la password. Aiuta a proteggere il tuo computer o il tuo PC touchscreen. Puoi scegliere qualsiasi immagine, e i tre gesti che usi con l'immagine, Per creare un'univoca password forte per il tuo account utente"/>
+			  <Tips OfficialName="Background - Desktop Wallpaper" TranslatedName="Sfondo - Desktop" Text="Cambia l'immagine di sfondo del desktop"/>
+			  <Tips OfficialName="Cursor - Arrow" TranslatedName="Puntatore - Selezione normale" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Busy" TranslatedName="Puntatore - Occupato" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Cross" TranslatedName="Puntatore - Selezione di precisione" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Help" TranslatedName="Puntatore - Guida" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Link" TranslatedName="Puntatore - Selezione collegamento" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Move" TranslatedName="Puntatore - Sposta" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Pen" TranslatedName="Puntatore - Riconoscimento grafia" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Resize Diagonal 1" TranslatedName="Puntatore - Ridimensionamento Diagonale 1" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Resize Diagonal 2" TranslatedName="Puntatore - Ridimensionamento Diagonale 2" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Resize Horizontal" TranslatedName="Puntatore - Ridimensionamento Orizzontale" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Resize Vertical" TranslatedName="Puntatore - Ridimensionamento Verticale" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Text" TranslatedName="Puntatore - Selezione testo" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Unavailable" TranslatedName="Puntatore - Occupato" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Up" TranslatedName="Puntatore - Selezione alternativa" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Cursor - Working" TranslatedName="Puntatore - Esecuzione in background" Text="Cambia il Puntatore"/>
+			  <Tips OfficialName="Bootres.dll" TranslatedName="Bootres.dll" Text="Sostituisce il tuo file, ma devi modificarlo da solo ... SUGGERIMENTI :RISERVATO SOLO AD UTENTI AVANZATI ! SPERIMENTALE !! Grazie per l'invio dei feedback"/>
+			  <Tips OfficialName="Imageres.dll" TranslatedName="Imageres.dll" Text="Sostituisce il tuo file, ma devi modificarlo da solo ... SUGGERIMENTI :RISERVATO SOLO AD UTENTI AVANZATI ! SPERIMENTALE !! Grazie per l'invio dei feedback"/>
+			  <Tips OfficialName="Shell32.dll" TranslatedName="Shell32.dll" Text="Sostituisce il tuo file, ma devi modificarlo da solo ... SUGGERIMENTI :RISERVATO SOLO AD UTENTI AVANZATI ! SPERIMENTALE !! Grazie per l'invio dei feedback"/>
+			  <Tips OfficialName="Modern UI Background" TranslatedName="Sfondo Metro" Text="Cambia lo sfondo Metro ... SUGGERIMENTI : il N°19 è tinta unita il N°20 visualizza lo sfondo desktop"/>
+			  <Tips OfficialName="Modern UI Color (Accent)" TranslatedName="Colore Metro (Tono)" Text="Cambia il tono del colore dell'interfaccia Metro"/>
+			  <Tips OfficialName="Modern UI Color (Background)" TranslatedName="Colore Metro (Sfondo)" Text="Cambia il colore dello sfondo dell'interfaccia Metro"/>
+			  <Tips OfficialName="Modern UI Color (Login)" TranslatedName="Colore Metro (Accesso)" Text="Cambia il colore dello sfondo all'accesso"/>
+			  <Tips OfficialName="Windows Theme" TranslatedName="Tema Windows" Text="Cambia Tema Windows predefinito. In base allo sfondo"/>
+		  <Tips OfficialName="Activate Various Customizations" TranslatedName="Attiva Varie Personalizzazioni" Text="Applica varie personalizzazioni come la posizione della barra della applicazioni e la grandezza, ..."/>
+		      <Tips OfficialName="Control Panel View" TranslatedName="Vista Pannello di Controllo" Text="Configura come verrà visualizzato il Pannello di Controllo"/>
+			  <Tips OfficialName="Mouse - Sensitivity" TranslatedName="Mouse - Movimento" Text="0 for lento e 20 per movimenti veloci"/>
+			  <Tips OfficialName="Open Files Click" TranslatedName="Selezione e apertura oggetti" Text="Sceglie il metodo di apertura dei file "/>
+			  <Tips OfficialName="Taskbar Position" TranslatedName="Posizione barra delle applicazioni" Text="Cambia la posizione del barra delle applicazioni nello schermo"/>
+			  <Tips OfficialName="Taskbar Size" TranslatedName="Grandezza barra delle applicazioni" Text="1 per 1 linea (misura piccolo) e 5 per 5 linee (misura grande)"/>
+      <Tips OfficialName="Features" TranslatedName="Funzionalità Windows" Text="Abilita, diabilita o rimove le funzionalità predefinite integrate in Windows ... SUGGERIMENTI : La rimozione di una funzionalità windows è definitiva"/>
+		  <Tips OfficialName="AD LDS Services" TranslatedName="AD LDS Services" Text="AD LDS is a Lightweight Directory Access Protocol (LDAP) directory service that provides flexible support for directory-enabled applications, without the dependencies that are required for Active Directory Domain Services (AD DS). AD LDS provides much of the same functionality as AD DS, but it does not require the deployment of domains or domain controllers. You can run multiple instances of AD LDS concurrently on a single computer, with an independently managed schema for each AD LDS instance"/>
+		  <Tips OfficialName="Direct Play" TranslatedName="Riproduzione diretta" Text=""/>
+		  <Tips OfficialName="Hyper-V" TranslatedName="Hyper-V" Text="Hyper-V permette di avviare allo stesso tempo più di un sitema operativo nello stesso Pc, usando le macchine virtuali"/>
+		  <Tips OfficialName="Internet Explorer 11" TranslatedName="Internet Explorer 11" Text="Browser di Internet Explorer. Se scegli di rimuoverlo drovrai installare un'altro browser per accedere alle pagine web"/>
+		  <Tips OfficialName="Internet Information Services (IIS)" TranslatedName="Internet Information Services (IIS)" Text="Internet Information Services (IIS) for Windows is a flexible, secure and manageable Web server for hosting anything on the Web. From media streaming to web applications, IIS's scalable and open architecture is ready to handle the most demanding tasks"/>
+		  <Tips OfficialName="Microsoft Message Queuing (MSMQ)" TranslatedName="Microsoft Message Queuing (MSMQ)" Text="Message Queuing (MSMQ) technology enables applications running at different times to communicate across heterogeneous networks and systems that may be temporarily offline. Applications send messages to queues and read messages from queues"/>
+		  <Tips OfficialName="Net Framework 3.5" TranslatedName="Net Framework 3.5" Text=""/>
+		  <Tips OfficialName="Net Framework 4.5 Network Advanced Services" TranslatedName="Servizi Avanzati Net Framework 4.5" Text=""/>
+		  <Tips OfficialName="Printing - LPR Port Monitor" TranslatedName="Stampa - Monitor porta LPR" Text="Monitor porta LPR (Line Printer Remote) consente a un computer che esegue Microsoft Windows Vista, Windows 7, Windows Server 2008 o Windows Server 2008 R2 di stampare sul servizio Line Printer Daemon (LPD) in un server di stampa UNIX."/>
+		  <Tips OfficialName="Printing - LPD Print Service" TranslatedName="Stampa - Servizio stampa LPD" Text="Il TCP/IP Print Server service (LPDSVC), Anche conosciuto come Servizio Line Printer Daemon (LPD), Abilita i Computer Unix o altri computer che stanno usando il servizio Line Printer Remote (LPR)  di stampare con stampanti condivise in questo server"/>
+		  <Tips OfficialName="Printing - Internet Printing" TranslatedName="Stampa - Client di stampa internet" Text="Il Client di stampa Internet permette di connettersi e di stampare con stampanti nella rete locale o attraverso Internetusando il protocollo Internet Printing Protocol (IPP). Si può usare l'Internet Printing Client e l'IPP per connettersi a stampanti condivise usando un browser web (se il server di stampa ha installato il servizio di stampa Internet)"/>
+		  <Tips OfficialName="Printing - Fax and Scan Services" TranslatedName="Stampa - Fax e Scanner di Windows" Text=""/>
+		  <Tips OfficialName="Remote Access Connection" TranslatedName=" Connessione Accesso Remoto " Text="Fornisce una connessione a un sistema di elaborazione dati da una postazione remota, per esempio attraverso una vpn (virtual private network)"/>
+		  <Tips OfficialName="Remote Differential Compression API" TranslatedName="Remote Differential Compression API" Text="Permette ai dati di essere sincronizzati con una sorgente remota utilizzando tecniche di compressione per ridurre la quantità di dati inviati attraverso la rete"/>
+		  <Tips OfficialName="Simple Network Management Protocol (SNMP)" TranslatedName="Servizio SNMP (Simple Network Management Protocol)" Text="Il servizio SNMP (Simple Network Management Protocol) è uno standard di gestione della rete ampiamente utilizzato in reti TCP / IP per gestire gli host di rete come computer workstation o server, router, bridge e hub dalla posizione centrale di un computer che esegue un programma di gestione dellarete"/>
+		  <Tips OfficialName="Simple TCP" TranslatedName="Simple TCP" Text="Fornisce il supporto per i servizi di protocollo opzionali TCP-IP"/>
+		  <Tips OfficialName="SMB1 Protocol" TranslatedName="SMB1 Protocol" Text="Il Protocollo SMB (Server Message Block) è un protocollo di condivisione file nella rete, e dal momento in cui è stato attuato in Microsoft Windows è noto come Microsoft SMB Protocol"/>
+		  <Tips OfficialName="Tagged Image File Format IFilter (TIFF iFilter)" TranslatedName="Tagged Image File Format IFilter (TIFF iFilter)" Text="Noto come TIFF IFilter. E' un plug-in che permette ai motori di ricerca di Microsoft per indicizzare diversi formati di file (come documenti, allegati e-mail, i record del database, metadati audio, ecc), in modo che diventino ricercabile. Senza un adeguato IFilter, contenuti di un file non possono essere analizzati e indicizzati dal motore di ricerca. Essi possono essere ottenuti come pacchetti standalone o in bundle su alcuni software, come Adobe Reader , LibreOffice , Microsoft Office Microsoft fornisce ai suoi IFilters Ufficio bundle e disponibili come pacchetti autonomi, a OpenOffice ."/>
+		  <Tips OfficialName="Telnet Client and Server" TranslatedName="Telnet Client and Server" Text="Telnet (TErminal NETwork o TELecommunication NETwork, o TELetype NETwork) è un protocollo di rete"/>
+		  <Tips OfficialName="Trivial File Transfer Protocol (TFTP)" TranslatedName="Trivial File Transfer Protocol (TFTP)" Text="Trivial File Transfer Protocol (TFTP) è un protocollo di trasferimento file notevole per la sua semplicità. Esso viene generalmente utilizzato per il trasferimento automatizzato di una configurazione o di file d'avvio  tra computer in un ambiente locale"/>
+		  <Tips OfficialName="Windows Defender" TranslatedName="Windows Defender" Text="Antivirus integrato in Windows.E' un software per la sicurezza del sistema, come Smart Screen per Internet Explorer"/>
+		  <Tips OfficialName="Windows Identity Foundation 3.5" TranslatedName="Windows Identity Foundation 3.5" Text="Windows Identity Foundation (WIF) is a new extension for the Microsoft.NET Framework 3.5 which allows developers to enable advanced features in identification applications.NET Framework. Based on standard, Windows Identity Foundation and identity model based queries can be used to enable single sign protocols, personalization, federation, strong authentication, identity delegation, and other identification features in ASP.NET applications and Windows Communication Foundation (WCF) that run on premise or in the cloud"/>
+		  <Tips OfficialName="Windows Media Player" TranslatedName="Windows Media Player" Text="Player musica e video di Microsoft (nb: non legge i dvd)"/>
+		  <Tips OfficialName="Windows Mobile PC" TranslatedName="Windows Mobile PC" Text="Fornisce supporto per software di un Laptop Windows"/>
+		  <Tips OfficialName="Windows PowerShell" TranslatedName="Windows PowerShell" Text="Windows PowerShell è un linguaggio di scrittura dedicato a operazioni di amministrazione"/>
+		  <Tips OfficialName="Windows Search" TranslatedName="Windows Search" Text="Prevedel'indicizzazione dei contenuti, memorizzazione nella cache delle proprietà, e risultati di ricerca per file, e-mail, e altri contenuti"/>
+		  <Tips OfficialName="Work Folders" TranslatedName="Cartella di lavoro" Text="Forniscee uno spazio di archiviazione sincronizzato per le imprese incorporato in Windows (una specie di Dropbox, ma gratuito, che e possibile impostare in un server). Consente all'utente di sincronizzare dati nella periferica da una cartella utente che si trova nel data center della società. I file creati localmente vengono sincronizzati con i file server in ambiente aziendale"/>
+		  <Tips OfficialName="XPS Viewer and Printer" TranslatedName="XPS Viewer e Printer" Text="Il formato XPS è un'alternativa di Microsoft al PDF. E 'stato introdotto in Windows Vista, ma non ha guadagnato molto seguito. Tuttavia, le versioni moderne di Windows continuano a includere un supporto migliore per i file XPS piuttosto che ai file PDF"/>
+      <Tips OfficialName="Internet Explorer" TranslatedName="Internet Explorer" Text="Migliora l'utilizzo Internet Explorer 11"/>
+      <Tips OfficialName="Remover" TranslatedName="Remover" Text="rimuove molti componenti e applica molte Tweaks per configurare la ISO di Windows al fine di ridurre e anche migliorare la velocità del computer ... SUGGERIMENTI : La rimozione dei Componenti di Windows è definitiva"/>
+		 <Tips OfficialName="Remove - Accessories" TranslatedName="Rimuovi - Accessori" Text="Rimuove gli accessori di Windows inutili"/>
+			  <Tips OfficialName="16-bit Support" TranslatedName="16-bit Support" Text="Servizio per l'avvio di applicazioni a 16-bit"/>
+			  <Tips OfficialName="Accessibility" TranslatedName="Accessibilità" Text="Strumenti che consentono di configurare il Sistema per soddisfare  le esigenze di vista, udito e mobilità"/>
+			  <Tips OfficialName="Anytime Upgrade" TranslatedName="Anytime Upgrade" Text="Per aggiungere funzionalità da una diversa edizione di Windows (per esempio, avete Windows Home Edition e si desidera aggiungere una funzionalità di Windows Professional)"/>
+			  <Tips OfficialName="Application Experience (Compatibility Tab)" TranslatedName="Risoluzione dei problemi relativi alla compatibilità" Text="Rimuove la voce di compatibilità dal menu contestuale cliccando col tasto destro sui file"/>
+			  <Tips OfficialName="Auto Play" TranslatedName="Auto Play" Text="Selezionalo per rimuovere l'AutoPlay.Dettagli funzione: AutoPlay consente di modificare le impostazioni predefinite per CD, DVD e dispositivi in modo che sia possibile aprire automaticamente il contenuto, riprodurre musica, video, visualizzare immagini..."/>
+			  <Tips OfficialName="Automatic Maintenance" TranslatedName="Attività di manutenzione automatiche" Text="Consente agli utenti e alle aziende di tenero sotto controllo la programmazione e configurazione di attività di manutenzione"/>
+			  <Tips OfficialName="Briefcase" TranslatedName="Sincronia file" Text="Sincronia file è una cartella speciale che supporta la sincronizzazione dei file tra la medesima cartella e un'altra cartella"/>
+			  <Tips OfficialName="Calculator" TranslatedName="Calcolatrice" Text="Calcolatrice avanzata di Microsoft per aiutarti fare calcoli di base e scientifici"/>
+			  <Tips OfficialName="Character Map" TranslatedName="Mappa caratteri" Text="Mappa Caratteri visualizza tutti i caratteri disponibili per ciascun font"/>
+			  <Tips OfficialName="Cleartype Tuner" TranslatedName="Ottimizzazioni caratteri Cleartype" Text="Ottimizzazioni caratteri Cleartype permette di affinare il testo per migliorare la leggibilità nei display LCD"/>
+			  <Tips OfficialName="Diagnostics Troubleshooting Wizard" TranslatedName="Diagnostica memoria Windows" Text="Aiuta a accogliere informazioni sui problemi che possono verificarsi con il computer"/>
+			  <Tips OfficialName="Disk Space Cleaner" TranslatedName="Pulizia disco" Text="Perdi la capacità di pulire la cartella WinSxS! - Libera spazio su disco eliminando i file non necessari"/>
+			  <Tips OfficialName="Disk Image Burning Tool" TranslatedName="Disk Image Burning Tool" Text="Strumento per masterizzare file ISO ... SUGGERIMENTI : Viene persa la funzionalità di montaggio delle ISO"/>
+			  <Tips OfficialName="Disk Quota" TranslatedName="Disk Quota" Text="Disk Quota consente di limitare l'utilizzo dello spazio su disco per utente sullo stesso computer"/>
+			  <Tips OfficialName="Display Color Calibration" TranslatedName="Calibra il colore dello schermo" Text="Calibra il colore delloschermo aiuta a garantire i colori che sono rappresentati con più precisione sul monitor"/>
+			  <Tips OfficialName="Display Switch" TranslatedName="Cambia schermo" Text="Cambia schermo permette di passare ad un differente schermo, come un proiettore collegato a un computer portatile"/>
+			  <Tips OfficialName="ELS (Extended Linguistic Services)" TranslatedName="ELS (Extended Linguistic Services)" Text="Extended Linguistic Services (ELS) supporta i servizi basati sul testo, tra cui i servizi di rilevamento della lingua, di rilevamento script, e  di traslitterazione"/>
+			  <Tips OfficialName="Help and Support" TranslatedName="Guida e supporto tecnico" Text="Rimuove solo i file di aiuto (* chm, ...) e mantiene intatto il motore"/>
+			  <Tips OfficialName="Imapi" TranslatedName="Imapi" Text="IMAPI, E' un componente del  Sistema operativo di Microsoft Windows  usato per la creazione e la registrazione di CD e DVD. Applicazioni Windows, come Windows Media Player, Windows Media Center, Windows Movie Maker, Windows DVD Maker e Windows Explorer utilizzare IMAPI per creare immagini ISO e masterizzare i dischi"/>
+			  <Tips OfficialName="Input Method Editor" TranslatedName="Input Method Editor" Text="Input method editor rende più facile scrivere nelle lingue che sono composte da migliaia di caratteri i quali non possono andare bene su una tastiera standard"/>
+			  <Tips OfficialName="Natural Languages" TranslatedName="Natural Languages" Text="I  suggerimenti di Windows Search e di IE10 non funzionano più, a meno che non scegli il relativo preset di protezione"/>
+			  <Tips OfficialName="Notepad" TranslatedName="Notepad" Text="Semplice visualizzatore ed editore di testo"/>
+			  <Tips OfficialName="On Screen Keyboard" TranslatedName="Tastiera su schermo" Text="Tastiera su schermo visualizza una tastiera visiva con tutte le chiavi standard. È possibile selezionare i tasti usando il mouse o un altro dispositivo di puntamento, oppure è possibile utilizzare un singolo tasto o un gruppo di tasti per passare da un tasto all'altro sullo schermo"/>
+			  <Tips OfficialName="Open With" TranslatedName="Apri con" Text="La voce contestuale non funziona più, è necessario associare i file con le applicazioni manualmente. Quindi state attenti"/>
+			  <Tips OfficialName="Paint" TranslatedName="Paint" Text="Paint è un semplice programma di disegno e modifica delle foto"/>
+			  <Tips OfficialName="Previous Versions" TranslatedName="Versioni precedenti" Text="Versioni precedenti è una funzionalità estremamente utile, che permette al sistema operativo di registrare e visualizzare le versioni precedenti dei file"/>
+			  <Tips OfficialName="Private Character Editor" TranslatedName="Editor di caratteri personalizzati" Text="Editor di caratteri personalizzati permette di creare i propri caratteri, che è quindi possibile inserirli nei documenti utilizzando Mappa caratteri"/>
+			  <Tips OfficialName="Recovery Drive Creator" TranslatedName="Recovery Drive Creator" Text="Crea un supporto di ripristino di Windows Sistema per risolvere i problemi del PC in caso che non si avvia"/>
+			  <Tips OfficialName="Run Legacy CPL Elevated" TranslatedName="Run Legacy CPL Elevated" Text="Pea avviare il Pannello di Controllo  con i privilegi di amministratore"/>
+			  <Tips OfficialName="Screen Magnifier" TranslatedName="Magnifier su schermo" Text="Magnifier è uno strumento che ingrandisce parte, o tutto lo schermo per vedere le parole e le immagini più in grande"/>
+			  <Tips OfficialName="Screen Reader" TranslatedName="Assistente vocale" Text="Assistente vocale è un'utilità per la lettura dello schermo che appartiene agli strumenti di accessibilità"/>
+			  <Tips OfficialName="Set Program Access and Defaults" TranslatedName="Imposta programmi predefiiti" Text="Programma di utilità per scegliere i programmi che Windows utilizza in modo predefinito per un determinato tipo di file o protocolli"/>
+			  <Tips OfficialName="Snipping Tool" TranslatedName="Strumento di cattura" Text="Semplice applicazione per la cattura di immagini dello schermo"/>
+			  <Tips OfficialName="Sound Recorder" TranslatedName="Registratore di suoni" Text="Semplice programma di registrazione suoni"/>
+			  <Tips OfficialName="Spell Checking" TranslatedName="Controllo ortografico" Text="Controllo ortografia di Microsoft"/>
+			  <Tips OfficialName="Steps Recorder" TranslatedName="Registrazioni azioni utente" Text="Semplice programma che cattura automaticamente i passi che fate su un computer, compresa una descrizione testuale di dove si è cliccato e una foto dello schermo durante ogni clic"/>
+			  <Tips OfficialName="Sticky Notes" TranslatedName="Sticky Notes" Text="strumento per prendere nota che permette di creare semplici post-it"/>
+			  <Tips OfficialName="System Restore" TranslatedName="Ripristino Configurazione Sistema" Text="Ripristino Configurazione Sistema consente di annullare le modifiche del sistema ripristinando il computer ad un punto di ripristino precedente"/>
+			  <Tips OfficialName="Tablet PC (Engine)" TranslatedName="Tablet PC (Motore)" Text="Il motore del Tablet PC è necessario se si prevede di utilizzare la penna del tablet (Tenetelo se avete bisogno di Snipping Tool)"/>
+			  <Tips OfficialName="Tablet PC (Flick Learning Wizard)" TranslatedName="Tablet PC (Flick Learning Wizard)" Text="Learning Wizard Flick è un corso di formazione per l'uso gesti rapidi della penna per navigare rapidamente e per usare scorciatoie con la penna del tablet"/>
+			  <Tips OfficialName="Tablet PC (Journal)" TranslatedName="Tablet PC (Journal)" Text="Consente di creare e organizzare le note scritte a mano e disegni e salvarli in un file JNT"/>
+			  <Tips OfficialName="Tablet PC (Keyboard Input Panel)" TranslatedName="Tablet PC (Pannello Input Tastiera)" Text="Esegue il riconoscimento della scrittura e converte la scrittura in testo per l'uso nella maggior parte delle applicazioni di Windows non a schermo intero"/>
+			  <Tips OfficialName="Tablet PC (Math Input Panel)" TranslatedName="Tablet PC (Panello Input Espressioni Matematiche)" Text="Panello Input Espressioni Matematiche consente di scrivere facilmente equazioni matematiche con la penna del tablet"/>
+			  <Tips OfficialName="Tablet PC (Text Prediction)" TranslatedName="Tablet PC (Text Prediction)" Text="Supporto Text Prediction per PC Tablet "/>
+			  <Tips OfficialName="Time and Date" TranslatedName="Data e ora" Text="!! Non vedrete la data o l'ora se si sceglie di rimuovere questa funzionalità!!"/>
+			  <Tips OfficialName="UIRibbon Software Compatibility" TranslatedName="UIRibbon Software Compatibility" Text="Utilizzo ottimale del software Windows con molti miglioramenti, come in Office 2013, Paint o Explorer. Sostituisce il vecchio menu del software con un design di menu migliorato ... SUGGERIMENTI : Non rimuoverlo se pianifichi di usare Office 2013, Paint i software dipendenti a UIRibbon !"/>
+			  <Tips OfficialName="Webcam Experience" TranslatedName="Webcam Experience" Text="Aggiunge strumenti per la  webcam"/>
+			  <Tips OfficialName="Welcome Center" TranslatedName="Welcome Center" Text="Conosciuto anche con il nome di Attività Iniziali. Welcome Center può essere trovato nel Pannello di Controllo, System and Maintenance"/>
+			  <Tips OfficialName="Windows Contacts" TranslatedName="Contatti Windows" Text="Conosciuto anche come Windows Address Book ed è usato da Windows Mail"/>
+			  <Tips OfficialName="Windows Easy Transfer" TranslatedName="Trasferimento dati Windows" Text="Trasferimento dati Windows sposta file e impostazioni da un Pc che esegue Windows ad un altro. Guida l'utente attraverso il processo di scelta del modo in cui  desidera spostare le proprie cose e cosa si desidera spostare sul nuovo PC, come gli account utente, file e cartelle, musica, immagini, video, e-mail, contatti, preferiti di Internet, e le impostazioni dei programmi. E poi sposta tutto automaticamente"/>
+			  <Tips OfficialName="Windows Features" TranslatedName="Funzionalità Windows" Text="Interfaccia grafica per aggiungere o rimuovere Funzionalità Windows come Net Framework 3.5. Fai attenzione, è necessario attivare Windows Features On Demand User Experience (FONDUE)"/>
+			  <Tips OfficialName="Windows Features On Demand User Experience (FONDUE)" TranslatedName="Windows Features On Demand User Experience (FONDUE)" Text="Scarica automaticamente i file per attivare funzionalità tipo Net Framework 3.5. Fai attenzione, è necessario per attivare le funzionalità di Windows"/>
+			  <Tips OfficialName="Windows Mail" TranslatedName="Windows Mail" Text="!!Interrompe il supporto mhtml!! - client email e newsgroup di Microsoft (successore di Outlook Express)"/>
+			  <Tips OfficialName="Windows Mail (Send to Desktop shortcut)" TranslatedName="Windows Mail (Send to Desktop shortcut)" Text="Rimuove l'invio del collegamento sul desktop nel menu contestuale di file e cartelle"/>
+			  <Tips OfficialName="Windows Sidebar" TranslatedName="Windows Sidebar" Text="Windows Sidebar (conosciuto anche come The Windows Desktop Gadgets) è il motore widget"/>
+			  <Tips OfficialName="Windows Recovery Environment" TranslatedName="Windows Recovery Environment" Text="!Danneggia Bitlocker!! - Windows RE è una piattaforma di ripristino estendibile basata su Windows Preinstallation Environment (Windows PE). Se il computer non si avvia, Windows farà automaticamente il failover in questo ambiente, e lo strumento Ripristino all'avvio di Windows RE automatizza la diagnosi e la riparazione di un'installazione non avviabile di Windows"/>
+			  <Tips OfficialName="Wordpad" TranslatedName="Wordpad" Text="WordPad è un programma di modifica del testo ce è possibile utilizzare per creare e modificare documenti. A differenza di Notepad, i documenti di WordPad  possono includere la formattazione e la grafica complessa, e si possono collegare o incorporare oggetti, ad esempio immagini o altri documenti, in un documento di WordPad"/>
+			  <Tips OfficialName="Write" TranslatedName="Write" Text="Un Wordpad di base ma solo per motivi di compatibilità"/>
+			  <Tips OfficialName="Zip" TranslatedName="Zip" Text="Windows consente di zippare (comprimere) un file o una cartella in modo da occupare meno spazio. È inoltre possibile aprire un file zip per estrarne il contenuto"/>
+		 <Tips OfficialName="Remove - Control Panels" TranslatedName="Rimuovi - Panelli di Controllo" Text="Remove gli Pannelli di Controllo di Windows"/>
+			  <Tips OfficialName="Control Panel - Action Center" TranslatedName="Pannello di Controllo - Centro Operativo" Text="Per mantenere l'interfaccia grafica della attivazione Windows, selezionare il relativo Preset . Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Action Center (Files)" TranslatedName="Pannello di Controllo - Centro Operativo (Files)" Text="Per mantenere l'interfaccia grafica della attivazione Windows, selezionare il relativo Preset - Centro Operativo è un luogo importante per visualizzare gli avvisi e intraprendere azioni che possono aiutare a mantenere Windows in esecuzione senza problemi, come le impostazioni di sicurezza e di manutenzione che richiedono la vostra attenzione"/>
+			  <Tips OfficialName="Control Panel - Administrative Tools" TranslatedName="Pannello di Controllo - Strumenti di amministrazione" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Auto Play" TranslatedName="Pannello di Controllo - Auto Play" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Color Management" TranslatedName="Pannello di Controllo - Gestione colori" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Color Management (Files)" TranslatedName="Pannello di Controllo - Gestione colori (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Credential Manager" TranslatedName="Pannello di Controllo - Gestione credenziali" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Credential Manager (Files)" TranslatedName="Pannello di Controllo - Gestione credenziali (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Date and Time" TranslatedName="Pannello di Controllo - Data e ora" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Device Center" TranslatedName="Pannello di Controllo - Device Center" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Device Center (Files)" TranslatedName="Pannello di Controllo - Device Center (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Device Manager" TranslatedName="Pannello di Controllo - Device Manager" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Device Manager (Files)" TranslatedName="Pannello di Controllo - Device Manager (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione. seleziona questo componente solo se sai cosa stai facendo"/>
+			  <Tips OfficialName="Control Panel - Diagnostics Troubleshooting" TranslatedName="Pannello di Controllo - Diagnostics Troubleshooting" Text="Esso Consente di trovare soluzioni e risolvere automaticamente i problemi comuni di Windows. Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Diagnostics Troubleshooting (Files)" TranslatedName="Pannello di Controllo - Diagnostics Troubleshooting (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Display" TranslatedName="Pannello di Controllo - Schermo" Text=" Cancella il collegamento dal Pannello di controllo. Rimuove anche il collegamento dalmenu contestuale del desktop"/>
+			  <Tips OfficialName="Control Panel - Display (Files)" TranslatedName="Pannello di Controllo - Schermo (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione. seleziona questo componente solo se sai cosa stai facendo"/>
+			  <Tips OfficialName="Control Panel - Ease of Access" TranslatedName="Pannello di Controllo - Centro Accessibilità" Text="Cancella il Centro Accessibilità dal Pannello di Controllo"/>
+			  <Tips OfficialName="Control Panel - Ease of Access (Files)" TranslatedName="Pannello di Controllo - Centro Accessibilità (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Folder Options" TranslatedName="Pannello di Controllo - Opzioni cartella" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Font Folder" TranslatedName="Pannello di Controllo - Caratteri" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Font Folder (Files)" TranslatedName="Pannello di Controllo - Caratteri (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione ... SUGGERIMENTI : NON Rimuoverlo, se vuoi installare nuovi Font di Windows "/>
+			  <Tips OfficialName="Control Panel - History Vault" TranslatedName="Pannello di Controllo - History Vault" Text="Cancella il collegamento dal Pannello di controllo. File History salva copie dei tuoi file in modo tale da recuperarli nel caso in cui vengano danneggiati o persi"/>
+			  <Tips OfficialName="Control Panel - HomeGroup" TranslatedName="Pannello di Controllo - Gruppo di lavoro" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Indexing Options" TranslatedName="Pannello di Controllo - Opzioni di indicizzazione" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Indexing Options (Files)" TranslatedName="Pannello di Controllo - Opzioni di indicizzazione (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Infrared" TranslatedName="Pannello di Controllo - Infrarossi" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Infrared (Files)" TranslatedName="Pannello di Controllo - Infrarossi (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Internet Options" TranslatedName="Pannello di Controllo - Opzioni internet" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Internet Options (Files)" TranslatedName="Pannello di Controllo - Opzioni internet (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Keyboard" TranslatedName="Pannello di Controllo - Tastiera" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Language Settings" TranslatedName="Pannello di Controllo - Impostazioni lingua" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Language Settings (Files)" TranslatedName="Pannello di Controllo - Paese e lingua (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Mobility Center" TranslatedName="Pannello di Controllo - Centro Mobility" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Mouse" TranslatedName="Pannello di Controllo - Mouse" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Network and Sharing Center" TranslatedName="Pannello di Controllo - Centro connessioni di rete e condivisione" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Network and Sharing Center (Files)" TranslatedName="Pannello di Controllo - Centro connessioni di rete e condivisione (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione. seleziona questo componente solo se sai cosa stai facendo"/>
+			  <Tips OfficialName="Control Panel - Parental Controls" TranslatedName="Pannello di Controllo - Controllo Genitori" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Pen and Touch" TranslatedName="Pannello di Controllo - Pen and Touch" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Personalization" TranslatedName="Pannello di Controllo - Personalizzazione" Text="Cancella il collegamento dal Pannello di controllo. Also remove desktop context menu shortcut"/>
+			  <Tips OfficialName="Control Panel - Personalization (Files)" TranslatedName="Pannello di Controllo - Personalizzazione (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Phone and Modem" TranslatedName="Pannello di Controllo - Telefono e Modem" Text="Cancella il collegamento dal Pannello di controllo. Phone and Modem allows to configure your telephone dialing rules and modem settings"/>
+			  <Tips OfficialName="Control Panel - Phone and Modem (Files)" TranslatedName="Pannello di Controllo - Telefono e Modem (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Power Options" TranslatedName="Pannello di Controllo - Opzioni risparmio energia" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Power Options (Files)" TranslatedName="Pannello di Controllo - Opzioni risparmio energia (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Programs and Features" TranslatedName="Pannello di Controllo - Programmi e funzionalità" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Programs and Features (Files)" TranslatedName="Pannello di Controllo - Programmi e funzionalità (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione. seleziona questo componente solo se sai cosa stai facendo"/>
+			  <Tips OfficialName="Control Panel - Recovery" TranslatedName="Pannello di Controllo - Ripristino" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Recovery (Files)" TranslatedName="Pannello di Controllo - Ripristino (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Region and Language" TranslatedName="Pannello di Controllo - Paese e lingua" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Region and Language (Files)" TranslatedName="Pannello di Controllo - Paese e lingua (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Secure Startup" TranslatedName="Pannello di Controllo - Avvio sicuro" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Sensors" TranslatedName="Pannello di Controllo - Sensori" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Set User Defaults" TranslatedName="Pannello di Controllo - Imposta impostazioni predefinite utente" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Sound" TranslatedName="Pannello di Controllo - Suoni" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Sound (Files)" TranslatedName="Pannello di Controllo - Suoni (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione. seleziona questo componente solo se sai cosa stai facendo"/>
+			  <Tips OfficialName="Control Panel - Speech Recognition" TranslatedName="Pannello di Controllo - Riconoscimento Vocale" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Storage Spaces" TranslatedName="Pannello di Controllo - Storage Spaces" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Storage Spaces (Files)" TranslatedName="Pannello di Controllo - Storage Spaces (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Sync Center Folder" TranslatedName="Pannello di Controllo - Centro di sincronizzazione" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Sync Center Folder (Files)" TranslatedName="Pannello di Controllo - Centro di sincronizzazione (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - System" TranslatedName="Pannello di Controllo - Sistema" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - System (Files)" TranslatedName="Pannello di Controllo - Sistema (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Tablet PC Settings" TranslatedName="Pannello di Controllo - Impostazioni Tablet PC " Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Taskbar and Menu Start" TranslatedName="Pannello di Controllo - Barra delle applicazioni e menu start" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Taskbar Notification Icons" TranslatedName="Pannello di Controllo - Icone area di notifica" Text="Cancella il collegamento dal Pannello di controllo. Rompe il collegamento nella barra delle applicazioni e l'accesso all'area delle notifiche"/>
+			  <Tips OfficialName="Control Panel - Taskbar Notification Icons (Files)" TranslatedName="Pannello di Controllo - Icone area di notifica (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Text to Speech" TranslatedName="Pannello di Controllo - Text to Speech" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - User Accounts" TranslatedName="Pannello di Controllo - Account utente" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - User Accounts (Files)" TranslatedName="Pannello di Controllo - Account utente (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - View Available Networks" TranslatedName="Pannello di Controllo - Visualizza reti disponibili" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - View Available Networks (Files)" TranslatedName="Pannello di Controllo - Visualizza reti disponibili (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+			  <Tips OfficialName="Control Panel - Windows Anytime Upgrade" TranslatedName="Pannello di Controllo - Windows Anytime Upgrade" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Windows Defender" TranslatedName="Pannello di Controllo - Windows Defender" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Windows Firewall" TranslatedName="Pannello di Controllo - Windows Firewall" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Windows Update" TranslatedName="Pannello di Controllo - Windows Update" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Wireless Devices" TranslatedName="Pannello di Controllo - Wireless Devices" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Workspaces Center" TranslatedName="Pannello di Controllo - Workspaces Center" Text="Cancella il collegamento dal Pannello di controllo"/>
+			  <Tips OfficialName="Control Panel - Workspaces Center (Files)" TranslatedName="Pannello di Controllo - Workspaces Center (Files)" Text="Rimuove tutti i relativi file. Non sarà possibile usare questa funzione"/>
+		  <Tips OfficialName="Remove - Drivers" TranslatedName="Remove - Drivers" Text="Rimuove i Driver Windows inutili"/>
+			  <Tips OfficialName="Support - USB Attached SCSI (USAP)" TranslatedName="Support - USB Attached SCSI (USAP)" Text="USB Attached SCSI (UAS) è un protocollo del computer utilizzato per spostare i dati da e verso dispositivi di archiviazione USB, come hard disk, unità a stato solido, e chiavette USB. UAS dipende dal protocollo USB, e utilizza il set di comandi SCSI standard. L'utilizzo di UAS generalmente fornisce i trasferimenti più veloci, rispetto ai vecchi driver usb di archiviazione di massa BOT (Bulk-Only Transfer)  ... SUGGERIMENTI : Non rimuoverlo se prevedi di accelaraee your usb 2.0 e 3.0 HDD, SDD o pen drive che usano il protocollo USAP"/>
+			  <Tips OfficialName="Support - Boot - EFI and UEFI" TranslatedName="Supporto - Avvio - EFI and UEFI" Text="SPERIMENTALE ! Rimuove tutti i file e le cartelle EFI e UEFI, quindi se la vostra scheda madre usa questi file, non sarà in grado di avviare Windows"/>
+			  <Tips OfficialName="Support - Boot - PCAT" TranslatedName="Supporto - Avvio - PCAT" Text="SPERIMENTALE ! Avvio predefinito per Windows e DVD-Rom. Rimuove solo i file non necessari"/>
+			  <Tips OfficialName="Support - Boot - PXE" TranslatedName="Supporto - Avvio - PXE" Text="SPERIMENTALE ! Avvio predefinito per la rete"/>
+			  <Tips OfficialName="USB Video" TranslatedName="USB Video" Text="Interrompe l'uso della Webcam incorporata nel Laptop e di altri dispositivi che necessitano di ciò per funzionare correttamente"/>
+		  <Tips OfficialName="Remove - Fonts" TranslatedName="Rimuovi - Fonts" Text="Rimuove i font di Windows non necessari"/>
+		  <Tips OfficialName="Remove - Keyboards" TranslatedName="Rimuovi - Tastiere" Text="Rimuove le tasterie di Windows non necessarie"/>
+		  <Tips OfficialName="Remove - Languages" TranslatedName="Rimuovi - Lingue" Text="Rimuove le lingue di Windows non necessarie"/>
+			  <Tips OfficialName="Language Pack Support" TranslatedName="Supporto pacchetti lingua" Text="Rimuove la possibilità di integrare i pacchetti delle lingue attraverso il Pannello di Controllo"/>
+		  <Tips OfficialName="Remove - Modern UI Apps" TranslatedName="Rimuovi - APP Metro" Text="Rimuove le app Metro non necessarie"/>
+			  <Tips OfficialName="Bing Finance" TranslatedName="Bing Finanza" Text="Aiuterà a rimanere in cima alle condizioni di mercato in rapida evoluzione in modo da poter prendere le decisioni finanziarie più consapevoli"/>
+			  <Tips OfficialName="Bing Food and Drink" TranslatedName="Bing Cibo e bibite" Text="Permette di esplorare ricette illustrate, scegliere il vino, cocktail, e imparare i trucchi da chef famosi per fare un ottimo pasto. Alcuni strumenti utili sono disponibili come lista della spesa, pianificazione del pasto, le note, la modalità di cottura a mano libera, tutte condivisibili con gli amici"/>
+			  <Tips OfficialName="Bing Health And Fitness" TranslatedName="Bing Salute e Fitness" Text="Aiuta a rimanere in forma con migliaia di video esercizi, riferimenti medici e nutrizionali e un sistema di tracciamento della dieta per aiutarti a raggiungere il tuo obiettivo"/>
+			  <Tips OfficialName="Bing Maps" TranslatedName="Bing Maps" Text="Rende più facile trovare e raggiungere  in fretta i luoghi che stai cercando"/>
+			  <Tips OfficialName="Bing News" TranslatedName="Bing News" Text="Rende più facile stare aggiornati riguardo cosa sta succedendo nel mondo"/>
+			  <Tips OfficialName="Bing Sports" TranslatedName="Bing Sport" Text="Rende più facile seguire tutti gli sport e le squadre che ti interessano"/>
+			  <Tips OfficialName="Bing Travel" TranslatedName="Bing Viaggi" Text="Consente di esplorare più di 2000 destinazioni di tutto il mondo attraverso belle fotografie e panorami"/>
+			  <Tips OfficialName="Bing Weather" TranslatedName="Bing Meteo" Text="Aiuta a prepararsi per le ultime condizioni meteo con le previsioni orarie, giornaliere e di 10 giorni"/>
+			  <Tips OfficialName="Camera" TranslatedName="Camera" Text="Aiuta a catturare immagini, video e sfogliarli per condividere quelli migliori con i tuoi amici e la famiglia"/>
+			  <Tips OfficialName="Communication Applications" TranslatedName="Applicazioni di Comunicazione" Text=""/>
+			  <Tips OfficialName="File Manager" TranslatedName="File Manager" Text="Aiuta a visualizzare, esplorare, copiare, incollare, cancellare, rinominare tutti i file e le cartelle come in Esplora file sul desktop. Possibilità di cercare i file e condividerli direttamente ad altre applicazioni del Share Charm. L'applicazione include anche l'integrazione di SkyDrive e Foto"/>
+			  <Tips OfficialName="Help And Tips" TranslatedName="Guida e Suggerimenti" Text="Ti guida ad imparare come utilizzare le funzioni di base di Windows correttamente utilizzando tutorial e video"/>
+			  <Tips OfficialName="Immersive Control Panel" TranslatedName="Immersivo Pannello di Controllo" Text="Il link nella Charms Bar non funzionerà più"/>
+			  <Tips OfficialName="Lockscreen Camera" TranslatedName="Camera Blocco Computer" Text=""/>
+			  <Tips OfficialName="Lockscreen SlideShow" TranslatedName="Lockscreen SlideShow" Text=""/>
+			  <Tips OfficialName="Media Play Ready" TranslatedName="Media Play Ready" Text=""/>
+			  <Tips OfficialName="Media Viewer" TranslatedName="Media Viewer" Text=""/>
+			  <Tips OfficialName="OneNote" TranslatedName="OneNote" Text=""/>
+			  <Tips OfficialName="Reader" TranslatedName="Reader" Text="Applicazione Metro per leggere documenti PDF e XPS. Ingrandisce, trova parole o frasi, prende appunti, salva le modifiche, e quindi stampa o condivide i file"/>
+			  <Tips OfficialName="Skype" TranslatedName="Skype" Text="Connetiti con i tuoi amici, chatta, senti la loro voce o per riunirsi faccia a faccia"/>
+			  <Tips OfficialName="Slide to Shutdown" TranslatedName="Slide to Shutdown" Text="Permette di arrestare Windows con un semplice gesto di un tocco o con un trascinamento"/>
+			  <Tips OfficialName="VPN Plugins" TranslatedName="VPN Plugins" Text=""/>
+			  <Tips OfficialName="Windows Alarms" TranslatedName="Windows Alarms" Text="Imposta vari allarmi e varie suonerie come promemoria o come sveglia. L'applicazione racchiude anche un timer e un cronometro"/>
+			  <Tips OfficialName="Windows Calculator" TranslatedName="Calcolatrice" Text="Semplice calolatrice matematica con modalità standard e scientifica insieme a numerosi convertitori"/>
+			  <Tips OfficialName="Windows Java Script" TranslatedName="Windows Java Script" Text="Necessario per le applicazioni dello stile di Windows Metro"/>
+			  <Tips OfficialName="Windows Reading" TranslatedName="Windows Reading" Text="Permette di salvare articoli da Internet Explorer (o da altre applicazioni) per poterli leggere in un secondomomento . È possibile aggiungere gli articoli con la Share Charm e gestirla all'interno dell'applicazione Reading List"/>
+			  <Tips OfficialName="Windows Scanner" TranslatedName="Scanner di Windows" Text="Interagisci praticamente con qualsiasi scanner installati nel sistema o disponibili nella rete per scannerizzare documenti"/>
+			  <Tips OfficialName="Windows Sound Recorder" TranslatedName="Registratore di suoni Windows" Text="Effettua semplici registrazioni e modifiche dell'audio attraversi il tuo microfono"/>
+			  <Tips OfficialName="Windows Store" TranslatedName="Windows Store" Text="Necessario if se vuoi installare le applicazioni per lo stile della Windows Metro"/>
+			  <Tips OfficialName="Windows Visual C++ Runtime" TranslatedName="Windows Visual C++ Runtime" Text="Necessario per le applicazioni dello stile della Windows Metro"/>
+			  <Tips OfficialName="Xbox LIVE Games" TranslatedName="Xbox LIVE Giochi" Text="applicazione Metro per trovare i migliori giochi XBOX del momento ed esclusivamente per Windows"/>
+			  <Tips OfficialName="Zune Music" TranslatedName="Zune Music" Text="Xbox Music ti porta tutta la musica che ami in una semplice applicazione. Ascolta e gestisci la musica dalla tua collezione personale, sfoglia e acquista brani dalla Xbox Music"/>
+			  <Tips OfficialName="Zune Video" TranslatedName="Zune Video" Text="Xbox Video Ti porta tutti i video HD e show TV nel tuo dispositivo Windows/Windows RT device e ti rende facile guardare ciò che ti piace, ovunque tu sia"/>
+		  <Tips OfficialName="Remove - Multimedia" TranslatedName="Rimuovi - Multimedia" Text="Rimuove i Multimedia di Windows non necessari"/>
+			  <Tips OfficialName="Codec - Camera" TranslatedName="Codec - Camera" Text="Meglio conosciuto come Microsoft Camera Codec Pack. It enables la visione di una varietà di formati di file di dispositivi specifici"/>
+			  <Tips OfficialName="Codec - Indeo5" TranslatedName="Codec - Indeo5" Text="Video Codec. Vecchio ma utile per diversi Giochi"/>
+			  <Tips OfficialName="Codec - MP3" TranslatedName="Codec - MP3" Text="Codec Audio. In alternativa dovresti usare un altro migliore programma gratuito come foobar2000"/>
+			  <Tips OfficialName="Codec - MP4" TranslatedName="Codec - MP4" Text="Codec Video (rimuove anche il codec AAC). In alternativa dovresti usare un altro migliore programma gratuito Media Player Classic or VLC"/>
+			  <Tips OfficialName="Codec - MPEG2" TranslatedName="Codec - MPEG2" Text="Codec Video (rimuove pure il codec AC3). In alternativa dovresti usare un altro programma gratuito migliore come  Media Player Classic o VLC"/>
+			  <Tips OfficialName="Codec - MPEG4" TranslatedName="Codec - MPEG4" Text="Codec Video (rimuove pure il codec h264). In alternativa dovresti usare un altro programma gratuito migliore come Media Player Classic o VLC"/>
+			  <Tips OfficialName="Codec - WMA" TranslatedName="Codec - WMA" Text="Codec Audio (rimuove pure i decoder ed encoder codec). Anche conosciuto come Windows Media Audio. Non rimuoverlo se usi Windows Media Player"/>
+			  <Tips OfficialName="Codec - WMV" TranslatedName="Codec - WMV" Text="Codec Video (rimuove pure i codec decoder ed encoder). Anche conosciuto come Windows Media Video. Non rimuoverlo se usi Windows Media Player"/>
+			  <Tips OfficialName="DirectX Diagnostic Tool" TranslatedName="DirectX Diagnostic Tool" Text="Raccoglie informazioni sul Sistema e in particolare sui componenti DirectX installati in esso"/>
+			  <Tips OfficialName="DVD-Video Playback" TranslatedName="DVD-Video Playback" Text="Rimuove il supporto al DVD-Video di Windows. In alternativa dovresti usare un'altro programma gratuito migliore come Media Player Classic o VLC"/>
+			  <Tips OfficialName="Games Explorer" TranslatedName="Explorer - Giochi" Text="La finestra Giochi in explorer raggruppa tutti i tuoi Giochi nella stessa finestra. Puoi avere gli aggiornamenti dei programmi, le news feed e la traccia delle statistiche"/>
+			  <Tips OfficialName="Keyboard Filter" TranslatedName="Filtro Tasti" Text="Filtro Tasti fornisce un elenco predefinito di tasti e combinazioni di tasti che è possibile bloccare sul tuo computer. Ad esempio, si potrebbe  bloccare la scorciatoia da tastiera Ctrl+Alt+Canc, che attiva o disattiva il secure logon; o potresti prevenire che alcuni utenti blocchino il computer usando la combinazione Windows+L"/>
+			  <Tips OfficialName="MIDI Support" TranslatedName="Supporto MIDI" Text="Utile solo per i musicisti"/>
+			  <Tips OfficialName="Miracast" TranslatedName="Miracast" Text="Miracast è uno standard di scrreencasting peer-to-peer wireless costituito attraverso una connessione diretta Wi-Fi  in modo analogo al Bluetooth. Esso consente la fornitura tramite wireless di audio e video da o nei desktop, nei tablet, nei telefoni, e altri dispositivi"/>			  
+			  <Tips OfficialName="Mobile PC (Mobility Center)" TranslatedName="Centro PC portatile Windows" Text="Centro PC portatile raggruppa le impostazioni di uso comune per i computer portatili e tablet, come volume, luminosità, lo stato della batteria, display esterno, Centro sincronizzazione ..."/>
+			  <Tips OfficialName="Mobile PC (Presentation)" TranslatedName="Centro PC portatile (Presentazioni)" Text="Le impostazioni delle Presentazioni sono un'insieme di opzioni che puoi regolare prima di eseguire una presentazione"/>
+			  <Tips OfficialName="Mobile PC (Sensors)" TranslatedName="Centro PC portatile (Sensori)" Text="Specifica le impostazioni per sensori o meccanismi. Esempi di sensori sono accelerometri, sensori di luce, sensori di temperatura e sensori di posizione"/>
+			  <Tips OfficialName="Mobile PC (SideShow)" TranslatedName="Centro PC portatile (Schermo Esterno)" Text="Utile per schermi ausiliari"/>
+			  <Tips OfficialName="Photo Viewer" TranslatedName="Visualizzatore Foto Windows" Text="Visualizzatore Foto Windows. Sarà necessario un altro programma per visualizzare le immagini se si decide di rimuoverlo"/>
+			  <Tips OfficialName="Speech" TranslatedName="Riconoscimento Vocale" Text="Riconoscimento Vocale rende l'utilizzo di una tastiera e di un mouse opzionale. È possibile controllare il PC con la voce e dettare il testo (non disponibile in lingua italiana, si può rimuovere perchè è inutile)"/>
+			  <Tips OfficialName="Windows Media Center" TranslatedName="Windows Media Center" Text="Aiuta a organizzare o visualizzare le vostre collezioni audio e video, si potrebbe anche guardare la TV (con hardware compatibile). E' disattivato come impostazione predefinita"/>
+			  <Tips OfficialName="Windows Optical Character Recognition (OCR)" TranslatedName="Windows Optical Character Recognition (OCR)" Text="Consente di analizzare un'immagine e riconoscere il testo al suo interno"/>
+			  <Tips OfficialName="Windows PlayTo" TranslatedName="Windows PlayTo" Text="PlayTo è una funzionalità per il flusso multimediale"/>
+			  <Tips OfficialName="Windows System Assessment Tool (WinSAT)" TranslatedName="Windows System Assessment Tool (WinSAT)" Text="Windows System Assessment Tool fornisce misurazioni e relazioni sulle funzionalità per valutare le prestazioni dei vari aspetti del Sistema"/>
+		  <Tips OfficialName="Remove - Network" TranslatedName="Remove - Network" Text="Rimuove le reti inutili di Windows"/>
+			  <Tips OfficialName="Adobe Flash for Windows" TranslatedName="Adobe Flash per Windows" Text="Edizione integrata e dedicata di Adobe Flash Player per Windows"/>
+			  <Tips OfficialName="Internet Explorer (Engine)" TranslatedName="Internet Explorer (Motore)" Text="Motore del browser internet di Microsoft utilizzato da molti altri browser come Maxthon. Selo rimuovi, non potresti visualizzare alcune scritture di programmi integrati in Windowscome  l'aiuto nella tabella dei Servizi ... SUGGERIMENTI : Necessario per Internet Explorer"/>
+			  <Tips OfficialName="Internet Explorer (Developer Tools)" TranslatedName="Internet Explorer (Developer Tools)" Text="Internet Explorer Developer Tools aiuta a testare le pagine web che hai creato"/>
+			  <Tips OfficialName="Internet Information Services (IIS)" TranslatedName="Internet Information Services (IIS)" Text="Internet Information Services (precedentemente noto come Internet Information Server) è un web server estendibile creato da Microsoft"/>
+			  <Tips OfficialName="Microsoft Message Queuing (MSMQ)" TranslatedName="Microsoft Message Queuing (MSMQ)" Text="MSMQ è un'implementazione della coda dei messaggi sviluppato da Microsoft"/>
+			  <Tips OfficialName="OneDrive" TranslatedName="OneDrive" Text="Spazio di archiviazione cloud di Windows, precedentemente conosciuto come SkyDrive"/>
+			  <Tips OfficialName="Remote Applications" TranslatedName="Applicazioni Remote" Text="Necessario se si desidera accedere a un altro computer utilizzando strumenti di connessione remota"/>
+			  <Tips OfficialName="Remote Assistance" TranslatedName="Assistenza Remota" Text="Necessaria Se si vuole accedere all'assistenza remota per il tuo computer"/>
+			  <Tips OfficialName="Remote Desktop Connection" TranslatedName="Connessione al Desktop remoto" Text="Strumento di connessione remota usato per creare una connessione remota"/>
+			  <Tips OfficialName="Smart Screen" TranslatedName="Smart Screen" Text="Protegge gli utenti dalle minacce che provengono da software e applicazioni non autorizzati o dannosi. Software di sicurezza come Windows Defender"/>
+		  <Tips OfficialName="Remove - Themes" TranslatedName="Rimuovi - Temi" Text="Rimuove le risorse dei Temi Windows inutili "/>
+			  <Tips OfficialName="Cursors - Aero" TranslatedName="Puntatori - Aero" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Aero (M)" TranslatedName="Puntatori - Aero (M)" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Aero (L)" TranslatedName="Puntatori - Aero (L)" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Aero (XL)" TranslatedName="Puntatori - Aero (XL)" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Black" TranslatedName="Puntatori - Black" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Black (L)" TranslatedName="Puntatori - Black (L)" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Black (XL)" TranslatedName="Puntatori - Black (XL)" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Inverted" TranslatedName="Puntatori - Inverted" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Inverted (L)" TranslatedName="Puntatori - Inverted (L)" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Inverted (XL)" TranslatedName="Puntatori - Inverted (XL)" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Magnified" TranslatedName="Puntatori - Magnified" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Standard" TranslatedName="Puntatori - Standard" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Standard (L)" TranslatedName="Puntatori - Standard (L)" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Cursors - Standard (XL)" TranslatedName="Puntatori - Standard (XL)" Text="Cancella tutti i puntatori Mouse di windows e la relativa combinazione nel pannello di controllo dei puntatori mouse"/>
+			  <Tips OfficialName="Icons - More Icons" TranslatedName="Icone - Altre Icone" Text="Cancella the deprecated moricons.dll file"/>
+			  <Tips OfficialName="Lockscreen - Pictures" TranslatedName="Blocca Computer - Immagini" Text="Cancella tutte le immagini per il blocco computer"/>
+			  <Tips OfficialName="Screensavers - Blank" TranslatedName="Screensavers - Blank" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Screensavers - Bubbles" TranslatedName="Screensavers - Bubbles" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Screensavers - Mystify" TranslatedName="Screensavers - Mystify" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Screensavers - Photo" TranslatedName="Screensavers - Photo" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Screensavers - Ribbons" TranslatedName="Screensavers - Ribbons" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Screensavers - Text 3D" TranslatedName="Screensavers - Text 3D" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Sounds" TranslatedName="Suoni" Text="Cancella tutti i suoni Windows e il relativo schema in Pannello di Controllo - suoni"/>
+			  <Tips OfficialName="Themes - Ease of Access" TranslatedName="Temi - Accesso facilitato" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Themes - Flowers" TranslatedName="Temi - Flowers" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Themes - Lines and Colors" TranslatedName="Temi - Lines and Colors" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Wallpapers - Flowers" TranslatedName="Sfondi - Flowers" Text="Cancella i file corrispondenti"/>
+			  <Tips OfficialName="Wallpapers - Lines and Colors" TranslatedName="Sfondi - Lines and Colors" Text="Cancella i file corrispondenti"/>
+		  <Tips OfficialName="Tweaks" TranslatedName="Tweaks" Text="Aggiunge molti tweaks interessanti per migliorare l'utilizzo di Windows"/>
+		      <Tips OfficialName="Context Menu - Add Copy To another folder" TranslatedName="Menu contestuale - Aggiungi copia in un altra cartella" Text="Aggiunge un collegamento nel Menu contestuale per aiutarti a copiare una cartella selezionata in un'altra cartella"/>
+		      <Tips OfficialName="Context Menu - Add Move To another folder" TranslatedName="Menu contestuale - Aggiungi sposta in un altra cartella" Text="Aggiunge un collegamento nel Menu contestuale per aiutarti a spostare una cartella selezionata in un'altra cartella"/>
+		      <Tips OfficialName="Context Menu - Add Register Dll or Ocx files" TranslatedName="Menu contestuale - Aggiungi Registra file Dll o Ocx " Text="Aggiunge un collegamento nel Menu contestuale per aiutarti a registrare i file dll or ocx selezionati"/>
+		      <Tips OfficialName="Context Menu - Add Take Ownership (with Pause)" TranslatedName="Menu contestuale - Aggiungi Take Ownership (with Pause)" Text="Aggiunge un collegamento nel Menu contestuale per diventare proprietario (con una pausa per verificare se tutto funziona come richiesto) di file, cartelle o unità. Se si attivi questa componente, dovresti aggiungere la tua traduzione sotto (quella prededinita è in inglese), poi è necessario premere OK per salvare"/>
+		      <Tips OfficialName="Context Menu - Enable Notepad to open nfo files" TranslatedName="Menu contestuale - Abilita Notepad per aprire i file nfo" Text="Cambiare il programma di apertura di file di default nfo connotepad. Questo programma è molto più confortevole per leggere questo tipo di file"/>
+		      <Tips OfficialName="Context Menu - Include in Library (Hide)" TranslatedName="Menu contestuale- Includi nella raccolta (Nascondi)" Text="Rimuove la possibilità di aggiungere i file  o cartelle che hai  selezionato, nella Raccolta, direttamente dal menu contestuale (tasto destro del mouse)"/>
+		      <Tips OfficialName="Context Menu - Remove Add to WMP list from audio files" TranslatedName="Menu contestuale- Rimuovi aggiungi alla lista di WMP dai file audio" Text="Rimuove la possibilità di aggiungere i file multimediali selezionati alla playlist di Windows Media Player dal menu contestuale (tasto destro del mouse)"/>
+		      <Tips OfficialName="Context Menu - Remove Print link for .ini files" TranslatedName="Menu contestuale- Rimuovi link della stampante per i file .ini" Text="Rimuove la possibilità di stampare i file .ini direttamente dal menu contestuale (tasto destro del mouse)"/>
+		      <Tips OfficialName="Context Menu - Remove SendTo link" TranslatedName="Menu contestuale- Rimuovi colllegamento invia a" Text="Rimuove il link dal menu contestuale (tasto destro del mouse) per inviare i tuoi fileo cartelle selezionati in un'altra posizione nel tuo hard disk, esempio nel Desktop"/>
+		      <Tips OfficialName="Desktop - Add My PC Shortcut" TranslatedName="Desktop - Aggiungi collegamento Computer" Text="Aggiunge un collegamento al tuo Desktop per aprire semplicemente Explorer (Collegamento Computer)"/>
+		      <Tips OfficialName="Desktop - Add User Documents Shortcut" TranslatedName="Desktop - Aggiungi collegamento Documenti" Text="Aggiunge un collegamento al tuo Desktop per i tuoi Documenti"/>
+		      <Tips OfficialName="Desktop - Add Windows Build Number" TranslatedName="Desktop - Aggiungi Numero build Windows" Text="visualizza sul tuo desktop il numero della build per la tua corrente edizione di Windows"/>
+		      <Tips OfficialName="Desktop - Hide Charms Bar" TranslatedName="Desktop - Nascondi Charms Bar" Text="Disattiva nell'angolo in basso a destra dello schermo del desktop per l'accesso alla Charms bar con il mouse"/>
+		      <Tips OfficialName="Desktop - Hide Icons" TranslatedName="Desktop - Nascondi Icons" Text="Nasconde tutte le icone del Desktop"/>
+		      <Tips OfficialName="Desktop - Hide Popup Help Tips" TranslatedName="Desktop - Nascondi Popup di aiuto" Text="Nascondi tutte le finestre nere di Metro e del Desktop  per aiutare l'utente nell'utilizzo dei collegamenti Metro "/>
+		      <Tips OfficialName="Desktop - Hide Switcher Bar" TranslatedName="Desktop - Nascondi Switcher Bar" Text="Disattiva la schermata in alto a sinistra  del desktop per accedere alla switcher bar con il tuo mouse"/>
+		      <Tips OfficialName="Desktop - Remove Recycle Bin Icon" TranslatedName="Desktop - Rimuovi Icona Cestino" Text="Nascondi il cestino dal desktop"/>
+		      <Tips OfficialName="Desktop - Save User Customized Settings" TranslatedName="Desktop - Salva impostazioni personalizzate utente" Text="Utilizza questa funzione se perdi la  posizione delle icone del desktop ogni volta che  riavvii o arresti il sistema"/>
+		      <Tips OfficialName="Explorer - Automatically Expand to Current Folder" TranslatedName="Explorer - Automatically Expand to Current Folder" Text="Mostra la cartella che si sta utilizzando espandendo il percorso nel pannello di navigazione di Windows Explorer ... SUGGERIMENTI: Il pannello di navigazione di Windows Explorer deve essere visibile, Altrimenti non sarà possibile vedere il risultato"/>
+		      <Tips OfficialName="Explorer - Command Bar - Remove Burn" TranslatedName="Explorer - Barra di comando - Rimuovi - Masterizza" Text=""/>
+		      <Tips OfficialName="Explorer - Command Bar - Remove Include in Library" TranslatedName="Explorer - Barra di comando - Rimuove Includi nella Raccolta" Text=""/>
+		      <Tips OfficialName="Explorer - Command Bar - Remove Library Pane" TranslatedName="Explorer - Barra di comando - Rimuovi Pannello Raccolta" Text=""/>
+		      <Tips OfficialName="Explorer - Disable Files and Folders Descriptions" TranslatedName="Explorer - Disattiva Descrizione File e Cartelle" Text="Nascondi le descrizioni quando si sceglie un file o una cartella"/>
+		      <Tips OfficialName="Explorer - Disable Thumbnails" TranslatedName="Explorer - Disattiva Thumbnails" Text="Disattiva le anteprime piccole per visualizzare velocemente le immagini usando windows explorer"/>
+		      <Tips OfficialName="Explorer - Disable Thumbnails Cache" TranslatedName="Explorer - Disattiva Thumbnails Cache" Text="Disattiva cache thumbnails. Potrebbe rallentarela visualizzazione delle anteprime"/>
+		      <Tips OfficialName="Explorer - Disable Thumbnails File Icons" TranslatedName="Explorer - Disattiva Thumbnails File Icone" Text="Rimuove il piccolo simbolo di descrizione sulle anteprime"/>
+		      <Tips OfficialName="Explorer - Disable Recently Opened Programs List" TranslatedName="Explorer - Disattiva lista dei programmi aperti di recente" Text="Disattiva elenco delle applicazioni utilizzate più di recente. Per un accesso rapido ai file, basta mantenere questa funzione"/>
+		      <Tips OfficialName="Explorer - Disable User Tracking" TranslatedName="Explorer - Disattiva User Tracking" Text="Ferma in Windows la registrazione e il monitoraggio delle informazioni dell'utente tra cui le applicazioni che un utente esegue e a quali file e documenti accede"/>
+		      <Tips OfficialName="Explorer - Enable Confirmation Dialog to Apply to all Current Items" TranslatedName="Explorer - Attiva il dialogo di conferma per l'applicazione a tutti i Elementi correnti" Text="Seleziona '' applica a tutti gli elementi correnti '' nella finestra di conferma per applicare la stessa azione a tutti i file o le cartelle selezionati"/>
+		      <Tips OfficialName="Explorer - Enable File Transfer Dialog with more Details" TranslatedName="Explorer - Attiva il dialogo di trasferimento file con più Dettagli" Text="Quando tagli, copi, o cancelli un file o una cartella in Windows, questa funzione ti mostrerà la finestra di dialogo di trasferimento file con la visualizzazione dettagliata attivata"/>
+		      <Tips OfficialName="Explorer - Preview Pane (Show)" TranslatedName="Explorer - Riquadro di anteprima (Mostra)" Text="Visualizza l'anteprima dei documenti direttamente nella finestra di Explorer"/>
+		      <Tips OfficialName="Explorer - Preview Pane Icon (Hide)" TranslatedName="Explorer - Icona riquadro anteprima (Nascondi)" Text="Visualizza l'anteprima dei documenti direttamente nella finestra di Explorer"/>
+		      <Tips OfficialName="Explorer - Hidden Files and Folders (Show)" TranslatedName="Explorer - File e cartelle  nascosti (Mostra)" Text="Mostra file e cartelle che sono nascosti di default. Non attivarlo se non sai cosa stai facendo"/>
+		      <Tips OfficialName="Explorer - Hidden System Files (Hide)" TranslatedName="Explorer - File System  nascosti (Nascondi)" Text="Nascondi i file del sistema che sono visibili di default. Non attivarlo se non sai cosa stai facendo, questa opzione è molto sensibile"/>
+		      <Tips OfficialName="Explorer - Increase Icon Cache to 4MB" TranslatedName="Explorer - Aumenta  Cache Icone a 4MB" Text="Aumenta la cache delle icone a 4Mb per precaricare più icone nella memoria del sistema"/>
+		      <Tips OfficialName="Explorer - Open File Security Waring Removal" TranslatedName="Explorer - Avviso di protezione apertura file" Text="Disattiva la richesta di Avviso di protezione dei file quando si apre o si esegue un file scaricato o copiato da Internet o da un altro computer sul tuo computer.Chiede il permesso (come UAC) prima di consentire un file scaricato o copiato da Internet o da un altro computerdi essere aperto o eseguito sul computer ... SUGGERIMENTI : Ciò consentirà di ridurre il livello di sicurezza di Windows, e collocare il computer a più alto rischio di infezione da malware, quindi se se lo disattivi è a tuo rischio e pericolo"/>
+		      <Tips OfficialName="Explorer - PowerShell instead of Command Prompt" TranslatedName="Explorer - PowerShell invece del Prompt dei Comandi" Text="Visualizza prompt dei comandi PowerShell invece del prompt dei comandi classico nel menu Windows"/>
+		      <Tips OfficialName="Explorer - Recent Document History (Cancella on Exit)" TranslatedName="Explorer - Cronologia documenti recenti (Cancella all'uscita)" Text="Cancella the most recent list of used documents for a quick access each time your exit from Windows"/>
+		      <Tips OfficialName="Explorer - Recent Document History (Do Not Save)" TranslatedName="Explorer - Cronologia documenti recenti (non salvare)" Text="Disattiva the most recent list of used documents. For a quick access, just keep this"/>
+		      <Tips OfficialName="Explorer - Remove Favorites from Navigation Panel" TranslatedName="Explorer - Rimuovi Favoriti dal pannello di navigazione" Text="Rimuove il collegamento dei preferiti dal pannello di navigazione di Explorer"/>
+		      <Tips OfficialName="Explorer - Remove Homegroup from Navigation Panel" TranslatedName="Explorer - Rimuovi Gruppo di lavoro dal pannello di navigazione" Text="Rimuove il collegamento Gruppo di lavoro  dal pannello di navigazione di Explorer"/>
+		      <Tips OfficialName="Explorer - Remove Libraries from Navigation Panel" TranslatedName="Explorer - Rimuovi Raccolte dal pannello di navigazione" Text="Rimuove il collegamento delle raccolte dal pannello di navigazione di Explorer"/>
+		      <Tips OfficialName="Explorer - Remove Network from Navigation Panel" TranslatedName="Explorer - Rimuovi Rete dal pannello di navigazione" Text="Rimuove il collegamento della rete dal pannello di navigazione di Explorer"/>
+		      <Tips OfficialName="Explorer - Remove Pin to Start Screen" TranslatedName="Explorer - Rimuovi Pin to Start Screen" Text="Cancella il collegamento dal Menu contestuale (tasto destro) in file e cartelle"/>
+		      <Tips OfficialName="Explorer - Remove Shortcut Arrow" TranslatedName="Explorer - Rimuovi freccia collegamento" Text="Rimuove la piccola icona a forma di freccia nei collegamenti usando un file in bianco chiamato Shortcut_Blank_Arrow.ico (in HOME\SOFTWARE). Quindi puoi facilmente personalizzare la freccia del collegamento sostituendola con una nuova. Una volta terminata l'installazione, puoi trovarla in C:\ come un file nascosto"/>
+		      <Tips OfficialName="Explorer - Remove Shortcut Suffix" TranslatedName="Explorer - Rimuovi suffisso collegamento" Text="Rimuove il suffisso quale indica che un file una cartella è un collegamento"/>
+		      <Tips OfficialName="Explorer - Run in a Separate Process" TranslatedName="Explorer - Avvia in un processo separato" Text="Carica Windows Explorer in un processo separato in caso di un bug in Windows Explorer. Potrebbe leggermente migliorare la velocità e la stabilità di Windows"/>
+		      <Tips OfficialName="Explorer - Show Drive Letters Before Drive Names" TranslatedName="Explorer - Mostra lettere unità prima del nome unità" Text="Visualizza Le lettere delle unità prima del nome delle unità in Windows Explorer"/>
+		      <Tips OfficialName="Explorer - Show File Extension" TranslatedName="Explorer - Mostra Estensione File" Text="Visualizza tutte le estensioni dei file Windows"/>
+		      <Tips OfficialName="Explorer - Show Folder Merge Conflicts" TranslatedName="Explorer - Mostra conflitti cartelle" Text="Cartelle che vengono copiate o spostate verranno automaticamente sostituite con lo stesso nome e nella stesso percorso senza avviso"/>
+		      <Tips OfficialName="Explorer - Show Full Path in Explorer Title Bar" TranslatedName="Explorer - Mostra percorso intero nella Barra del Titolo di Explorer" Text="Visualizza l'intero percorso di una cartella aperta nella barra del titolo di Windows Explorer"/>
+		      <Tips OfficialName="Internet Explorer - Do not Save Encrypted Pages to Disk" TranslatedName="Internet Explorer - Non salvare pagine crittografate nel disco" Text="Impedisce a Internet Explorer di salvare componenti crittografati delle pagine web come password, ... nel disco"/>
+			  <Tips OfficialName="Internet Explorer - Turn Off Location Sharing" TranslatedName="Internet Explorer - Disattiva condivisione posizione" Text="Fa si che i siti web richiedanoLasciate siti web richiedere la tua posizione fisica al fine di migliorare l'utilizzo"/>
+		      <Tips OfficialName="Logon - Enable Secure Logon" TranslatedName="Logon - Abilita Secure Logon" Text="Dovrai effettuare la combinazione dei tasti (ctrl+alt+canc) durante ogni accesso per implementare la sicurezza"/>
+		      <Tips OfficialName="Logon - Disable first Sign-In animation" TranslatedName="Logon - Disattiva animazione al primo accesso" Text=""/>
+		      <Tips OfficialName="Logon - Disable Lock Screen" TranslatedName="Logon - Disattiva blocca computer" Text="Nasconde l'immagine del blocco computer quando deve essere visualizza (Es. : quando ti disconnetti)"/>
+		      <Tips OfficialName="Logon - Disable Shutdown Power Menu Icon" TranslatedName="Logon - Disattiva menu icona spegnimento" Text="Rimuove l'icona di arresto da tutte le schermate di logon e di accesso per tutti gli utenti. Una volta rimosso, dovrai effettura il login nel tuo Pc per arrestare o riavviare Windows"/>
+		      <Tips OfficialName="Modern UI - Enable Apps to Work with UAC Disable" TranslatedName="Modern UI - Attiva app per lavorare con UAC Disattivato" Text=" Se disattivi UAC, tutte le app Metro non possono essere avviate, ciò ti aiuta a risolvere questo problema di Windows"/>
+		      <Tips OfficialName="Modern UI - Hide Apps on the Desktop Taskbar" TranslatedName="Modern UI - Nascondi Apps nella barra delle applicazioni del Desktop " Text="Impedisce di visualizzare tutte le icone delle App Metro sulla barra delle applicazioni del Desktop"/>
+		      <Tips OfficialName="Modern UI - Hide Power Button on Start Screen" TranslatedName="Modern UI - Nascondi Pulsante di Accensione nella schermata d'avvio" Text="rimuove il pulsante di accensione nella schermata di avvio Metro, in questo modo non potrai spegnere il computer usando questa funzione"/>
+		      <Tips OfficialName="Modern UI - Reduce Closing Speed for Modern UI Apps" TranslatedName="Modern UI - Aumenta velocità di chiusura delle app Metro" Text="Riduce il ritardo dell'animazione di apertura /chiusura app a 300ms"/>
+		      <Tips OfficialName="Modern UI - Reduce Closing Screen Drag Distance for Modern UI Apps" TranslatedName="Modern UI - Reduce Closing Screen Drag Distance for Modern UI Apps" Text="Riduce la distanza (all' 80%) per trascinare le app Metro con il mouse, o con il touchscreen, dal bordo superiore per chiuderle"/>
+		      <Tips OfficialName="Modern UI - Show Apps View on Start Screen" TranslatedName="Modern UI - Mostra Apps View on Start Screen" Text="Display ModernUI Apps view instead of the default ModernUI Start Screen ... SUGGERIMENTI : se pianifichi di usare ''Ottimizzazione - ESPERTO - Pulizia WinSXS'', fai attenzione che la visualizzazione delle Applicazioni non funzionerà correttamente"/>
+		      <Tips OfficialName="Mouse - Set Pointer to Default Button" TranslatedName="Mouse - Posiziona automaticamente su pulsante predefinito" Text="Quando attivata, questa impostazione sposta il mouse sul pulsante predefinito della finestra attiva"/>
+		      <Tips OfficialName="Open and Save Dialog - Remove User Folders Link" TranslatedName="Dialogo Apri e Salva - Rimuovi collegamento delle cartelle utente" Text="Aumenta la leggibilita del dialogo Apri e Salva rimuovendo il collegamento delle cartelle utente"/>
+		      <Tips OfficialName="Power - Disable USB Power Saving" TranslatedName="Power - Disattiva Risparmio Energetico USB" Text="Disattiva la combinazione di risparmio energia che potrebbe spegnere il tuo dispositivo USB ... SUGGERIMENTI : E' utile se hai riscontrato errori nelle periferiche USB durante la riaccensione  di Windows dopo una sopensione"/>
+		      <Tips OfficialName="Recycle Bin - Enable Confirmation Dialog" TranslatedName="Cestino - Attiva dialogo di conferma" Text="Attiva il dialogo di conferma quando i file vengono spostati nel cestino"/>
+		      <Tips OfficialName="Sound - Disable all Sounds" TranslatedName="Suoni - Disattiva tutti i  Suoni" Text="Disattiva i Suoni Windows"/>
+		      <Tips OfficialName="Sound - Disable Startup Sounds" TranslatedName="Suoni - Disattiva Suoni di avvio di Windows" Text="Disattiva i Suoni di avvio di Windows"/>
+		      <Tips OfficialName="Sound - Disable Auto System Sounds Leveling" TranslatedName="Sound - Regolazione automatica volume" Text="Disattiva la Regolazione automatica del volume quando Windows rileva una attività di comunicazione"/>
+		      <Tips OfficialName="System - Boot directly to Desktop" TranslatedName="Sistema - Avvia direttamente in modalità desktop" Text="Attivare una bellissima opzione per avviare direttamente il desktop di Windows all'accesso"/>
+		      <Tips OfficialName="System - CTRL+ALT+DEL Screen - Hide Change Password" TranslatedName="Sistema - Schermata CTRL+ALT+CANC - Nascondi Cambia Password" Text="Rimuove il relativo collegamento. Puoi sempre cambiare password dalla pagina Account Utente"/>
+		      <Tips OfficialName="System - CTRL+ALT+DEL Screen - Hide Lock Computer" TranslatedName="Sistema - Schermata CTRL+ALT+CANC - Nascondi Blocca Computer" Text="Può disattivare blocca Computer nel tuo Sistema Operativo installato"/>
+		      <Tips OfficialName="System - CTRL+ALT+DEL Screen - Hide Logoff" TranslatedName="Sistema - Schermata CTRL+ALT+CANC - Nascondi Disconnetti" Text="Può disattivare Disconnetti nel tuo Sistema Operativo installato"/>
+		      <Tips OfficialName="System - CTRL+ALT+DEL Screen - Hide Shutdown Icon" TranslatedName="Sistema - Schermata CTRL+ALT+CANC - Nascondi Icona Arresto" Text="Rimuove il relativo collegamento"/>
+		      <Tips OfficialName="System - CTRL+ALT+DEL Screen - Hide Switch User" TranslatedName="Sistema - Schermata CTRL+ALT+CANC - Nascondi Cambia Utente" Text="Può anche disattivare Cambia Utente nel Sistema"/>
+		      <Tips OfficialName="System - CTRL+ALT+DEL Screen - Hide Task Manager" TranslatedName="Sistema - Schermata CTRL+ALT+CANC - Nascondi Task Manager" Text="Può anche disattivare Task Manager nel Sistema.  Disattiva il collegamento della barra delle applicazioni"/>
+		      <Tips OfficialName="System - Block Negative DNS Entries" TranslatedName="Sistema - Blocca DNS negativi in entrata" Text="Aiuta ad aumentare leggermente la velocità di rete e ciò potrebbe essere interessante per un sistema operativo molto leggero"/>
+		      <Tips OfficialName="System - Disable Administrative Shares" TranslatedName="Sistema - Disattiva Administrative Shares" Text="Disattiva l'accesso remoto a tutte le tue partizioni, o volumi, nel tuo computer"/>
+		      <Tips OfficialName="System - Disable Automatic Defragmentation" TranslatedName="Sistema - Disattiva Deframmentazione Automatica" Text="Disattiva la deframmentazione automatica del sistema durante l'inattività del tuo computer"/>
+		      <Tips OfficialName="System - Disable Automatic Reboot on BSOD" TranslatedName="Sistema - Disattiva riavvio automatico nella schermata BSOD" Text="Disattiva il riavvio automatico dopo un crash dovuto da un errore di sistema di Windows  chiamato BSOD (Blue Screen of Death)"/>
+		      <Tips OfficialName="System - Disable Bandwidth Limit" TranslatedName="Sistema - Disattiva Bandwidth Limit" Text="Disattiva la memoria cache riservata alla banda di rete  per aumentare leggermente la velocità internet"/>
+		      <Tips OfficialName="System - Disable Dr Watson" TranslatedName="Sistema - Disattiva Dr Watson" Text="Disattiva Dr. Watson che è un'applicazione di debug che serve a raccogliere i log degli errori su software difettoso"/>
+		      <Tips OfficialName="System - Disable Drives Autorun" TranslatedName="Sistema - Disattiva Drives Autorun" Text="Disattiva l'avvio autorun integrato per tutte le unità, come CD-ROM o hard disk esterni. Ciò è anche una protezione contro molti virus che utilizzano procedure in autorun"/>
+		      <Tips OfficialName="System - Disable Fault Tolerant Heap" TranslatedName="Sistema - Disattiva Fault Tolerant Heap" Text="The Fault Tolerant Heap (FTH) è un sottosistema di windows Windows responsabile del monitoraggio dei crash dell'applicazione e  dell'applicazione autonomi di attenuanti per prevenire futuri crash sulla base dell'applicazione. Per la stragrande maggioranza degli utenti, FTH funzionerà senza bisogno di un intervento o modifica da parte loro. Tuttavia, in alcuni casi, sviluppatori di applicazioni e software tester potrebbe essere necessario ignorare il comportamento predefinito di questo Sistema"/>
+		      <Tips OfficialName="System - Disable File System Tunneling" TranslatedName="Sistema - Disattiva File System Tunneling" Text="Attiva la compatibilità con i programmi che si basano su sistemi di file (FAT o NTFS) per essere in grado di trattenere  meta-informazioni dei file per un breve periodo di tempo. Ciò si verifica dopo la cancellazione o ridenominazione e la reintroduzione di una directiory con una determinata meta-informazione (se una creazione o una rinomina  causa a un file di quel nome a comparire di nuovo in un breve periodo di tempo). Quando un nome è Rimosso in una directory (rinomina o cancella), la sua breve/lunga coppia di nome e data di creazione vengono salvati in una cache, digitato il nome che è stato rimosso. Quando un nome viene aggiunto a una directory (rinomina o creazione), la cache viene cercata per vedere se ci sono informazioni da ripristinare. La cache è efficace per ogni istanza di una directory. Se una directory viene eliminata, la cache per essa viene rimossa."/>
+		      <Tips OfficialName="System - Disable Hibernation" TranslatedName="Sistema - Disattiva ibernazione" Text="Cancella il file di ibernazione. Salva un enorme spazio sul disco rigido, ma si perde la capacità di ibernazione di Windows per un avvio rapido"/>
+		      <Tips OfficialName="System - Disable Hybrid Boot" TranslatedName="Sistema - Disattiva Avvio Ibrido" Text="Disattiva l'avvio ibrido"/>
+		      <Tips OfficialName="System - Disable Last Known Good configuration" TranslatedName="Sistema - Disattiva Last Known Good configuration" Text="Permette di disattivare la creazione of the LastKnownGood configuration, che memorizza una copia della configurazione dopo ogni avvio riuscito"/>
+		      <Tips OfficialName="System - Disable Metro Boot" TranslatedName="Sistema - Disattiva avvio Metro" Text="Riporta il menu di avvio F8  al vecchio stile"/>
+		      <Tips OfficialName="System - Disable NTFS Short File Names Creation" TranslatedName="Sistema - Disattiva NTFS creazione breve nome di file" Text="Disattiva NTFS 8.3 breve nome di file (Velocizza l'accesso del dsco)"/>
+		      <Tips OfficialName="System - Disable Paging Executive" TranslatedName="Sistema - Disattiva Paging Executive" Text="Specifica se i drivere in modalità utente, in modalità kernel  e il codice del sitema in modalità kernel possono essere impaginati nella memoria del sistema invece che nell'unità hard disk. Può migliorare la velocità di Windows"/>
+		      <Tips OfficialName="System - Disable Paging File" TranslatedName="Sistema - Disattiva File Paging" Text="Disattivandolo salverà enorme spazio (uguale alla memoria del Sistema) sul disco rigido. Ma avete bisogno di un sacco di memoria Sistema installata (RAM) per garantire una buona stabilità di Windows. Per Windows 64 bit, non utilizzarla con meno di 4 GB di RAM. Disattivala se si dispone di un SSD .... SUGGERIMENTI: Non disattivarla se prevedi di utilizzare l'opzione unattended per specificare le dimensioni"/>
+		      <Tips OfficialName="System - Disable Paging Swap File" TranslatedName="System - Disable Paging Swap File" Text="Disable swapfile.sys file. It's only used by Windows Store and could be disable without trouble, just a little slowdown in loading Windows Store Apps ... TIPS : If you don't use Windows Store, then you don't need this component. And it's also another way to diable this component seperately from the paging file (pagefile.sys)"/>
+		      <Tips OfficialName="System - Disable Ready Boot" TranslatedName="Sistema - Disattiva Ready Boot" Text="Se lo disattivi, esso non indicizza più tutti i contenuti ipiù utilizzati dal Sistema durante l'avvio precedente ... SUGGERIMENTI : Ciò è Disattivato automaticamente da Windows se si utilizza un SSD come partizione di Sistema"/>
+		      <Tips OfficialName="System - Disable Superfetch, Prefetcher and Boot Trace" TranslatedName="Sistema - Disattiva Superfetch, Prefetcher and Boot Trace" Text="Disattivalo se si dispone di un SSD, ma mantienilo con un'unità Hard Disk  per mantenere una buona velocità"/>
+		      <Tips OfficialName="System - Disable System Failure" TranslatedName="Sistema - Disattiva Sistema Failure" Text="Disattiva le notifiche di Windows e la relazione in caso di un guasto al Sistema. Essa migliorerà la velocità di Windows"/>
+		      <Tips OfficialName="System - Disable User Account Control (UAC)" TranslatedName="Sistema - Disattiva User Account Control (UAC)" Text="Necessario per app Metro. E non è una buona idea disattivarla per motivi di sicurezza"/>
+		      <Tips OfficialName="System - Disable Windows Resource Protection" TranslatedName="Sistema - Disable Windows Resource Protection" Text="Windows Resource Protection (WRP) impedisce la sostituzione delle chiavi file di sistema, cartelle, e del Registro essenziali che vengono installati come parte del Sistema operativo (ex Windows File Protection)"/>
+		      <Tips OfficialName="System - Enable Large System Cache" TranslatedName="Sistema - Enable Large System Cache" Text="Migliora la velocità dell'unità Hard Disk e SSD"/>
+		      <Tips OfficialName="System - Improve Disk Check Timeout (5 sec)" TranslatedName="Sistema - Migliora Timeout controllo disco (5 sec)" Text="Riduce il tempo di attesa per il lancio di strumenti di controllo di avvio dopo un errore del Sistema Windows "/>
+		      <Tips OfficialName="System - Improve Shutdown Speed" TranslatedName="Sistema - Migliora velocità arresto" Text="Determina quanto tempo il sistema attende per fermare  i servizi dopo aver informato il servizio che il sistema è in fase di arresto. Il valore è 2 secondi"/>
+		      <Tips OfficialName="System - Improve Windows Shell Response" TranslatedName="Sistema - Migliora Risposta Windows Shell " Text="Applica vari tweak per migliorare notevolmente l'utilizzo di Windows"/>
+		      <Tips OfficialName="System - Reduce Launch Delay For Desktop Startup Apps" TranslatedName="System - Riduci ritardo di avvio per le app avvio del Desktop" Text="Riduce il ritardo di tutti i vostri software di Windows nella cartella di avvio"/>
+		      <Tips OfficialName="Taskbar - Disable Notifications" TranslatedName="barra delle applicazioni - Disattiva Notifiche" Text="Disattiva palloncino dei suggerimenti nella barra delle applicazioni"/>
+		      <Tips OfficialName="Taskbar - Disable Promotion of Notification Icons" TranslatedName="barra delle applicazioni - Disattiva avanzamento icone di notifica" Text="Tutte le nuove icone della barra del Sistema non saranno visibili nell'area delle notifiche. Così saranno nascoste"/>
+		      <Tips OfficialName="Taskbar - Disable Taskbar Grouping" TranslatedName="barra delle applicazioni - Disattiva raggruppamento finestre simili" Text="Disattiva la possibilità di raggruppare tutte le stesse finestre aperte, in un'unica icona nella barra delle applicazioni"/>
+			  <Tips OfficialName="Taskbar - Remove Language Bar" TranslatedName="barra delle applicazioni - Rimuovi barra della lingua" Text="rimuove l'icona nella barra delle applicazioni che indica la lingua attiva nel tuo sistema"/>
+		      <Tips OfficialName="Taskbar - Show all Icons" TranslatedName="barra delle applicazioni - Mostra tutte le icone" Text="Mostra tutte le icone dell'area di notifica dalla barra delle applicazioni, altrimenti tutte le icone non necessarie saranno nascoste"/>
+		      <Tips OfficialName="Taskbar - Unlock" TranslatedName="barra delle applicazioni - Sblocca" Text="Aiuta a cambiare posizione della barra delle applicazioni"/>
+		      <Tips OfficialName="Taskbar - Use Small Icons" TranslatedName="barra delle applicazioni - Usa icone piccole" Text="Attiva le icone piccole nella barra delle applicazioni per ridurre la grandezza della barra delle applicazioni sullo schermo"/>
+		  <Tips OfficialName="Optimizations" TranslatedName="Optimizations" Text="Proceed to some Windows ISO DVD optimizations"/>
+			  <Tips OfficialName="ISO - Boot - Clean Boot Wim" TranslatedName="ISO - Boot - Clean Boot Wim" Text="Rimuove tutti i componenti Windows che hai scelto di rimuovere (specialmente Drivers, tastiere, lingue, cartella di backup WinSXS and la pulizia di altri file Windows non necessari, ...) nel file Boot.wim  per ridurne la grandezza"/>
+			  <Tips OfficialName="ISO - Boot - Delete Unneeded Editions" TranslatedName="ISO - Boot - Cancella Unneeded Editions" Text="Cancella WindowsPE dalla tua ISO per ridurne la grandezza. Funziona anche se si utilizza salva nella opzione dei file wim . Non usare questa opzione, se ti serve WindowsPE per l'installazione d'avvio"/>
+			  <Tips OfficialName="ISO - Windows - Delete Unneeded Editions" TranslatedName="ISO - Windows - Cancella Unneeded Editions" Text="Cancella tutte le Edizioni Windows non necessarie dalla tua ISO per ridurne la grandezza, eccetto quella che attualmente stai personalizzando. Funziona anche se si usa Salva nell'opzione del file wim. Non usare questa opzione, se vuoi tenere la tua ISO All In One con tutte le Edizioni dentro"/>
+			  <Tips OfficialName="ISO - Windows - Unneeded Files Cleanup" TranslatedName="ISO - Windows - Pulizia file non necessari" Text="Cancella i file o le cartelle non necessarie dalla tua ISO per ridurne la grandezza"/>
+			  <Tips OfficialName="Windows - Unneeded Files Cleanup" TranslatedName="Windows - Pulizia file non necessari" Text="Cancella tutti i file temporanei di Windows (*.bak,*.log,...) che non sono necessari e riduce leggermente la dimensione dell'installazione"/>
+			  <Tips OfficialName="Windows - WinSXS Backup Folder Cleanup" TranslatedName="Windows - Pulizia Cartella di Backup WinSXS" Text="Cancella tutti i file che sono nella cartella backup di WinSXS in Windows  per ridurre l'ingombro della dimendione d'installazione"/>
+			  <Tips OfficialName="EXPERT - Net Framework Complete Cleanup" TranslatedName="EXPERT - Pulizia Completa Net Framework" Text="SPERIMENTALE ! RISERVATO SOLO AD UTENTI ESPERTI ... Rimuove completamente il supporta a Net Framework dal tuo sistema e mantiene solo i file necessari le funzionalità del programma Winreducer ... SUGGERIMENTI : Potrebbe rendere diffettosi alcuni sofware che dipendono da Net Framework... Per conoscere se il tuo programma necessita di Net Framework puoi digitare da linea di comando : tasklist /fi ''modules eq mscoree.dll'' !"/>
+			  <Tips OfficialName="EXPERT - Net Framework Light Cleanup" TranslatedName="ESPERTO - Pulizia Leggera Net Framework" Text="SPERIMENTALE ! RISERVATO SOLO AD UTENTI ESPERTI ... Rimuove file e cartelle per salvare diverso spazio. Potrebbe causare problemi con programmi che necessitano di Net Framework, in particolare di Net Framework 3.5 il quale non potrebbe funzionare più (In base lavoro di billybully and mrpotter2510 dal forum di Winreducer) ... SUGGERIMENTI : potrebbe danneggiare la Segnalazione Errori Windows"/>
+			  <Tips OfficialName="EXPERT - WinSXS Folder Cleanup (boot.wim)" TranslatedName="ESPERTO - Pulizia Cartella WinSXS (boot.wim)" Text="Pulisce completamente la cartella WinSxS nel tuo boot.wim per salvare diverso spazio ... SUGGERIMENTI : questa funzione attiva automaticamente : ISO - Boot - Pulizia Boot Wim. Ciò non danneggia le funzionalità di Windows , puoi usarla senza problemi"/>
+			  <Tips OfficialName="EXPERT - WinSXS Folder Cleanup (install.wim)" TranslatedName="ESPERTO - Pulizia Cartella WinSXS  (install.wim)" Text="SPERIMENTALE ! RISERVATO SOLO AD UTENTI ESPERTI ... Pulisce completamente la cartella di WinSxS (in install.wim and boot.wim) per salvare più spazio. E' noto che danneggia gi Aggiornamenti di Windows, ma puoi sempre integrarli prima dell'installazione. Sfortunatamente, si può arrivare al punto che alcuni di questi aggiornamenti non potranno essere integrati (In base al lavoro di billybully and mrpotter2510 dal forum di WinReducer) ... SUGGERIMENTI : potrebbe danneggiare la Segnalazione Errori Windows e la visione delle Modern UI Apps View non funzionerà correttamente. E probabilmente dovresti anche rimuovere Funzionalita di Windows,servizio di Windows Update, il servizio di Segnalazione Errori Windows (sono inutili perchè danneggiati)"/>
+			  <Tips OfficialName="EXPERT - WinSXS Folder Compression" TranslatedName="ESPERTO - Compressione cartella WinSXS " Text="SPERIMENTALE ! RISERVATO SOLO AD UTENTI ESPERTI ... Comprimela cartella WinSXS da boot.wim e install.wim. Ci impiegherà più di 10 minuti per completare l'operazione, in più rallenterà l'installazione di Windows. La tua installazione sarà ridotta notevolmente"/>
+	  <Tips OfficialName="Services" TranslatedName="Services" Text="Configura Servizi Windows (Avvia, Disattiva, Rimuovi, ...) ... SUGGERIMENTI : La rimozione Di un Servizio Windows è definitiva"/>
+		  <Tips OfficialName="ActiveX Service" TranslatedName="Servizio ActiveX Installer" Text="Fornisce la convalida del controllo dell'account utente per l'installazione dei controlli ActiveX da Internet e consente la gestione dell'installazione dei controlli ActiveX in base alle impostazioni di Criteri di gruppo. Il servizio viene avviato su richiesta e, nel caso venga disattivato, il comportamento dell'installazione dei controlli ActiveX dipenderà dalle impostazioni del browser predefinito"/>
+		  <Tips OfficialName="App Readiness Service" TranslatedName="Servizio Preparazione app (AppReadiness)" Text="Consente di preparare le app per l'utilizzo al primo accesso dell'utente al PC e all'aggiunta di nuove app. Meglio conosciuto come App Readiness in lingue differenti ... SUGGERIMENTI : Danneggia tutte le Modern UI APPS, quindi se vuoi usarle,  Disattivalo ma non Rimuoverlo"/>
+		  <Tips OfficialName="Application Experience Service" TranslatedName="Servizio Verifica compatibilità applicazioni" Text="Controlla un database mantenuto di Microsoft per i problemi noti con programmi popolari e abilita automaticamente soluzioni alternative, o alla prima installazione (usando UAC) o all'avvio di un'applicazione. I vecchi programmi “Vista o Windows 7 non compatibili” potrebbero aver bisogno di questo servizio in esecuzione. Disattivando questa funzione può aumentare su tutta la risposta delle applicazioni in fase di avvio (dovuto dall'evitato controllo del database), tuttavia, non risolverà i problemi di installazione delle applicazioni"/>
+		  <Tips OfficialName="Background Intelligent Transfer Service" TranslatedName="Servizio trasferimento intelligente in background" Text="Trasferisce i file in background utilizzando la larghezza di banda inattiva. Se il servizio è disabilitato, le applicazioni dipendenti da BITS, come Windows Update o MSN Explorer, non saranno in grado di effettuare il download automatico di programmi e altre informazioni"/>
+		  <Tips OfficialName="Beep Service" TranslatedName="Servizio Beep" Text="Disattiva il servizio BEEP del Sistema"/>
+		  <Tips OfficialName="BitLocker Drive Encryption Service" TranslatedName="Servizio di crittografia unità BitLocker" Text="BDESVC ospita il servizio Crittografia unità BitLocker. Questo servizio consente l'avvio sicuro del sistema operativo, nonché la crittografia dell'intero volume per il volume del sistema operativo, i volumi fissi o quelli rimovibili. Tramite questo servizio, BitLocker può richiedere agli utenti di eseguire varie azioni correlate ai volumi montati e consente di sbloccare automaticamente i volumi senza interazioni con gli utenti. Il servizio supporta inoltre l'archiviazione di informazioni per il ripristino in Active Directory, se disponibile. Se necessario, garantisce inoltre che vengano utilizzati i certificati di ripristino più recenti. L'arresto o la disabilitazione del servizio impedirebbe agli utenti di utilizzare queste funzionalità ... SUGGERIMENTI : NON Rimuoverlo, se pianifichi di usare ''Unattended - Prevenzione crittografia unità''"/>
+		  <Tips OfficialName="Block Level Backup Engine Service" TranslatedName="Servizio modulo di backup a livello di blocco" Text="Il servizio WBENGINE viene utilizzato da Windows Backup per eseguire operazioni di backup e ripristino. L'arresto del servizio da parte di un utente potrebbe causare l'esito negativo dell'operazione di backup o ripristino in esecuzione. La disabilitazione del servizio potrebbe disattivare le operazioni di backup e ripristino eseguite tramite Windows Backup in questo computer"/>
+		  <Tips OfficialName="Bluetooth Support Service" TranslatedName="Servizio Supporto Tecnico Bluetooth" Text="Il servizio Bluetooth supporta l'individuazione e l'associazione di dispositivi Bluetooth remoti. L'arresto o la disattivazione del servizio potrebbe impedire il corretto funzionamento dei dispositivi Bluetooth già installati e impedire l'individuazione o l'associazione di nuovi dispositivi"/>
+		  <Tips OfficialName="BranchCache Service" TranslatedName="Servizio BranchCache" Text="Riduce l'utilizzo della  wide area network (WAN)  aumentando allo stesso tempo la capacità di risposta di applicazioni di rete presso uffici remoti"/>
+		  <Tips OfficialName="COM+ Event System Service" TranslatedName="Servizio COM+ Event System" Text="Supporta il servizio di notifica eventi di sistema (SENS), che implementa la distribuzione automatica degli eventi nei componenti COM che eseguono la sottoscrizione ... SUGGERIMENTI : NON Rimuoverlo, se devi installare programmi come Visual Studio, altrimenti altrimenti non potrebbero essere installati"/>
+		  <Tips OfficialName="COM+ System Application Service" TranslatedName="Servizio applicazione di sistema COM+" Text="Gestisce la configurazione e registrazione di componenti basati su COM+"/>
+		  <Tips OfficialName="Diagnostic Policy Services" TranslatedName="Servizio Criteri di diagnostica" Text="Consente di rilevare e risolvere i problemi relativi ai componenti di Windows"/>
+		  <Tips OfficialName="Family Safety Service" TranslatedName="Servizio Family Safety" Text="Il servizio è uno stub per la funzionalità Controllo genitori Windows già presente in Vista. Viene fornito esclusivamente per compatibilità con le versioni precedenti"/>
+		  <Tips OfficialName="Fax Service" TranslatedName="Servizio Fax" Text="Consente di inviare e ricevere fax utilizzando le risorse fax disponibili nel computer o in rete"/>
+		  <Tips OfficialName="File History Service" TranslatedName="Servizio Cronologia file" Text="Consente di copiare i file dell'utente in un percorso di backup per evitare che vengano persi accidentalmente"/>
+		  <Tips OfficialName="Servizi HomeGroup Listener and Provider" TranslatedName="Servizi Listener e Privider Gruppo Home " Text="La funzionalità Gruppo Home non funzionerà se questi servizi sono disattivati. Con un gruppo Home, puoi condividere file e stampanti con altri computer nella tua rete domestica ed effettuare lo streaming multimediale a dispositivi"/>
+		  <Tips OfficialName="HyperV Services" TranslatedName="Servizi HyperV" Text="Fornisce una macchina virtuale utilizzando un sistema operativo in esecuzione sul computer fisico"/>
+		  <Tips OfficialName="Internet Connection Sharing (ICS) Service" TranslatedName="Servizio Condivisione connessione Internet (ICS) " Text="!!Danneggia la visualizzazione di applicazioni ModernUI e Windows Firewall!! - Fornisce servizi di conversione indirizzi di rete, indirizzamento e risoluzione nomi e/o servizi di prevenzione intrusione per una rete domestica o una piccola rete aziendale"/>
+		  <Tips OfficialName="Microsoft iSCSI Initiator Service" TranslatedName="Servizio iniziatore iSCSI Microsoft" Text="Gestisce le sessioni SCSI (iSCSI) Internet tra il computer e i dispositivi di destinazione iSCSI remoti. Se il servizio viene arrestato, il computer non sarà in grado di accedere alle destinazioni iSCSI. Se il servizio viene disabilitato, non sarà possibile avviare i servizi che dipendono esplicitamente da questo."/>
+		  <Tips OfficialName="Network Connected Devices Auto-Setup Service" TranslatedName="Servizio Configurazione automatica dispositivi connessi alla rete" Text="Controlla e installa i dispositivi qualificati che si connettono a una rete qualificata"/>
+		  <Tips OfficialName="Offline Files Service" TranslatedName="Servizio File non in linea" Text="Esegue attività di manutenzione della cache File non in linea, risponde agli eventi di accesso e fine sessione degli utenti, implementa gli elementi interni della API pubblica e distribuisce gli eventi alle applicazioni e agli utenti interessati alle attività di File non in linea e ai cambiamenti di stato della cache"/>
+		  <Tips OfficialName="Optimize Drives Service" TranslatedName="Servizio Ottimizza unità" Text="Formalmente Utilità di deframmentazione dischi"/>
+		  <Tips OfficialName="Peer Name Resolution Protocol Services" TranslatedName="Servizio Protocollo PNRP" Text="Consente la risoluzione dei nomi di peer senza server su Internet tramite Peer Name Resolution Protocol (PNRP). Rimuove anche Servizio Gruppi reti peer"/>
+		  <Tips OfficialName="Printer Support Services" TranslatedName="Servizi Supporto Stampante " Text="Fornisce supporto per le stampanti di rete o locali. Se lo disattivi o rimuovi, non sarai in grado di stampare i tuoi documenti con la tua stampante, perchè rimuoverà anche i driver della stampante predefiniti"/>
+		  <Tips OfficialName="Problem Reports and Solutions Service" TranslatedName="Servizio Segnalazioni di problemi e soluzioni" Text="Questo servizio fornisce supporto per la visualizzazione, l'invio e l'eliminazione di rapporti sui problemi a livello di sistema per Segnalazioni di problemi e soluzioni nel Pannello di controllo"/>
+		  <Tips OfficialName="Program Compatibility Assistant Service" TranslatedName="Servizio Risoluzione problemi compatibilità programmi" Text="Questo servizio fornisce supporto per Risoluzione problemi compatibilità programmi. Risoluzione problemi compatibilità programmi esegue il monitoraggio dei programmi installati ed eseguiti dall'utente e rileva i problemi di compatibilità noti"/>
+		  <Tips OfficialName="Quality Windows Audio Video Experience Service" TranslatedName="Servizio audio/video Windows di qualità" Text="Servizio audio/video Windows di qualità (qWave) è una piattaforma di rete per applicazioni che utilizzano il flusso di dati audio/video (AV) in reti domestiche IP. qWave migliora le prestazioni e l'affidabilità durante l'utilizzo del flusso AV, garantendo la qualità del servizio (QoS, Quality of Service) sulla rete per le applicazioni AV. Offre infatti meccanismi per il controllo dell'ammissione, il monitoraggio e l'imposizione in fase di esecuzione, il feedback dell'applicazione e l'impostazione della priorità del traffico"/>
+		  <Tips OfficialName="Remote Access Manager Services" TranslatedName="Servizi Manager di Accesso Remoto" Text="Creano una connessione ad una rete remota"/>
+		  <Tips OfficialName="Remote Desktop Services" TranslatedName="Servizi Desktop Remoto" Text="Permette agli utenti di connettersi interattivamente ad un computer remoto. Desktop Remoto e il Server Host di Desktop Remoto dipendono da questo servizio. Per prevenire un uso remoto di questo computer, clear the checkboxes on the Remote tab of the System properties Pannello di Controllo item"/>
+		  <Tips OfficialName="Remote Registry Service" TranslatedName="Servizio Registro di sistema remoto" Text="Abilita gli utenti remoti alla modifica delle impostazioni del Registro di sistema del computer in uso. Se il servizio è stato arrestato, il Registro di sistema potrà essere modificato soltanto dagli utenti del computer. Se il servizio è disabilitato, i servizi da esso dipendenti non verranno avviati"/>
+		  <Tips OfficialName="Secondary Logon Service" TranslatedName="Servizio Accesso Secondario" Text="Abilita processi di avvio sotto credenziali alternative"/>
+		  <Tips OfficialName="Security Center Service" TranslatedName="Servizio Centro Sicurezza PC" Text="WSCSVC (Centro sicurezza PC Windows) esegue il monitoraggio delle impostazioni di integrità della sicurezza e genera rapporti corrispondenti. Le impostazioni di integrità riguardano il firewall (attivato/disattivato), l'antivirus (attivato/disattivato/non aggiornato), l'antispyware (attivato/disattivato/non aggiornato), Windows Update (download e installazione degli aggiornamenti manuali o automatici), Controllo dell'account utente (attivato/disattivato) e le impostazioni di Internet (consigliate/non consigliate)"/>
+		  <Tips OfficialName="Sensor Monitoring Service" TranslatedName="Servizio monitoraggio sensori" Text="Esegue il monitoraggio di diversi sensori per esporre i dati e adattarli allo stato del sistema e dell'utente. Se il servizio viene arrestato o disattivato, la luminosità dello schermo non verrà regolata in base alle condizioni di illuminazione. L'arresto del servizio può inoltre influire su altre funzionalità e caratteristiche del sistema"/>
+		  <Tips OfficialName="Smart Card Services" TranslatedName="Servizio Smart Card" Text="Rimuove anche i servizi Criterio rimozione smart card e Propagazione certificati"/>
+		  <Tips OfficialName="SNMP Trap Service" TranslatedName="Servizio Trap SNMP" Text="Riceve messaggi trap generati da agenti Simple Network Management Protocol (SNMP) locali o remoti e inoltra i messaggi a programmi di gestione SNMP in esecuzione su questo computer"/>
+		  <Tips OfficialName="SSDP Discovery Service" TranslatedName="Servizio Individuazione SSDP" Text="Individua i servizi e i dispositivi di rete che utilizzano il protocollo di individuazione SSDP, ad esempio i dispositivi UPnP. Annuncia inoltre i dispositivi e i servizi SSDP in esecuzione nel computer locale. Se questo servizio viene arrestato, i dispositivi basati su SSDP non verranno individuati. Se viene disattivato, gli eventuali servizi che dipendono in modo esplicito da esso non verranno avviati"/>
+		  <Tips OfficialName="Secure Socket Tunneling Protocol Service" TranslatedName="Servizio SSTP (Secure Socket Tunneling Protocol)" Text="Fornisce supporto per il protocollo SSTP (Secure Socket Tunneling Protocol) per la connessione a computer remoti tramite VPN"/>
+		  <Tips OfficialName="Superfetch Service" TranslatedName="Servizio Ottimizzazione avvio" Text="Ottimizzazione avvio diminuisce il tempo d'avvio, mantiene e migliora nel tempo le prestazioni del sistema"/>
+		  <Tips OfficialName="System Event Notification Service" TranslatedName="Servizio di notifica eventi di sistema" Text="Esegue il monitoraggio degli eventi di sistema e li notifica ai sottoscrittori di COM+ Event System"/>
+		  <Tips OfficialName="Telephony Service" TranslatedName="Servizio Telefonia" Text="Fornisce il supporto per TAPI (Telephony API) ai programmi che controllano i dispositivi di telefonia sul computer locale e, attraverso la LAN, agli altri server che eseguono il servizio"/>
+		  <Tips OfficialName="Telnet Service" TranslatedName="Telnet Service" Text="Enables a remote user to log on to this computer and run programs, and supports various TCP/IP Telnet clients, including UNIX-based and Windows-based computers. If this service is stopped, remote user access to programs might be unavailable. If this service is disabled, any services that explicitly depend on it will fail to start"/>
+		  <Tips OfficialName="Touch Keyboard and Handwriting Panel Service" TranslatedName="Servizio tastiera virtuale e pannello per la grafia" Text="Attiva le funzionalità di input penna della tastiera virtuale e del pannello per la grafia"/>
+		  <Tips OfficialName="UPnP Device Host Service" TranslatedName="Servizio Host di dispositivi UPnP" Text="Consente l'hosting dei dispositivi UPnP nel computer. Se questo servizio viene arrestato, gli eventuali dispositivi UPnP ospitati smetteranno di funzionare e non sarà possibile aggiungere altri dispositivi ospitati. Se viene disattivato, gli eventuali servizi che dipendono in modo esplicito da esso non verranno avviati"/>
+		  <Tips OfficialName="Volume Shadow Copy Service" TranslatedName="Servizio Copia shadow del volume" Text="Gestisce e implementa le copie shadow del volume utilizzate a scopo di backup e altro. Se il servizio è stato arrestato, le copie shadow non saranno disponibili per il backup e il backup potrebbe non riuscire. Se il servizio è disabilitato, i servizi da esso dipendenti non verranno avviati"/>
+		  <Tips OfficialName="Windows Connect Now Service" TranslatedName="Servizio Windows Connect Now - Registro configurazioni" Text="Non Rimuoverlo se devi utilizzare il Wi-Fi. WCNCSVC ospita la configurazione di Windows Connect Now, ovvero l'implementazione Microsoft del protocollo WPS (Wi-Fi Protected Setup). Questo servizio viene utilizzato per configurare le impostazioni LAN wireless per un punto di accesso o un dispositivo Wi-Fi"/>
+		  <Tips OfficialName="Windows Biometric Service" TranslatedName="Servizio di biometria Windows" Text="Il Servizio di biometria Windows consente alle applicazioni client di acquisire, confrontare, modificare e archiviare dati biometrici senza accedere direttamente all'hardware o a campioni biometrici. Il servizio è ospitato in un processo SVCHOST privilegiato"/>
+		  <Tips OfficialName="Windows Defender Service" TranslatedName="Servizio Windows Defender" Text="Antivirus integrato di Windows. Software di sicurezza come Smart Screen. Necessario per le funzionalità di Windows Defender. Contribuisce a proteggere gli utenti da malware e altro software potenzialmente indesiderato"/>
+		  <Tips OfficialName="Windows Error Reporting Service" TranslatedName="Servizio Segnalazione errori Windows" Text="Servizio Segnalazione errori Windows consente di segnalare gli errori quando i programmi smettono di funzionare o si bloccano e di ricevere soluzioni. Consente inoltre di generare registri per i servizi di diagnostica e ripristino"/>
+		  <Tips OfficialName="Windows Firewall Service" TranslatedName="Servizio Windows Firewall" Text="Windows Firewall facilita la protezione del computer dagli accessi non autorizzati da Internet o da una rete"/>
+		  <Tips OfficialName="Windows Indexing Service" TranslatedName="Servizio di Indicizzazione Windows" Text="Fornisce l'indicizzazione di contenuti, memorizzazione nella cache delle propietà, e risultati di ricerca per file, e-mail, e altri contenuti. Necessario per le funzionalità Windows Search"/>
+		  <Tips OfficialName="Windows Store Service" TranslatedName="Servizio Windows Store Service" Text="Non rimuoverlo se pianifichi di usare le applicazione di Windows Store. Fornisce l'infrastruttura di supporto per Windows Store. Questo servizio è stato avviato su richiesta. Se viene disabilitato, le applicazioni acquistate presso Windows Store non funzioneranno correttamente"/>
+		  <Tips OfficialName="Windows Time Service" TranslatedName="Servizio Ora di Windows" Text="Sincronizzazione automatica di Data e Ora."/>
+		  <Tips OfficialName="Windows Update Service" TranslatedName="Servizio Windows Update" Text="Non rimuoverlo se pianifichi di installare aggiornamenti o .Net Framework 3.5 usando Windows Update"/>
+		  <Tips OfficialName="WLAN AutoConfig Service" TranslatedName="Servizio Configurazione automatica WLAN" Text="Il servizio WLANSVC rende disponibile la logica necessaria per le attività di configurazione, individuazione, connessione e disconnessione relative a una rete locale (LAN) wireless (WLAN) in base a quanto definito negli standard IEEE 802.11. Questo servizio consente inoltre di trasformare il computer in un punto di accesso software, in modo che altri dispositivi o computer possano connettersi a tale computer in modalità wireless tramite una scheda WLAN che supporta questa funzionalità. L'arresto o la disabilitazione del servizio WLANSVC renderà tutte le schede WLAN nel computer non accessibili dall'interfaccia utente per le funzionalità di rete di Windows. E consigliabile eseguire il servizio WLANSVC se il computer dispone di una scheda WLAN ..."/>
+		  <Tips OfficialName="Work Folders Service" TranslatedName="Servizio Cartelle di lavoro" Text="Questo servizio sincronizza i file con il server di Cartelle di lavoro. Necessario per le funzionalità delle cartelle di lavoro"/>
+		  <Tips OfficialName="WWAN AutoConfig Service" TranslatedName="Servizio Configurazione automatica WWAN" Text="Questo servizio gestisce le schede e le connessioni per schede dati e moduli incorporati a banda larga mobile (GSM e CDMA) tramite la configurazione automatica delle reti. E consigliabile che il servizio venga mantenuto sempre in esecuzione per consentire un utilizzo ottimale dei dispositivi a banda larga mobile ..."/>
+	  <Tips OfficialName="System" TranslatedName="Sistema" Text="Migliora l'utilizzo di Windows (integra Driver, Aggiornamenti and Cambia il Percorso delle Cartelle Utente o usa la Post Installazione di WinReducer ...)"/>
+		  <Tips OfficialName="Integrate - Drivers" TranslatedName="Drivers" Text="Aiuta ad integrare i driver mancanti nella tua ISO per il Sistema Operativo. Puoi aggiungere i tuoi driver nella cartella di Winreducer : ''HOME\INTEGRATE\DRIVERS'' ... SUGGERIMENTI : Per un migliore supporto, Crea una cartella differente per ciascun driver con dentro tutti i file necessari (*.inf, *.cat, *.dll, ...). Se vuoi usare gli eseguibili (*.exe, *.msi,...), devi usare la Post Installazione di WinReducer , per avviarli durante l'installazione, o puoi usarli dopo l'installazione di Windows ... ATTENZIONE : Bisogna stare attenti a scegliere la Cartella dei Driver x86 per una Edizione Windows x86  o la Cartella dei Driver x64 per una Edizione Windows x64"/>
+		  <Tips OfficialName="Integrate - Net Framework 3.5" TranslatedName="Net Framework 3.5" Text="Aiuta ad attivare Net Framework 3.5, in caso che ti serva per vecchi Programmi ... ATTENZIONE : Bisogna stare attenti a scegliere la Cartella di Net Framework35 x86 per una Edizione Windows x86  o la Cartella di Net Fremework35 x64 per una Edizione Windows x64"/>
+		  <Tips OfficialName="Integrate - Updates" TranslatedName="Updates" Text1="Aiuta ad integrare gli aggiornamentimancanti nella tua ISO per il tuo Sistema Operativo. Puoi aggiungere gli aggiornamenti Windows nella cartella di WinReducer : ''HOME\INTEGRATE\UPDATES'' ... ATTENZIONE : Bisogna stare attenti a scegliere la Cartella dei Driver per una Edizione Windows x86  o la Cartella dei Driver x64 per una Edizione Windows x64" Text2="Open the Download Tool to help you maintain your Windows installation up to date by downloading latest available Windows Updates to sliptreamed them in Windows using WinReducer"/>
+		  <Tips OfficialName="Folders - Contacts" TranslatedName="Contatti" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Desktop" TranslatedName="Mio Desktop" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Documents" TranslatedName="Documenti" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Downloads" TranslatedName="Downloads" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Favorites" TranslatedName="Preferiti" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Links" TranslatedName="Link" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Music" TranslatedName="Musica" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Pictures" TranslatedName="Immagini" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Videos" TranslatedName="Video" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Saved Games" TranslatedName="Giochi salvati" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Folders - Searches" TranslatedName="Ricerche" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE"/>
+		  <Tips OfficialName="Internet Explorer Temporary Folder" TranslatedName="Cartella temporanea Internet Explorer" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Local Temporary Folder" TranslatedName="Cartella temporanea locale" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="Windows Temporary Folder" TranslatedName="Cartella temporanea Windows" Text="QUESTA CARTELLA DEVE ESSERE CREATA PRIMA DI INSTALLARE WINDOWS, ALTRIMENTI L'INSTALLAZIONE NON ANDRA' A BUON FINE ... SUGGERIMENTI : Puoi usare le variabili d'ambiente windows tipo %USERPROFILE%"/>
+		  <Tips OfficialName="OEM Prepared Folder" TranslatedName=" Cartella preparata OEM" Text="È necessario preparare la propria cartella OEM and WinReducer la trasferirà nella tua ISO. FAI ATTENZIONE CIO' RIMUOVE OGNI PRECEDENTE CARTELLA OEM NELLA TUA ISO !"/>
+		  <Tips OfficialName="OOBE Configuration" TranslatedName="Configurazione OOBE" Text="Il metodo RUNONCE  è utilizzato per realizzare la Post Installazione OOBE di Windows. Così il primo utente registrato deve avere i diritti dell'amministratore o oppure devi disattivare UAC (Controllo Account Utente). Crea il file WinReducer81.cmd Nell'unità C, e aggiunge anche una chiave di registro per avviarlo (la quale sarà automaticamente eliminata alla fine del processo) .... Attenzione : ciò sostituira qualsiasi  WinReducer81.cmd e qualsiasi cartella ISO  WinReducerPI " Text1="Aiuta ad integrare correttamente i tuoi file o cartelle per installarli durante l'ultima fase dell'installazione Windows. Scegli un fileeseguibile (*.exe, *.msi) (o una cartella, poi un file eseguibile) e sara autamticamente aggiunto nella lista e tutti i file saranno copiati nella giusta cartella all'interno della tua ISO... SUGGERIMENTI : Puoi aggiungere individualmente ciascun silent switch .... ATTENZIONE : Ciò sostituirà ogni precedente WinReducer81.cmd e ogni cartella ISO WinReducerPI" Text2="Configura qui la tua  Post Installazione di WinReducer aggiungendo programmi (con o senza silent switch) o voci di registro, ... Sarà automaticamente creato Un file WinReducer81.cmd nella tua Unità C utilizzando l'elenco di testo" Text3="Aiuta a cambiare l'aspetto della finestra di comando per modificare il colore e aggiunge il testo per migliorarlo. Seleziona un'opzione e verrà aggiunta automaticamente nella lista ... SUGGERIMENTI : Se desideri ripristinarlo, basta cancellare il relativo testo nella lista"/>
+		  <Tips OfficialName="WinReducer Registry Integrator" TranslatedName="Integratore registro di Winreducer" Text1="Ciò aiuterà a integrare il proprio file di registro personalizzato. Si potrebbero aggiungere le chiavi di registro manualmente o importare un file reg (* .reg). Poi bisogna verificare la compatibilità dell'intero file usando il pulsante dedicato e se si vuole si possono salvare le modifiche in un nuovo file ... SUGGERIMENTI : Sono supportati solo ''HKEY_CLASSES_ROOT'' (o HKCR), ''HKEY_LOCAL_MACHINE\\SOFTWARE'' (or HKLM\\SOFTWARE), ''HKEY_LOCAL_MACHINE\\SYSTEM''  (o HKLM\\SYSTEM) e ''HKEY_CURRENT_USER'' (o HKCU) , quindi per tutti gli altri non funzionerà)" Text2="Apre un file di registro (*.reg). Questo file deve essere compatibile con il sistema di imposrtazione del Registro Windows (v5.0) altrimenti non funzionerà correttamente" Text3="Per aumentare lacompatibilità delle tue chiavi di registro, usa questo strumento per sapere quali chiavi di registro non sono compatibili with l'Integratore Rgegistro di Winreducer. Appariranno in rosso, quindi devi cancellarli (assieme ai relativi valori) per prevenire problemi durante l'importazione del registro" Text4="Puoi salvare le tue modifiche in un nuovo file reg il quale sarà disponibile nella cartella INTEGRATE per usarlo in futuro"/>
+      <Tips OfficialName="Unattended" TranslatedName="Unattended" Text="Configura la tua installazione Windows con un file unattended xml"/>
+		  <Tips OfficialName="Accept EULA" TranslatedName="Accetta EULA" Text="Specifica se nascondere la pagina del contratto di licenza del software Microsoft durante la schermata installazione e duarante la schermata di benvenuto di Windows"/>
+		  <Tips OfficialName="Computer Name" TranslatedName="Nome computer" Text="Specifica il nome utilizzato dal computer per l'identificazione in una rete"/>
+		  <Tips OfficialName="Hide Boot Image Selection" TranslatedName="Nascondi Selezione immagine avvio" Text="Specifica l'immagine di Windows che deve essere installata"/>
+		  <Tips OfficialName="Hide Local Account" TranslatedName="Nascondi Account locale" Text="Specifica se gli utenti finali deve impostare la schermata della password di amministratore che appare durante  l'OOBE"/>
+		  <Tips OfficialName="Hide Online Account" TranslatedName="Nascondi Online Account" Text="Specifica se sarà richiesto all'utente di effettuare l'accesso durante l'OOBE. Questa impostazione è soprattutto per le imprese che non vogliono i dipendenti che utilizzino indirizzi di posta elettronica come nomi utente"/>
+		  <Tips OfficialName="Hide Wireless Setup" TranslatedName="Nascondi Wireless Setup" Text="Specifica se nascondere la schermata di accesso ad una connessione Wireless che appare durante il benvenuto in Windows. Se usi questa impostazione, puoi definire un Profilo  Wireless Lan  che sarà caricato durante l'Installazione di Windows ... SUGGERIMENTI : Dovresti usare WinReducer Wlan Profile Backup and Restore per creare il tuo Profilo Wireless Lan, ciò  ti aiuta a connetterti facilmente ad una rete wifi senza inserire il tuo ssid o la chiave di sicurezza"/>
+		  <Tips OfficialName="Network Location" TranslatedName="Posizione per la rete" Text="Specifica la posizione per la rete se il computer si connette al primo accesso"/>
+		  <Tips OfficialName="Page File Size" TranslatedName="Dimensione file paging" Text="Specifica quanto spazio, nel tuo HDD o SSD, dedichi per il file paging : Può essere impostato il livello Minimo e Massimo. Lascia in bianco per disattivarlo ... SUGGERIMENTI : NON Disattivarlo nella sezione Tweaks altrimenti non funzionerà correttamente"/>
+		  <Tips OfficialName="Protect your PC" TranslatedName="Proteggi il tuo PC" Text="Specifica se Windows Update installa automaticamente gli aggiornamenti importanti e raccomandati"/>
+		  <Tips OfficialName="Power Schemes" TranslatedName="Combinazioni risparmio energia" Text="Specifica la combinazione di risparmio energia preferita per il tuo computer"/>
+		  <Tips OfficialName="Screen Resolution" TranslatedName="Risoluzione schermo" Text="Specifica le impostazioni dello schermo per la relativa periferica : Orizzontal - Verticale - Profondità colore - Frequenza di Aggiornamento (Es : Per impostazione predefinita WinReducer mostra = Risoluzione schermo  1024x768, con profondità di colare a 32-bit, frequenza di aggiornamento a 60 hertz)"/>
+		  <Tips OfficialName="Serial Number" TranslatedName="Numero di serie" Text="Specifica chiave del prodotto da usare per la installazione di Windows. Digitando una chiave del prodotto invalida nel file di risposta l'installazione di Windows non andrà a buon fine"/>
+		  <Tips OfficialName="Activate Auto Activation" TranslatedName="Attiva Attivazione automatica" Text="Permette l'attivazione automatica durante l'installazione di Windows utilizzando il numero di serie"/>
+		  <Tips OfficialName="System Language" TranslatedName="Lingua di Sistema" Text="Specifica la lingua dell'interfaccia utente (UI) del Sistema predefinita  ... SUGGERIMENTI : "/>
+		  <Tips OfficialName="System Keyboard" TranslatedName="Tastiera di sistema" Text="Specifica l'input locale del sistema con il layout della tastiera"/>
+		  <Tips OfficialName="Text Size (DPI)" TranslatedName="Dimensione Testo (DPI)" Text="Specifica la dimensionde del testo e di altri oggetti nello schermo"/>
+		  <Tips OfficialName="Time Zone" TranslatedName="Fuso Orario" Text="Specifica il fuso orario del computer"/>
+		  <Tips OfficialName="Time Zone Disable Auto Daylight" TranslatedName="Fuso orario - disattiva imposta automaticamente ora legale" Text="Specifica se attivare nel computer la funzione di passaggio automatico tra l'ora solare e l'ora legale"/>
+		  <Tips OfficialName="Turn Off Computer Sleep" TranslatedName="Sospensione computer" Text="Specifica il ritardo preferito (in minuti) per sospendere il computer. Se si usa 0 minuti, disattiverà questa funzionalità di Windows"/>
+		  <Tips OfficialName="Turn Off Display" TranslatedName="Disattivazione schermo" Text="Specifica il ritardo preferito (in minuti) per spegnere il tuo schermo. Se si usa 0 minuti, disattiverà questa funzionalità di Windows"/>
+		  <Tips OfficialName="Turn Off Hard Disk Drive" TranslatedName="Disattiva disco rigido" Text="Specifica il ritardo preferito (in minuti) per spegnere tutti i tuoi Hard Disk o SSD. Se si usa 0 minuti, disattiverà questa funzionalità di Windows"/>
+		  <Tips OfficialName="WinSXS DISM Cleanup" TranslatedName="Pulizia WinSXS DISM" Text="Migliora la pulizia della cartella WinSXS di Windows per ridurre la grandezza dell'installazione"/>
+		  <Tips OfficialName="WinSXS DISM Cleanup (ResetBase)" TranslatedName="Pulizia WinSXS DISM(ResetBase)" Text="Migliora ancora di più la pulizia della cartella WinSXS di Windows per ridurre la grandezza dell'installazione. But you will lose the possibilità di rimuovere all Windows Updates ... SUGGERIMENTI : Use this option only if you integrate Updates before installation, altrimenti you will waste a lot of time for almost nothing in term of size reduction"/>
+		  <Tips OfficialName="Work Group Name" TranslatedName="Nome gruppo di lavoro" Text="Specifica il gruppo di lavoro da assegnare al computer"/>
+		  <Tips OfficialName="Administrator Account" TranslatedName="Account amministratore" Text="Attiva l'Account Amministratore"/>
+		  <Tips OfficialName="Administrator Password" TranslatedName="Password amministratore" Text="Specifica la password per l'Account Amministratore ... SUGGERIMENTI : se attivi questa opzione, devi inserire una password ! Senza di essa, l'Account Amministratore sarà disattivato per evitare problemi di sicurezza durante l'installazione di Windows"/>
+		  <Tips OfficialName="User Account Name" TranslatedName="Nome account utente" Text="Specifica gli account locali che devono essere creati, gli account di dominio che devono essere aggiunti"/>
+		  <Tips OfficialName="User Password" TranslatedName="Password utente" Text="Specifica una password per gli account locali (attivasti se inserisci un nome utente). Puoi lasciare lo spazio in bianco se non vuoi aggiungere la password"/>
+		  <Tips OfficialName="Activate Autologon" TranslatedName="Attiva Autologon" Text="Attiva l'accesso automatico per l'utente o per l'amministratore. Ciò ti aiuta ad accedere facilmente in Windows"/>
+		  <Tips OfficialName="Turn Off Password Expiration" TranslatedName="Disattiva scadenza password" Text="La tua password non scadrà mai, quindi Windows non ti chiederà mai di cambiarla"/>
+		  <Tips OfficialName="Disable Encrypted Disk Provisioning" TranslatedName="Disable Encrypted Disk Provisioning" Text="Specifies whether Windows activates encryption on blank drives that are capable of hardware-based encryption during installation. By default, Windows activates drives that are capable of hardware-based encryption by using a fixed access control list (ACL) that is based on the Opal Security Subsystem Class (Opal SSC) specification"/>
+		  <Tips OfficialName="Disable TCG Security Activation" TranslatedName="Disable TCG Security Activation" Text="Specifies whether Windows automatically configures encrypted drives (eDrives), also known as encrypted hard disk drives (eHDDs). TCGSecuirtyActivationDisabled sets the Group Policy administrative template setting: Do not automatically encrypt files moved to encrypted folders. This Group Policy setting is used after Windows is installed and started up. The setting specifies, for unprovisioned eDrives, whether security should be activated on the eDrive during provisioning. Use the DisableEncryptedDiskProvisioning unattend setting for configuring the operating system installation for the target HDD."/>
+		  <Tips OfficialName="Prevent Device Encryption" TranslatedName="Prevenzione crittografia dispositivo" Text="Usa questa  impostazione per prevenire la crittografia del dispositivo e di crittografare automaticamente l'unità del sistema operativo e qualsiasi unità dati fissa attraverso BitLocker ... SUGGERIMENTI : Questa impostazione è disponibile se non rimuovi ''Servizi - Servizio Bitlocker'', altrimenti sarà automaticamente disattivata per prevenire errori di installazione"/>
+		  <Tips OfficialName="Domain Name" TranslatedName="Nome del dominio" Text="Specifies il dominio dell'account usato per l'autenticazione durante l'accesso a un dominio. Se si desidera connettersi a un dominio, è necessario scrivere un nome, un nome utente e una password altrimenti WinReducer automaticamente lo disattiverà"/>
+		  <Tips OfficialName="Domain Username" TranslatedName="Username del dominio" Text="Specifica l'account utente usato per l'autenticazione durante l'accesso a un dominio. Se si desidera connettersi a un dominio, è necessario scrivere un nome, un nome utente e una password altrimenti WinReducer automaticamente lo disattiverà"/>
+		  <Tips OfficialName="Domain Password" TranslatedName="Password del dominio" Text="Specifica la password dell'account utente usata per l'autenticazione durante la connessione a un dominio. Se si desidera connettersi a un dominio, è necessario scrivere un nome, un nome utente e una password altrimenti WinReducer automaticamente lo disattiverà"/>
+		  <Tips OfficialName="Activate Domain Debug Mode" TranslatedName="Attiva Domain Debug Mode" Text="Si tratta di un'impostazione avanzata progettata per essere utilizzato per lo sviluppo di prodotti e per il supporto tecnico Microsoft. Lasciare questa impostazione non modificata quando si configura il file di risposta automatica. Se viene specificato DebugJoin, un file di traccia viene generato durante il processo di connessione al dominio (% WINDIR% \ Panther \ UnattendGC \ UnattendedJoinDCLocator.etl). Questo file di traccia può essere utile per la diagnosi di problemi di connettività di rete durante l'installazione, che potrebbe impedire al dominio effettuare la connessione."/>
+	  <Tips OfficialName="Presets" TranslatedName="Presets" Text="Aiuta a proteggere le funzionalità che ti servono"/>
+		  <Tips OfficialName="Automatic Removing Process" TranslatedName="Processo di Rimozione Automatica" Text="Seleziona automaticamente tutti i componenti dipendenti di quelli che avete scelto per migliorare la riduzione della ISO ... SUGGERIMENTI : la miglior scelta per principianti"/>
+		  <Tips OfficialName="Protect Important Files" TranslatedName="Protezione File Importanti" Text="Mantiene file importanti che sono necessari per multimedia oo per programmi di giochi ... SUGGERIMENTI : la miglior scelta per principianti, e gli altri, dovranno controllare"/>
+		  <Tips OfficialName="Protect ModernUI Apps" TranslatedName="Protezione ModernUI Apps" Text="Mantiene file importanti che sono necessari per le app metro per funzionare correttamente ... SUGGERIMENTI : La miglior scelta se userai Metro"/>
+		  <Tips OfficialName="Protect MS Office" TranslatedName="Protezione MS Office" Text="Protegge i file importanti per MS Office per essere installato e usato correttamente ... SUGGERIMENTI : la miglior scelta per principianti, e gli altri, dovranno controllare"/>
+		  <Tips OfficialName="Protect MS Online Account" TranslatedName="Protezione MS Online Account" Text="Protegge tutto il necessario per mantenere le funzionalità dell'account online"/>
+		  <Tips OfficialName="Protect Sysprep" TranslatedName="Protezione Sysprep" Text="Protegge file importanti per la funzionalità di sysprep per essere in grado di utilizzarlo quando necessario"/>
+		  <Tips OfficialName="Protect VirtualBox" TranslatedName="Protezione VirtualBox" Text="Protegge la tua ISO personalizzata proteggendo tutti i driver necessari per avviarla in una macchina virtuale : Intel PRO1000 MT Desktop Network Adapter"/>
+		  <Tips OfficialName="Protect VMware Player and Workstation" TranslatedName="Protezione VMware Player e Workstation" Text="Protegge la tua ISO personalizzata proteggendo tutti i driver necessari per avviarla in una macchina virtuale : LSI SAS Storage Controller e Intel 82574 Gigabit Network"/>
+		  <Tips OfficialName="Protect Windows Activation GUI" TranslatedName="Protezione Windows Activation GUI" Text="Protegge i file importanti for la funzionalità dell' Attivazione GUI  per poter registrare la tua Edizione Windows ... SUGGERIMENTI : Migliore scelta per principianti, e gli altri, dovranno controllare"/>
+		  <Tips OfficialName="Protect Windows Features" TranslatedName="Protect Windows Features" Text="It protects ''Windows Features'' functionnalities to enable, disable or remove default Windows Integrated Features ... TIPS : Using this option will automatically protect EXPERT WinSxS Cleanup(install.wim) optimizations"/>
+		  <Tips OfficialName="Protect Windows Media Center" TranslatedName="Protezione Windows Media Center" Text="Protegge le funzioni di Windows Media Center "/>
+		  <Tips OfficialName="Protect Windows Media Player" TranslatedName="Protezione Windows Media Player" Text="Protegge le funzioni di Windows Media Player"/>
+		  <Tips OfficialName="Protect Windows Search" TranslatedName="Protezione Windows Search" Text="Protegge importanti file per Windows Search se pianifichi di rimuovere le Lingue Naturali ... SUGGERIMENTI : la miglior scelta per principianti, e gli altri, dovranno controllare"/>
+		  <Tips OfficialName="Protect Windows Update" TranslatedName="Protezione Windows Update" Text="Protegge le funzioni di Windows Update ... SUGGERIMENTI : fai attenzione qualche volta Windows Update non riesce ad installare un aggiorrnamento specifico se hai rimosso il relativo componente in Winreducer"/>
+	  <Tips OfficialName="Removing Speed" TranslatedName="Velocità Rimozione" Text="Predefinisce la velocità di rimozione per ridurre il tempo necessario per concludere tutte le operazioni ... SUGGERIMENTI : fai attenzione a scegliere quella migliore in relazione alle proprietà del tuo sistema operativo altrimenti potresti riscontrare qualche instabilità. DEFAULT : Per computer normali ; HIGH : Riservato solo a CPU con 1-4 core e con 1-4 gb di memoria RAM ; HIGHEST : Riservato solo a CPU con 4-8 core e con 4-32 gb di memoria RAM"/>
+   	  <Tips OfficialName="WIM or ISO Configuration" TranslatedName="Configurazione WIM o ISO" Text="Salva automaticamente le tue impostazioni in un file WIM or ISO, alla fine di tutte le operazioni ... SUGGERIMENTI : Se usi questa funzione, potrai selezionare l'opzione 'spegni computer al termine'"/>
+   	  <Tips OfficialName="Shutdown computer when finished" TranslatedName="Spegni computer al termine" Text="Spegne automaticamente il tuo computer alla fine di tutte le operazioni"/>
+   	  <Tips OfficialName="Apply" TranslatedName="Applica" Text="Applica tutte le impostazione per personalizzare o ridurre la tua Edizione Windows"/>
+	</WR81>
+    <WR80>
+		  <Tips OfficialName="Bing" TranslatedName="Bing" Text="This is the Modern UI Apps search engine"/>
+		  <Tips OfficialName="Skydrive" TranslatedName="Skydrive" Text="Windows cloud storage. Ha cambiato nome in OneDrive"/>
+    </WR80>
+    <WR70>
+		  <Tips OfficialName="Basebrd.dll" TranslatedName="Basebrd.dll" Text="Sostituisce il tuo file, ma devi modificarlo da solo ... SUGGERIMENTI :RISERVATO SOLO AD UTENTI AVANZATI ! SPERIMENTALE !! Grazie per l'invio dei feedback"/>
+		  <Tips OfficialName="Basebrd.dll.mui" TranslatedName="Basebrd.dll.mui" Text="Sostituisce il tuo file, ma devi modificarlo da solo ... SUGGERIMENTI :RISERVATO SOLO AD UTENTI AVANZATI ! SPERIMENTALE !! Grazie per l'invio dei feedback"/>
+		  <Tips OfficialName="Shellbrd.dll" TranslatedName="Shellbrd.dll" Text="Sostituisce il tuo file, ma devi modificarlo da solo ... SUGGERIMENTI :RISERVATO SOLO AD UTENTI AVANZATI ! SPERIMENTALE !! Grazie per l'invio dei feedback"/>
+		  <Tips OfficialName="Spwizimg.dll" TranslatedName="Spwizimg.dll" Text="Sostituisce il tuo file, ma devi modificarlo da solo ... SUGGERIMENTI :RISERVATO SOLO AD UTENTI AVANZATI ! SPERIMENTALE !! Grazie per l'invio dei feedback"/>
+		  <Tips OfficialName="Spwizres.dll" TranslatedName="Spwizres.dll" Text="Sostituisce il tuo file, ma devi modificarlo da solo ... SUGGERIMENTI :RISERVATO SOLO AD UTENTI AVANZATI ! SPERIMENTALE !! Grazie per l'invio dei feedback"/>
+		  <Tips OfficialName="Games - Chess" TranslatedName="Giochi - Scacchi" Text=""/>
+		  <Tips OfficialName="Games - FreeCell" TranslatedName="Giochi - FreeCell" Text=""/>
+		  <Tips OfficialName="Games - Hearts" TranslatedName="Giochi - Hearts" Text=""/>
+		  <Tips OfficialName="Games - Mine Sweeper" TranslatedName="Giochi - Prato Fiorito" Text=""/>
+		  <Tips OfficialName="Games - More Games" TranslatedName="Giochi - Altri giochi" Text=""/>
+		  <Tips OfficialName="Games - Purble Place" TranslatedName="Giochi - Purble Place" Text=""/>
+		  <Tips OfficialName="Games - Shanghai" TranslatedName="Giochi - Shanghai" Text=""/>
+		  <Tips OfficialName="Games - Solitaire" TranslatedName="Giochi - Solitario" Text=""/>
+		  <Tips OfficialName="Games - Spider Solitaire" TranslatedName="Giochi - Spider Solitario" Text=""/>
+		  <Tips OfficialName="Games (Multiplayer) - Backgammon" TranslatedName="Giochi (Multiplayer) - Backgammon" Text=""/>
+		  <Tips OfficialName="Games (Multiplayer) - Checkers" TranslatedName="Giochi (Multiplayer) - Scacchi" Text=""/>
+		  <Tips OfficialName="Games (Multiplayer) - Spades" TranslatedName="Giochi (Multiplayer) - Spades" Text=""/>
+		  <Tips OfficialName="Internet Explorer 8" TranslatedName="Internet Explorer 8" Text="Browser di Internet Explorer. Se scegli di rimuoverlo devi installare un'altro browser per accedere alle pagine web"/>
+		  <Tips OfficialName="Microsoft NFS Client" TranslatedName="Microsoft NFS Client" Text=""/>
+		  <Tips OfficialName="Subsystem for UNIX-based Applications (SUA)" TranslatedName="Subsystem for UNIX-based Applications (SUA)" Text=""/>
+		  <Tips OfficialName="Windows DVD Maker" TranslatedName="Windows DVD Maker" Text=""/>		  
+		  <Tips OfficialName="Windows Tablet PC" TranslatedName="Windows Tablet PC" Text=""/>
+		  <Tips OfficialName="Recovery Disc" TranslatedName="Disco di Ripristino" Text=""/>
+		  <Tips OfficialName="Control Panel - Backup and Restore" TranslatedName="Pannello di Controllo - Backup e Ripristino" Text=""/>
+		  <Tips OfficialName="Control Panel - Backup and Restore (Files)" TranslatedName="Pannello di Controllo - Backup e Ripristino (Files)" Text=""/>
+		  <Tips OfficialName="Control Panel - Getting Started" TranslatedName="Pannello di Controllo - Attività iniziali" Text=""/>
+		  <Tips OfficialName="Control Panel - Getting Started (Files)" TranslatedName="Pannello di Controllo - Attività iniziali (Files)" Text=""/>
+		  <Tips OfficialName="Control Panel - Performance Information and Tools" TranslatedName="Pannello di Controllo - Performance Information and Tools" Text=""/>
+		  <Tips OfficialName="Control Panel - Windows CardSpace" TranslatedName="Pannello di Controllo - Windows CardSpace" Text=""/>
+		  <Tips OfficialName="Control Panel - Windows CardSpace (Files)" TranslatedName="Pannello di Controllo - Windows CardSpace (Files)" Text=""/>
+		  <Tips OfficialName="Remove - Gadgets" TranslatedName="Rimuovi - Gadgets" Text=""/>
+		  <Tips OfficialName="Calendar" TranslatedName="Calendario" Text=""/>
+		  <Tips OfficialName="Clock" TranslatedName="Orologio" Text=""/>
+		  <Tips OfficialName="CPU" TranslatedName="CPU" Text=""/>
+		  <Tips OfficialName="Currency" TranslatedName="Valuta" Text=""/>
+		  <Tips OfficialName="Media Center" TranslatedName="Windows Media Center" Text=""/>
+		  <Tips OfficialName="Picture Puzzle" TranslatedName="Puzzle con immagini" Text=""/>
+		  <Tips OfficialName="RSS Feeds" TranslatedName="Titoli RSS" Text=""/>
+		  <Tips OfficialName="Slide Show" TranslatedName="Presentazione" Text=""/>
+		  <Tips OfficialName="Weather" TranslatedName="Meteo" Text=""/>
+		  <Tips OfficialName="Connect to a Network Projector" TranslatedName="Connetti ad un proiettore" Text=""/>
+		  <Tips OfficialName="Sharing (Shell Extensions)" TranslatedName="Condivisione (Estensione Shell)" Text=""/>
+		  <Tips OfficialName="Samples - Media" TranslatedName="Media campione" Text=""/>
+		  <Tips OfficialName="Samples - Music" TranslatedName="Musica campione" Text=""/>
+		  <Tips OfficialName="Samples - Photos" TranslatedName="Immagini campione" Text=""/>
+		  <Tips OfficialName="Samples - Ringstones" TranslatedName="Suonerie campione" Text=""/>
+		  <Tips OfficialName="Samples - Videos" TranslatedName="Video campione" Text=""/>
+		  <Tips OfficialName="Sounds - Afternoon" TranslatedName="Suoni - Afternoon" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Calligraphy" TranslatedName="Suoni - Calligraphy" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Characters" TranslatedName="Suoni - Characters" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Cityscape" TranslatedName="Suoni - Cityscape" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Delta" TranslatedName="Suoni - Delta" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Festival" TranslatedName="Suoni - Festival" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Garden" TranslatedName="Suoni - Garden" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Heritage" TranslatedName="Suoni - Heritage" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Landscape" TranslatedName="Suoni - Landscape" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Quirky" TranslatedName="Suoni - Quirky" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Raga" TranslatedName="Suoni - Raga" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Savanna" TranslatedName="Suoni - Savanna" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Sounds - Sonata" TranslatedName="Suoni - Sonata" Text="Cancella tutti i file suoni di Windows e il relativo schema in Pannello di controllo -  Suoni"/>
+		  <Tips OfficialName="Themes - Architecture" TranslatedName="Temi - Architettura" Text=""/>
+		  <Tips OfficialName="Themes - Classic" TranslatedName="Temi - Classico" Text=""/>
+		  <Tips OfficialName="Themes - Characters" TranslatedName="Temi - Personaggi" Text=""/>
+		  <Tips OfficialName="Themes - Ease of Access - High Contrast (1)" TranslatedName="Temi - Accesso Facilitato - Contrasto Alto (1)" Text=""/>
+		  <Tips OfficialName="Themes - Ease of Access - High Contrast (2)" TranslatedName="Temi - Accesso Facilitato - Contrasto Alto (2)" Text=""/>
+		  <Tips OfficialName="Themes - Ease of Access - High Contrast (Black)" TranslatedName="Temi - Accesso Facilitato - Contrasto Alto (Nero)" Text=""/>
+		  <Tips OfficialName="Themes - Ease of Access - High Contrast (White)" TranslatedName="Temi - Accesso Facilitato - Contrasto Alto (Bianco)" Text=""/>
+		  <Tips OfficialName="Themes - Landscapes" TranslatedName="Temi - Paesaggi" Text=""/>
+		  <Tips OfficialName="Themes - Local Packs" TranslatedName="Temi - Pack locali" Text=""/>
+		  <Tips OfficialName="Themes - Nature" TranslatedName="Temi - Natura" Text=""/>
+		  <Tips OfficialName="Themes - Scenes" TranslatedName="Temi - Scene" Text=""/>
+		  <Tips OfficialName="User - Account Pictures" TranslatedName="Utente - Immagini account" Text=""/>
+		  <Tips OfficialName="Wallpapers - Architecture" TranslatedName="Sfondi - Architettura" Text=""/>
+		  <Tips OfficialName="Wallpapers - Characters" TranslatedName="Sfondi - Personaggi" Text=""/>
+		  <Tips OfficialName="Wallpapers - Landscapes" TranslatedName="Sfondi - Paesaggi" Text=""/>
+		  <Tips OfficialName="Wallpapers - Nature" TranslatedName="Sfondi - Natura" Text=""/>
+		  <Tips OfficialName="Wallpapers - Scenes" TranslatedName="Sfondi - Scene" Text=""/>
+		  <Tips OfficialName="Explorer - Details Pane (Hide)" TranslatedName="Explorer - Pannello Dettegli (Nascondi)" Text=""/>
+		  <Tips OfficialName="Explorer - Hidden System Files (Show)" TranslatedName="Explorer - File di sistema nascosti (Mostra)" Text=""/>
+		  <Tips OfficialName="Explorer - Rimuovi Software Security Warning" TranslatedName="Explorer - Rimuovi Avviso di Protezione all'apertura di un file. " Text=""/>
+		  <Tips OfficialName="Menu Start - Disable Highlight Newly Installed Programs" TranslatedName="Menu Start - Disable Highlight Newly Installed Programs" Text=""/>
+		  <Tips OfficialName="Menu Start - Disable Use Large Icons" TranslatedName="Menu tart - Disabilita Usa Icone Grandi" Text=""/>
+		  <Tips OfficialName="Menu Start - Disable Search other files and libraries" TranslatedName="Menu Start - Disabilita Cerca altri file e raccolte" Text=""/>
+		  <Tips OfficialName="Menu Start - Computer Icon (Hide)" TranslatedName="Menu Start -Icona  Computer (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Control Panel Icon (Show)" TranslatedName="Menu Start - Icona Pannello di Controllo (Mostra)" Text=""/>
+		  <Tips OfficialName="Menu Start - Default Programs Icon (Hide)" TranslatedName="Menu Start - Icona Programmi Predefiniti (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Device and Printers Icon (Hide)" TranslatedName="Menu Start - Icona Dispositivi e Stampanti (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Documents Icon (Hide)" TranslatedName="Menu Start - Icona Documenti (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Downloads Icon (Hide)" TranslatedName="Menu Start - Icona Giochi (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Games Icon (Hide)" TranslatedName="Menu Start - Icona Giochi (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Help Icon (Hide)" TranslatedName="Menu Start - Icona Guida in linea e supporto tecnico (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Music Icon (Hide)" TranslatedName="Menu Start - Icona Musica (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Personal Folder Icon (Hide)" TranslatedName="Menu Start - Icona Cartella Personale (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Pictures Icon (Hide)" TranslatedName="Menu Start - Icona immagini (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Recorded TV Icon (Hide)" TranslatedName="Menu Start - Icona registrazioni tv (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Run Icon (Hide)" TranslatedName="Menu Start - Icona Esegui (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Run Icon (Show)" TranslatedName="Menu Start - Icona Esegui (Mostra)" Text=""/>
+		  <Tips OfficialName="Menu Start - Videos Icon (Hide)" TranslatedName="Menu Start - Icona Video (Nascondi)" Text=""/>
+		  <Tips OfficialName="Menu Start - Sort All Programs by Name" TranslatedName="Menu Start - Ordina tutti i programmi per nome" Text=""/>
+		  <Tips OfficialName="System - Force Aero" TranslatedName="Sistema - Forza Aero" Text=""/>
+		  <Tips OfficialName="Logon - Disable Welcome Text" TranslatedName="Accesso - Disattiva testo Welcome " Text=""/>
+		  <Tips OfficialName="Program Compatibility Assistance - Turn Off" TranslatedName="Esegui programmi per versioni precedenti di Windows - Disattiva" Text=""/>
+		  <Tips OfficialName="Remove - Windows Licenses" TranslatedName="Rimuovi - Licenze Windows" Text=""/>
+		  <Tips OfficialName="Windows Starter" TranslatedName="Windows Starter" Text=""/>
+		  <Tips OfficialName="Windows Home Basic" TranslatedName="Windows Home Basic" Text=""/>
+		  <Tips OfficialName="Windows Home Premium" TranslatedName="Windows Home Premium" Text=""/>
+		  <Tips OfficialName="Windows Enterprise" TranslatedName="Windows Enterprise" Text=""/>
+		  <Tips OfficialName="Windows Professional" TranslatedName="Windows Professional" Text=""/>
+		  <Tips OfficialName="Windows Ultimate" TranslatedName="Windows Ultimate" Text=""/>
+		  <Tips OfficialName="EXPERT - Net Framework Folder Cleanup" TranslatedName="EXPERT - Pulizia Cartella Net Framework" Text=""/>
+		  <Tips OfficialName="Download and Install Internet Explorer" TranslatedName="Scarica e Installa Internet Explorer" Text="Scarica tutti i file necessari per integrare, a seconda del file di lingua, l'ultima versione di Internet Explorer prima dell'installazione ... Consigli : usando questa funzione potrebbe richiede ulteriori installazioni, ma non devi installarle dopo l'intallazione di Windows"/>
+    </WR70>
+	<ESSeries>
+		  <ESSeries_About>Informazioni</ESSeries_About>
+		  <ESSeries_Tooltips>Aiuto descrizioni dei comandi</ESSeries_Tooltips>
+		  <ESSeries_TooltipsHelp>Visualizza la descrizione dei comandi su tutte le funzionalità</ESSeries_TooltipsHelp>
+		  <ESSeries_NoSoftware>Nessuna Opzione Disponibile</ESSeries_NoSoftware>
+	</ESSeries>
+	<ESLogoChanger>
+		  <ESLogo_Opening>Visualizza tutte le funzionalità disponibili</ESLogo_Opening>
+		  <ESLogo_OpeningHelp>Scegli nella lista quale elemento vuoi personalizzare</ESLogo_OpeningHelp>
+		  <ESLogo_Opening_OEM>Informazioni OEM (CPL Sistema)</ESLogo_Opening_OEM>
+		  <ESLogo_Opening_Windows>Logo Windows (CPL Sistema)</ESLogo_Opening_Windows>
+		  <ESLogo_OpeningError>Questo file non è disponibila ... Clicca il bottone Aggiorna per aggiornare la lista dei file</ESLogo_OpeningError>
+		  <ESLogo_OEM_Help>Lascia il campo bianco per rimuovere l'informazione OEM</ESLogo_OEM_Help>
+		  <ESLogo_OEM_Manufacturer>Manufacturer</ESLogo_OEM_Manufacturer>
+		  <ESLogo_OEM_Model>Model</ESLogo_OEM_Model>
+		  <ESLogo_OEM_SupportHours>Supporto (Ore)</ESLogo_OEM_SupportHours>
+		  <ESLogo_OEM_SupportPhone>Support (Telefono)</ESLogo_OEM_SupportPhone>
+		  <ESLogo_OEM_SupportURL>Support (URL)</ESLogo_OEM_SupportURL>
+		  <ESLogo_OEM_LogoImage> File d'immagine OEM di Windows</ESLogo_OEM_LogoImage>
+		  <ESLogo_OEM_LogoImageHelp>Mostra Solo i file d'immagine compatibili (Bitmap)</ESLogo_OEM_LogoImageHelp>
+		  <ESLogo_OEM_LogoDelete>Elimina il Logo OEM</ESLogo_OEM_LogoDelete>
+		  <ESLogo_WINDOWS_LogoImage>File d'immagine del Logo di Windows</ESLogo_WINDOWS_LogoImage>
+		  <ESLogo_WINDOWS_LogoImageHelp>Mostra Solo i file d'immagine compatibili (Bitmap 32 bits)</ESLogo_WINDOWS_LogoImageHelp>
+		  <ESLogo_WINDOWS_LogoDelete>Elimina Logo di Windows</ESLogo_WINDOWS_LogoDelete>
+		  <ESLogo_Refresh>Aggiorna</ESLogo_Refresh>
+		  <ESLogo_RefreshHelp>Aggiorna tutti gli Elementi</ESLogo_RefreshHelp>		
+		  <ESLogo_APPLY>APPLICA</ESLogo_APPLY>
+		  <ESLogo_APPLYHelp>Applica le impostazioni</ESLogo_APPLYHelp>
+		  <ESLogo_APPLYError>E' stato rilevato un errore !</ESLogo_APPLYError>
+		  <ESLogo_APPLYSuccess>Effettuato con Successo! </ESLogo_APPLYSuccess>
+	</ESLogoChanger>
+	<ESWimConverter>
+		<ESWim_Open>Apri</ESWim_Open>
+		<ESWim_OpenError>Questo file è di sola lettura Quindi non può essere utilizzato ... È necessario copiarlo in un'altra posizione del tuo HDD o SSD !</ESWim_OpenError>
+		<ESWim_OpenHelp>Apre un file ESD, SWM o WIM per convertirlo in un altro formato in base alle tue esigenze. Sono supportati solo i file esd non crittografati</ESWim_OpenHelp>
+		<ESWim_SystemCompatible>Your Operating System is compatible with ESD conversion</ESWim_SystemCompatible>
+		<ESWim_SystemNOTCompatible>Il tuo Sistema Operativo non è compatibile per la conversione dell' ESD </ESWim_SystemNOTCompatible>
+		<ESWim_SystemNOTCompatibleError>Per il supporto alla conversione ESD è necessario: Windows 8.1 con Update 1 o Windows 10</ESWim_SystemNOTCompatibleError>
+		<ESWim_SystemNOTCompatiblePagingingFile>Il File Paging di Windows è disattivato, ciò potrebbe gravemente compromettere la conversione dell' ESD </ESWim_SystemNOTCompatiblePagingingFile>
+		<ESWim_SystemNOTCompatiblePagingingFileError>Laconversione dell' ESD probabilmente non funzionerà senza il File Paging di Windows. Attivalo e riavvia il tuo computer prima di effettuare la conversione dell' ESD</ESWim_SystemNOTCompatiblePagingingFileError>
+		<ESWim_EditionsAll>Mantieni tutte le Edizioni Windows</ESWim_EditionsAll>
+		<ESWim_EditionsCompatible>Edizioni Windows compatibili rilevate</ESWim_EditionsCompatible>
+		<ESWim_EditionsNOTCompatible>Nessuna Edizione Windows rilevata</ESWim_EditionsNOTCompatible>
+		<ESWim_EditionsNOTCompatibleHelp>Il tuo file non contiene Edizioni Windows valide</ESWim_EditionsNOTCompatibleHelp>
+		<ESWim_ISOCompatible>La struttura della cartella ISO è stata correttamente rilevata</ESWim_ISOCompatible>
+		<ESWim_ISONOTCompatible>La struttura della cartella ISO non è stata rilevata</ESWim_ISONOTCompatible>
+		<ESWim_ISODetectionESD> Installazione Multimediale ESD rilevata</ESWim_ISODetectionESD>
+		<ESWim_ISODetectionESDInfo>Può essere creata una  installazione ISO di Windows, or una cartella, usando direttamente qesto file di Installazione Multimediale ESD, ma deve essere decriptato, altrimenti verrà rilevato un errore di conversione</ESWim_ISODetectionESDInfo>
+		<ESWim_SWMSize>Grandezza del file SWM in Mb</ESWim_SWMSize>
+		<ESWim_SWMSizeInfo>Nel campo della grandezza del file SWM bisogna usare solo NUMERI, non sono consentiti altri caratteri</ESWim_SWMSizeInfo>
+		<ESWim_KeepSource>Elimina il file di origine dopo la conversione</ESWim_KeepSource>
+		<ESWim_KeepSourceInfo>Il file di origine non sarà automaticamente eliminato solo dopo l'intero processo di conversione. Non selezionare questa opzione, se vuoi mantenere entrambi i file</ESWim_KeepSourceInfo>
+		<ESWim_WindowsEditions>
+				<ESWim_Title>Edizioni Windows</ESWim_Title>
+				<ESWim_Text>Visualizza tutte le Edizioni Windows nel tuo file. Puoi scegliere di mantenere tutte le Edizioni o di sceglierne solo una</ESWim_Text>
+		</ESWim_WindowsEditions>
+		<ESWim_Convert>Converti</ESWim_Convert>
+		<ESWim_ConvertISO>Crea una ISO con il nome :</ESWim_ConvertISO>
+		<ESWim_ConvertISOLabel>Cambia nome eticchetta  della ISO:</ESWim_ConvertISOLabel>
+		<ESWim_ConvertISOLabelHelp>Modifica il nome che verrà visualizzato in Windows Explorer quando verrà usato questa ISO nel lettore DVD</ESWim_ConvertISOLabelHelp>
+		<ESWim_ConvertISOError1>La cartella, che contiene il file ESD, SWM o WIM , non può essere utilizzata per creare la tua ISO ! Perchè la struttura della cartella non ècompatibile con la creazione della ISO !</ESWim_ConvertISOError1>
+		<ESWim_ConvertISOError2>Esiste già un file ISO con lo stesso nome ! E' necessario cambiare nome ...</ESWim_ConvertISOError2>
+		<ESWim_ConvertISOHelp>Crea automaticamente un file ISO utilizzando il tuo nuovo file alla fine del processo di conversione. Puoi cambiare il nome della ISO predefinito</ESWim_ConvertISOHelp>
+		<ESWim_ConvertUEFI>Supporto Compatibilità avvio UEFI</ESWim_ConvertUEFI>
+		<ESWim_ConvertUEFIHelp>Crea automaticamente una ISO  compatibile con l'avvio UEFI</ESWim_ConvertUEFIHelp>
+		<ESWim_ConvertHelp>Avvia la conversione del tuo file</ESWim_ConvertHelp>
+		<ESWim_ConvertInfo>La conversione potrebbe essere lunga, quindi per favore un po' di pazienza</ESWim_ConvertInfo>
+		<ESWim_ConvertFinish>Il tuo file è stato creato con successo !</ESWim_ConvertFinish>
+		<ESWim_ConvertFinishError>Si è verificato un errore durante il processo di conversione impedendo di creare correttamente il file !</ESWim_ConvertFinishError>
+	</ESWimConverter>
+	<ESWlanBackupRestore>
+		  <ESWlan_Opening>Visualizza tutte le funzionalità disponibili</ESWlan_Opening>
+		  <ESWlan_OpeningHelp>Scegli nella lista quale elemento vuoi personalizzare</ESWlan_OpeningHelp>
+		  <ESWlan_Opening_Function1>Effattua il Backup dei profili Wireless Lan </ESWlan_Opening_Function1>
+		  <ESWlan_Opening_Function2>Elimina i profili Wireless Lan</ESWlan_Opening_Function2>
+		  <ESWlan_Opening_Function3>Carica i profili Wireless Lan</ESWlan_Opening_Function3>
+		  <ESWlan_Opening_Function4>Informazioni Schede di Rete</ESWlan_Opening_Function4>
+		  <ESWlan_Backup>
+			  <ESWlan_BackupName>Backup</ESWlan_BackupName>
+			  <ESWlan_BackupAvailable>Sostituicetutti i profili con gli stessi nomi!</ESWlan_BackupAvailable>
+			  <ESWlan_BackupHelp>Salva tutti i profili Wireless Lan  ATTIVI rilevati nel tuo computer</ESWlan_BackupHelp>
+		  </ESWlan_Backup>
+		  <ESWlan_Delete>
+			  <ESWlan_DeleteName>Elimina</ESWlan_DeleteName>
+			  <ESWlan_DeleteFile>Elimina i file locali</ESWlan_DeleteFile>
+			  <ESWlan_DeleteFileWarning>Cancellerai anche il file delle impostazioni per questo profilo!</ESWlan_DeleteFileWarning>
+			  <ESWlan_DeleteHelp>Elimina i profili Wireless Lan selezionati. La tua connessione internet sarà rimossa fino a quando non caricherai un nuovo profilo</ESWlan_DeleteHelp>
+		  </ESWlan_Delete>
+		  <ESWlan_Load>
+			  <ESWlan_LoadName>Caca</ESWlan_LoadName>
+			  <ESWlan_AllUsers>Utente (tutti)</ESWlan_AllUsers>
+			  <ESWlan_CurrentUser>Utente (corrente)</ESWlan_CurrentUser>
+			  <ESWlan_ChooseProfile>E' necessario scegliere un profilo!</ESWlan_ChooseProfile>
+			  <ESWlan_ChooseUser>E' necessario scegliere un utente per applicare questo profilo!</ESWlan_ChooseUser>
+			  <ESWlan_LoadHelp>Carica il profilo selezionato per creare una connessione internet wireless</ESWlan_LoadHelp>
+		  </ESWlan_Load>
+		  <ESWlan_Network>
+			  <ESWlan_NetworkInformation>Informazioni</ESWlan_NetworkInformation>
+			  <ESWlan_NetworkType>Tipologia</ESWlan_NetworkType>
+			  <ESWlan_NetworkStatus>Stato</ESWlan_NetworkStatus>
+			  <ESWlan_NetworkIP>Protocollo Internet</ESWlan_NetworkIP>
+			  <ESWlan_NetworkUnknown>Sconosciuto</ESWlan_NetworkUnknown>
+			  <ESWlan_NetworkHelp>Mostra tutte le informazioni disponibili della scheda di rete</ESWlan_NetworkHelp>
+		  </ESWlan_Network>
+		  <ESWlan_Messages>
+			  <ESWlan_NoProfile>Nessun profilo rilevato</ESWlan_NoProfile>
+			  <ESWlan_NoNetwork>Nessuna scheda di rete rilevata</ESWlan_NoNetwork>
+			  <ESWlan_Successful>Il tuo comando è stato eseguito con successo !</ESWlan_Successful>
+			  <ESWlan_Unsuccessful>nessun valido profilo Wireless Lan rilevato !</ESWlan_Unsuccessful>
+		  </ESWlan_Messages>
+	</ESWlanBackupRestore>
+	<ESFileValidator>
+		  <ESFileValidator_Opening>Display all available functionalities</ESFileValidator_Opening>
+		  <ESFileValidator_OpeningHelp>Choose in the list which element you want to customize</ESFileValidator_OpeningHelp>
+		  <ESFileValidator_Opening_Function1>Check Hash Values</ESFileValidator_Opening_Function1>
+		  <ESFileValidator_Opening_Function2>Export Hash Values</ESFileValidator_Opening_Function2>
+		  <ESFileValidator_OpenFile>From a File</ESFileValidator_OpenFile>
+		  <ESFileValidator_OpenFile_Help>Get hash values from a file</ESFileValidator_OpenFile_Help>
+		  <ESFileValidator_OpenFolder>From a Folder</ESFileValidator_OpenFolder>
+		  <ESFileValidator_OpenFolder_Detection>files have been detected</ESFileValidator_OpenFolder_Detection>
+		  <ESFileValidator_OpenFolder_Recusive>Do you want to use subdirectories recursive search ?</ESFileValidator_OpenFolder_Recusive>
+		  <ESFileValidator_OpenFolder_Help>Get all files hash values from a folder</ESFileValidator_OpenFolder_Help>
+		  <ESFileValidator_FileInformation>File Information</ESFileValidator_FileInformation>
+		  <ESFileValidator_FileInformationFolder>Folder</ESFileValidator_FileInformationFolder>
+		  <ESFileValidator_FileInformationName>Name</ESFileValidator_FileInformationName>
+		  <ESFileValidator_FileInformationFormat>Format</ESFileValidator_FileInformationFormat>
+		  <ESFileValidator_HashValues>Hash Algorithms Values</ESFileValidator_HashValues>
+		  <ESFileValidator_HashValues_Calculating>Processing ... Please wait</ESFileValidator_HashValues_Calculating>
+		  <ESFileValidator_HashValues_CalculatingError>Value Error ...</ESFileValidator_HashValues_CalculatingError>
+		  <ESFileValidator_HashValues_Information>Show Entire Hash Calculated Value</ESFileValidator_HashValues_Information>
+		  <ESFileValidator_HashValues_Pending>Pending ...</ESFileValidator_HashValues_Pending>
+		  <ESFileValidator_Check>CHECK</ESFileValidator_Check>
+		  <ESFileValidator_Export_Txt>Export as .txt</ESFileValidator_Export_Txt>
+		  <ESFileValidator_Export_Xml>Export as .xml</ESFileValidator_Export_Xml>
+	</ESFileValidator>
+  </Traduction>
+</Packages>

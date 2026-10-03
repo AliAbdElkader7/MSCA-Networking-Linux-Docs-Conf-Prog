@@ -1,0 +1,52 @@
+- MariaDB is a relational database.
+- Relational databases are a common way to store information for applications.
+- Appache for example can get its information from a database.
+- Logging for example can write its information to a database.
+- Databases organize data in a set of tables.
+- In a table, a raw represents a record.
+- In a record, a column represents an attribute of that record.
+- MariaDB is a community branch of MySQL.
+- PostgreSQL is another open source database
+
+[root@server ~]# yum install mariadb-server mariadb-libs mariadb-test
+[root@server ~]# systemctl start mariadb
+[root@server ~]# systemctl enable mariadb
+[root@server ~]# cat /etc/services  | grep mysql
+[root@server ~]# firewall-cmd --permanent --add-service=mysql
+[root@server ~]# firewall-cmd --reload
+[root@server ~]# firewall-cmd --list-all
+
+(to complete instllation host database)
+[root@server ~]# mysql_secure_installation            (an installation script to setup a secure environment of the MySQL)
+Enter current password for root (enter for none): enter        (The DB root user, not the linux root user)
+Set root password? [Y/n] y
+New password:
+Re-enter new password:
+Remove anonymous users? [Y/n] y
+Disallow root login remotely? [Y/n] y                (For security purposes)
+Remove test database and access to it? [Y/n] n
+Reload privilege tables now? [Y/n] y                 (To apply all the changes we have made)
+
+[root@server ~]# vim /etc/my.cnf                     (The configuration file)
+To login to the DB:
+[root@server ~]# mysql -u root -h localhost -p
+Hint: All the commands are terminated with a semicollon.
+MariaDB [(none)]> show databases;              (To list all available databases)
+MariaDB [(none)]> create database addressbook;         (To create a database named addressbook)
+MariaDB [(none)]> use addressbook;                      (To use the addressbook database)
+MariaDB [addressbook]> show tables;
+MariaDB [addressbook]> use mysql;                      (Switch between difrrent databases)
+MariaDB [mysql]> show tables;
+MariaDB [mysql]> descripe user;
+MariaDB [mysql]> create user abeer identified by 'password';             (Create a user on the database)
+
+
+
+
+
+
+
+
+
+
+

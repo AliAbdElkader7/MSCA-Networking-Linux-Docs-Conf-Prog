@@ -1,0 +1,42 @@
+- ADCS is a Microsoft's PKI solution.
+- ADCS is used to create, manage, adminster, revoke and publish Digital Certifactes.
+- We use PKI in some scenarios. For example, HTTPS web sites, wireless security using "peap eap-tls", ADRMS, ADFS. 
+- Digital Certificate can be used for users, computers, and network devices.
+- Digital Certificates provide confidentiality, integrity and authentication.
+======================================================
+### Public CA ###
+- Less administration
+- Automatic trust by external clients
+- certificates cost money
+- Getting Certs takes time
+
+### Private CA ###
+- You have total control over cert administration
+- much cheaper as you own the infrastructure
+- Custom templates (e-mail, SSL web, Code signing, powershell script signing...)
+- Autoenrollment
+- no trust by external clients
+
+======================================================
+### Standalone CA ###
+- Used for offline CAs
+- No dependency on ADDS
+- Certificate requests are either manual or web enrollment
+- All cert requests are manually approved
+
+======================================================
+### Enterprise CA ###
+- Cannot exist offline
+- can be a root or a sub-ordinate CA
+- Requires ADDS
+- Cert requests support autoenrollment
+- Cert requests can be automatically issued or denied based on ACL
+
+======================================================
+### PKI topologies ###
+1- Only one CA
+2- Standalone root CA and a sub-ordinate enterprise CA
+3- Standalone root CA, a policy CA and a sub-ordinate enterprise CA
+4- Cross certification Hirarchy 
+
+======================================================

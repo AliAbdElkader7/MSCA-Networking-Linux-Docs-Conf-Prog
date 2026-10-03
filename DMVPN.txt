@@ -1,0 +1,260 @@
+DMVPN components:
+- CEF 
+- Multipoint GRE (mGRE)
+- Next hop resolution protocol (NHRP)
+- Dynamic Routing protocol or static routing
+- Optional IPsec 
+================================================
+DMVPN Phases:
+Phase 1 (Hub & Spoke topology)
+-mGRE configured on Hub, point-to-point GRE configured on spokes
+-traffic flow between hub & spokes only
+-can be configured statically or NHC will dynamically register themselves in NHS
+-NHRP required for sopke dynamic registeration to hub
+-Summarization/default routing at hub is allowed
+-next-hop on spokes is always the hub
+
+Phase 2 ( Spoke-To-Spoke topology)
+-mGRE on hub and spokes
+-NHRP required for sopke dynamic registeration to hub
+-NHRP required for sopke-to-spoke resolution
+-spoke-to-spoke tunnel triggered by spoke
+-Summarization/default routing at hub is NOT allowed
+-next hop on spokes is always preserved by the hub
+-multi level hierarchy requires hub daisy-chaining
+-traffic flows between spokes directly
+
+Phase 3 (recommended)
+-mGRE on hub and spokes
+-NHRP required for sopke dynamic registeration to hub
+-NHRP required for sopke-to-spoke resolution
+-Summarization/default routing at hub is allowed (causes probles with OSPF)
+-the hub sends NHRP redirect message so that the spoke installs the route to the destination in its routing table
+- next hop on spokes is always the hub (routing is then more flexible)
+-multi level hierarchy works without daisy-chaining
+=================================================
+
+Phase 1 (static mapping):
+
+hub(config)#int tunnel 1
+hub(config-if)#ip address 10.0.0.1 255.255.255.0
+hub(config-if)#tunnel source s1/0
+hub(config-if)#tunnel mode gre multipoint
+hub(config-if)#ip nhrp network-id 123
+hub(config-if)#ip nhrp map 10.0.0.2 12.0.0.2
+hub(config-if)#ip nhrp map 10.0.0.3 13.0.0.2
+hub(config-if)#ip nhrp authentication CISCO    (optional)
+hub(config-if)#ip nhrp map multicast dynamic     (to support IGP protocols)
+where 10.0.0.2 is the tunnel IP and 11.0.0.2 is the spoke public IP
+
+spoke(config)#int tunnel 1
+spoke(config-if)#ip address 10.0.0.2 255.255.255.0
+spoke(config-if)#tunnel source s1/1
+spoke(config-if)#tunnel destination 11.0.0.2
+spoke(config-if)#ip nhrp netowrk-id 123
+spoke(config-if)#ip nhrp map 10.0.0.1 11.0.0.2 
+spoke(config-if)#ip nhrp authentication CISCO    (optional)
+spoke(config-if)#ip nhrp map multicast 11.0.0.2        (to support IGP protocols)
+
+=================================================
+
+Phase 1 (dynamic mapping):
+
+hub(config)#int tunnel 1
+hub(config-if)#ip address 10.0.0.1 255.255.255.0
+hub(config-if)#tunnel source s1/0
+hub(config-if)#tunnel mode gre multipoint
+hub(config-if)#ip nhrp network-id 123
+hub(config-if)#ip nhrp authentication CISCO    (optional)
+hub(config-if)#ip nhrp map multicast dynamic     (to support IGP protocols)
+
+spoke(config)#int tunnel 1
+spoke(config-if)#ip address 10.0.0.2 255.255.255.0
+spoke(config-if)#tunnel source s1/1
+spoke(config-if)#tunnel destination 11.0.0.2
+spoke(config-if)#ip nhrp network-id 123
+spoke(config-if)#ip nhrp map 10.0.0.1 11.0.0.2 
+spoke(config-if)#ip nhrp nhs 10.0.0.1
+spoke(config-if)#ip nhrp authentication CISCO    (optional)
+spoke(config-if)#ip nhrp map multicast 11.0.0.2        (to support IGP protocols)
+
+
+=================================================
+
+Phase 2 (static mapping):
+
+hub(config)#int tunnel 1
+hub(config-if)#ip address 10.0.0.1 255.255.255.0
+hub(config-if)#tunnel source s1/0
+hub(config-if)#tunnel mode gre multipoint
+hub(config-if)#ip nhrp network-id 123
+hub(config-if)#ip nhrp map 10.0.0.2 12.0.0.2
+hub(config-if)#ip nhrp map 10.0.0.3 13.0.0.2
+hub(config-if)#ip nhrp authentication CISCO    (optional)
+hub(config-if)#ip nhrp map multicast dynamic     (to support IGP protocols)
+where 10.0.0.2 is the tunnel IP and 12.0.0.2 is the spoke public IP
+
+spoke(config)#int tunnel 1
+spoke(config-if)#ip address 10.0.0.2 255.255.255.0
+spoke(config-if)#tunnel source s1/1
+spoke(config-if)#tunnel mode gre multipoint
+spoke(config-if)#ip nhrp netowrk-id 123
+spoke(config-if)#ip nhrp map 10.0.0.1 11.0.0.2 
+spoke(config-if)#ip nhrp authentication CISCO    (optional)
+spoke(config-if)#ip nhrp map multicast 11.0.0.2        (to support IGP protocols)
+
+=================================================
+Phase 2 (dynamic mapping):
+
+hub(config)#int tunnel 1
+hub(config-if)#ip address 10.0.0.1 255.255.255.0
+hub(config-if)#tunnel source s1/0
+hub(config-if)#tunnel mode gre multipoint
+hub(config-if)#ip nhrp network-id 123
+hub(config-if)#ip nhrp authentication CISCO    (optional)
+hub(config-if)#ip nhrp map multicast dynamic     (to support IGP protocols)
+
+spoke(config)#int tunnel 1
+spoke(config-if)#ip address 10.0.0.2 255.255.255.0
+spoke(config-if)#tunnel source s1/1
+spoke(config-if)#tunnel mode gre multipoint
+spoke(config-if)#ip nhrp netowrk-id 123
+spoke(config-if)#ip nhrp map 10.0.0.1 11.0.0.2 
+spoke(config-if)#ip nhrp nhs 10.0.0.1
+spoke(config-if)#ip nhrp authentication CISCO    (optional)
+spoke(config-if)#ip nhrp map multicast 11.0.0.2        (to support IGP protocols)
+
+=================================================
+
+Phase 3:
+
+The same config used in phase 2 besides the following:
+
+hub(config)#int tunnel 1
+hub(config-if)#ip nhrp redirect
+
+spoke(config)#int tunnel 1
+spoke(config-if)#ip nhrp shortcut
+
+=================================================
+
+RIP on DMVPN:
+1)
+hub(config)#int tunnel 1
+hub(config-if)#no ip splite-horizon
+
+OR
+2)recommended
+hub(config)#router rip
+hub(config-router)#default-information originate
+
+=================================================
+
+ODR on DMVPN:
+hub(config)#router odr
+spoke(config)#router odr
+make sure that CDP is enabled on tunnel interfaces
+
+=================================================
+
+classic EIGRP over DMVPN phase1:
+
+hub(config)#int tunnel 1
+hub(config-if)#no ip splite-horizon eigrp 1
+
+=================================================
+
+classic EIGRP over DMVPN phase2:
+
+hub(config)#int tunnel 1
+hub(config-if)#no ip splite-horizon eigrp 1
+hub(config-if)#no ip next-hop-self eigrp 1
+
+=================================================
+
+classic EIGRP over DMVPN phase3:
+
+hub(config)#int tunnel 1
+hub(config-if)#no ip split-horizon eigrp 1
+
+=================================================
+
+OSPF over DMVPN phase 1:
+hub(config)#int tunnel 1
+hub(config-if)#ip ospf network point-to-multipoint
+
+spoke(config)#int tunnel 1
+spoke(config-if)#ip ospf network point-to-multipoint
+
+=================================================
+
+OSPF over DMVPN phase 2:
+
+hub(config)#int tunnel 1
+hub(config-if)#ip ospf priority 10    (Hub must be the DR router)
+hub(config-if)#ip ospf network broadcast
+
+spoke(config)#int tunnel 1
+spoke(config-if)#ip ospf priority 0
+spoke(config-if)#ip ospf network broadcast
+
+=================================================
+
+OSPF over DMVPN phase 3:
+point-to-multipoint or broadcast network type can be used as the spokes will reach each other directly even though the next hop in the routing table
+
+=================================================
+
+To verify:
+hub#show ip nhrp 
+hub#show ip nhrp detail
+hub#show dmvpn
+hub#debug dmvpn packet nhrp     equivelent to    hub#debug nhrp
+
+=================================================
+
+IPsec over DMVPN: (on hub and spokes)
+step1: Setup the ISAKMP policy (for IKE phase1)
+
+hub(config)#crypto isakmp policy 1
+hub(config-isakmp)#authentication pre-share
+hub(config-isakmp)#encryption aes
+hub(config-isakmp)#group 2
+hub(config-isakmp)#hash sha
+To Verify: hub#show crypto isakmp policy
+
+Configure pre-shared keys:
+hub(config)#crypto isakmp key 0 CISCO address 0.0.0.0 0.0.0.0
+ 
+
+step2: Setup IPSEC transform-set (for IKE phase2 )
+
+hub(config)#crypto ipsec transform-set NAME esp-aes 256 esp-sha-hmac
+hub(config)#crypto ipsec security-association lifetime seconds 1800 (optional)
+To Verify: hub# show crypto ipsec transform-set
+
+
+step3: Setup crypto map
+
+hub(config)#crypto ipsec profile DMVPN_MAP
+hub(config-crypto-map)#set security-association lifetime seconds 86400
+hub(config-crypto-map)#set transform-set NAME
+where NAME is the name of the IPSEC transform-set
+To Verify: hub# show crypto map
+
+
+setp4: Asign crypto map to interafce
+
+hub(config)#int tunnel 1
+hub(config-if)#tunnel protection ipsec profile DMVPN_MAP
+
+
+
+
+
+
+
+
+
+
+

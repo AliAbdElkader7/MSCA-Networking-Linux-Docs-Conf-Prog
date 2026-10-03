@@ -1,0 +1,4 @@
+Convert Between Virtual Images Extensions:
+qemu-img convert -f <from> -O <to> image.ex image.ex 	For Example Convert From vmdk to qcom2:
+
+qemu-img convert -f vmdk -O qcow2 image.vmdk image.qcow2

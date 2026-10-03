@@ -1,0 +1,20 @@
+phase1 isakmp:
+
+crypto isakmp policy 1
+ encr aes
+ hash sha
+ authentication pre-share
+ group 5
+crypto isakmp key CCNA address 0.0.0.0 0.0.0.0
+
+
+identify specific traffic (src,dst) to be encrypted:
+	ip access-list extended ...
+	permit ...
+
+phase2 (ipsec):
+crypto ipsec transform-set SECRET esp-aes esp-sha-hmac 
+crypto map gre/ipsec 1 ipsec-isakmp
+ set peer 10.10.10.2
+ set transform-set SECRET
+ match address 100

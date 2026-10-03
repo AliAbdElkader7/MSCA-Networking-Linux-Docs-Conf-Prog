@@ -1,0 +1,5 @@
+set IP_ADDR
+set DEFAULT_ROUTER
+ping to tftp server
+emergency-install tftp://
+make a boot system command which will be ios file.

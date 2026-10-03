@@ -1,0 +1,5 @@
+To Enable Access Through ASA Firewall
+=========================================
+1- Configure Access Rule to Allow Traffic ( from lower interface sl to inside or any higher security level(sl) )
+2- Configure Serivce Policy with allowed protocols (icmp, for example)
+3- Configure NAT Rule to allow traffic ( from pc1, pc2 to internet )

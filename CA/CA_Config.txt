@@ -1,0 +1,42 @@
+### On the CA1 Server ###
+
+- Install the "Active Directory Certificate Services" role.
+- Configure the Root Standalone CA1 Server.
+- Use Script "1-SetCDP_AIA.cmd" to change the default path of the AIA and CDP.
+- Use Script "2-CopyRootCert.cmd" to copy the Root CA cettificates to the C:\export directory.
+- Copy the two cert files to the C:\import directory on the CA2 Server.
+
+
+### On the CA2 Server ###
+
+- Add the Root CA Server cert files to the local store using the Script file "3-DistRootCert.cmd".
+- Install the "Active Directory Certificate Services" role.
+- Configure the Enterprise Subordinate CA2 Server.
+(Save a certificate request to file on the target machine)
+- Copy the CA2 request file to the CA1 Server.
+
+### On the CA1 Server ###
+
+- Launch the powershell and type the following command:
+certreq -submit c:\CA2.tshoot.com_tshoot-CA2-CA.req
+(Where "CA2.tshoot.com_tshoot-CA2-CA.req" is the name of the request file)
+
+- Approve the Pending Request using the "Certificate Authority" console.
+
+- Launch the powershell and type the following command:
+certreq -retrieve 2 c:\CA2.tshoot.com_tshoot-CA2-CA.crt
+(Take care of the file extension)
+
+- Copy the .crt file to the CA2 Server in the c:\pki directory.
+
+### On the CA2 Server ###
+
+- Launch the "Certificate Authority" console.
+Right click on the server name.. All tasks.. Install CA Certificate.
+(browse to the crt file under C:\pki directory)
+
+- Run the "4-ConfigAIA_2.cmd" Script file.
+
+### On the CA2 Server ###
+
+- Install the IIS service and create a virtual directory named pki under the "Default Web Site".

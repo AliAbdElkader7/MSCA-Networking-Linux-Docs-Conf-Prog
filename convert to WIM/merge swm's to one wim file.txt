@@ -1,0 +1,1 @@
+dism /export-image /sourceimagefile:F:\sources\install.swm /swmfile:F:\sources\install*.swm /sourceindex:1 /destinationimagefile:c:\win10install.wim /Compress:max /CheckIntegrity

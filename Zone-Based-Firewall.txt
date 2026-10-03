@@ -1,0 +1,37 @@
+1- Define the zones:
+R1(config)#zone security INSIDE
+R1(config)#zone security OUTSIDE
+R1(config)#zone security DMZ
+
+2- Classify the traffic:
+R1(config)#class-map type inspect TCP         (default is match-all)
+R1(config-cmap)#match protocol tcp
+R1(config)#class-map type inspect UDP         (default is match-all)
+R1(config-cmap)#match protocol udp
+R1(config)#class-map type inspect ICMP        (default is match-all)
+R1(config-cmap)#match protocol icmp
+
+3- Define the inspection policy:
+R1(config)#policy-map type inspect IN_TO_OUT
+R1(config-pmap)#class TCP
+R1(config-pmap-c)#inspect
+R1(config-pmap)#class UDP
+R1(config-pmap-c)#inspect
+R1(config-pmap)#class ICMP
+R1(config-pmap-c)#inspect
+
+4- Associate the zone and apply the policy:
+R1(config)#zone-pair security IN_TO_OUT_PAIR source INSIDE destination OUTSIDE
+R1(config-sec-zone-pair)#service-policy type inspect IN_TO_OUT
+
+5- Apply the zone to the interface:
+R1(config)#int s1/0
+R1(config-if)#zone-member security OUTSIDE
+R1(config)#int f0/0
+R1(config-if)#zone-member security INSIDE
+
+6- Verify:
+R1#show class-map type inspect 
+R1#show policy-map type inspect zone-pair sessions
+
+
